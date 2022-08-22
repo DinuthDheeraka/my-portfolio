@@ -5,18 +5,33 @@
     <title>case_3</title>
   <link rel="stylesheet" href="assets/styles/normalize.css">
   <style>
-    main>section:first-child>div{
+    main>section:first-child>div:first-child{
       position: fixed;
       margin: auto;
-      background-color: #c7ab46;
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       bottom: 0;
       left: 0;
       right: 0;
       top: 0;
       border-radius: 100%;
-      border: 10px solid red;
+      border: 12px solid #666060;
+      background-color: transparent;
+      z-index: 2;
+    }
+
+    main>section:first-child>div>div{
+      position: fixed;
+      margin: auto;
+      width: 280px;
+      height: 280px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 2;
+      border-radius: 100%;
+      border: 12px solid #ea1029;
       background-color: transparent;
     }
 
@@ -24,29 +39,64 @@
       width: 98vw;
       height: 100vh;
       border-color: #ecb902;
-      background-color: #02ac0f;
+      background-color: #ffffff;
     }
 
     main>section:nth-child(2){
       width: 98vw;
       height: 100vh;
       border-color: #ecb902;
-      background-color: #02ac0f;
+      background-color: #ffffff;
     }
 
     main>section:nth-child(3){
       width: 98vw;
       height: 100vh;
       border-color: #ecb902;
-      background-color: #36993e;
+      background-color: #ffffff;
     }
 
-    main>section:nth-child(4){
-      width: 98vw;
-      height: 100vh;
-      border-color: #154b89;
-      background-color: #8b1ea3;
+    main>section{
+      position: relative;
     }
+
+    /*main>section>div:nth-child(2){*/
+    /*  background-color: #5976b4;*/
+    /*  width: 280px;*/
+    /*  height: 283px;*/
+    /*  border-radius: 100%;*/
+    /*  top: 3px;*/
+    /*  bottom: 40px;*/
+    /*  left: 0;*/
+    /*  right: 3px;*/
+    /*  margin: auto;*/
+    /*  position: absolute;*/
+    /*}*/
+
+    .circle{
+      width: 280px;
+      height: 283px;
+      border-radius: 100%;
+      top: 5px;
+      bottom: 40px;
+      left: 0;
+      right: 10px;
+      margin: auto;
+      position: absolute;
+    }
+
+    #circle-1{
+      background-color: #893589;
+    }
+
+    #circle-2{
+      background-color: #048072;
+    }
+
+    #circle-3{
+      background-color: #b37906;
+    }
+
   </style>
 </head>
 <body>
@@ -56,11 +106,20 @@
       <div>
       </div>
     </div>
+    <div class="circle" id="circle-1">
+      blaa
+    </div>
   </section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
+
+  <section>
+    <div class="circle" id="circle-2">
+    </div>
+  </section>
+
+  <section>
+    <div class="circle" id="circle-3">
+    </div>
+  </section>
 </main>
 </body>
 </html>
