@@ -1,3 +1,21 @@
 header{
-    background-color: #02ac0f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+/*main-form-header-navigations-list*/
+header>#header-navigations>nav>#list-navigation{
+    border: 2px solid #ffffff;
+    width: 560px;
+    margin-left: 32%;
+}
+
+header>#header-navigations>nav>#list-navigation>li{
+    display: inline-block;
+    margin-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
