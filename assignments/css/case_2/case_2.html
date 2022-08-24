@@ -6,6 +6,7 @@
     <title>case_2</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
     <style>
         *{
             font-family: 'Poppins', sans-serif;
@@ -23,7 +24,8 @@
             position: fixed;
             top: 0;
             z-index: 2;
-            background-color: rgba(182, 180, 180, 0.66);
+            box-shadow: 0px -1px 8px 2px #1c1717e8;
+            background-color: rgb(255, 255, 255);
         }
 
         footer{
@@ -34,14 +36,14 @@
 
         main>nav{
             position: absolute;
-            background-color: #ea1029;
+            background-color: #9610ea;
             top: 0;
             bottom: 0;
             width: 300px;
         }
         main>article{
             margin-left: 300px;
-            background-color: #02ac0f;
+            background-color: #bcc1bc;
         }
 
         main>article>section:first-child{
@@ -56,11 +58,48 @@
             height: 250px;
             border: 1px solid #1f1d1d;
         }
+
+        header>img{
+            width: 190px;
+            position: relative;
+            top: 15px;
+            left: 10px;
+        }
+
+        header>nav{
+            position: absolute;
+            right: 30px;
+            background-color: rgba(255, 255, 255, 0.87);
+            width: 700px;
+            top: 0;
+            right: 5px;
+        }
+
+        header>nav>ul{
+            margin-left:200px;
+        }
+
+        header>nav>ul>li{
+            padding-left: 20px;
+            display: inline-block;
+        }
+
+        header>nav>ul>li i{
+            padding-right: 6px;
+        }
     </style>
 </head>
 <body>
 <header>
-
+    <img src="assets/images/favicon.png">
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i>Home</li>
+            <li><i class="fa-solid fa-handshake-simple"></i>Services</li>
+            <li><i class="fa-solid fa-phone"></i>Contact</li>
+            <li><i class="fa-solid fa-address-card"></i>About</li>
+        </ul>
+    </nav>
 </header>
 <main>
     <nav>
