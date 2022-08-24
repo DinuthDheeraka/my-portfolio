@@ -1,21 +1,66 @@
 header{
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 60px;
-    background-color: #ffffff;
+    z-index: 2;
+    background-color: #c9c6c6;
 }
 
 /*main-form-header-navigations-list*/
-header>#header-navigations>nav>#list-navigation{
-    border: 2px solid #ffffff;
-    width: 560px;
+header>#header-navigations>nav>#list-navigations{
+    /*border: 2px solid #ffffff;*/
+    width: 40%;
     margin-left: 32%;
+    font-size: 100%;
 }
 
-header>#header-navigations>nav>#list-navigation>li{
+header>#header-navigations>nav>#list-navigations>li{
     display: inline-block;
     margin-right: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+}
+
+main{
+    position: relative;
+}
+
+main>#main-page{
+    position: relative;
+    margin-top: 60px;
+    /*background-color: #9610ea;*/
+    width: 100%;
+    height: 700px;
+}
+
+
+/*main-page-introduction-name-area*/
+main>#main-page>#main-page-introduction{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0e0e;
+}
+
+main>#main-page>#main-page-introduction>#main-page-name{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #02ac0f;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+main>#main-page>#main-page-introduction>#main-page-name>h1{
+    display: inline-block;
+    position: absolute;
+    color: orange;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 400%;
 }
