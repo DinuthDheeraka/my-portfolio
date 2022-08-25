@@ -8,14 +8,16 @@ header{
 }
 
 /*header-side-image*/
-header>#my-image>img{
-    width: 100px;
-    height: 90px;
+header>#my-image>h2{
+    /*width: 50px;*/
+    height: 50px;
     position: absolute;
     margin: auto;
-    left: 10px;
+    left: 100px;
     top: 10px;
-    border-radius: 100%;
+    /*border-radius: 50%;*/
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-weight: lighter;
 }
 
 /*main-form-header-navigations-list*/
@@ -70,7 +72,8 @@ main>#main-page>#main-page-introduction>#main-page-name{
 
 /*main-page-name*/
 main>#main-page>#main-page-introduction>#main-page-name>h1{
-    font-family: 'Aclonica', sans-serif;
+    /*font-family: 'Aclonica', sans-serif;*/
+    font-family: 'DM Mono', monospace;
     display: inline-block;
     position: absolute;
     background: -webkit-linear-gradient(180deg, rgb(8, 132, 226), rgb(179, 23, 243),deepskyblue);
@@ -114,14 +117,14 @@ main>#main-page>#main-page-introduction>section:nth-child(2){
     height: 130px;
     margin: auto;
     background-color: #ffffff;
-    bottom: 40px;
+    bottom: 50px;
 }
 
 main>#main-page>#main-page-introduction>section:nth-child(2)>h2:nth-child(1){
     position: absolute;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     font-size: 20px;
     left: 0;
     right: 0;
@@ -149,7 +152,7 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>button{
     text-align: center;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(122, 20, 220, 0.87);
+    background-color: rgba(3, 150, 229, 0.96);
     border-color: transparent;
     border-radius: 25px;
     color: white;
@@ -159,5 +162,12 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>button{
     height: 40px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 40px;
+}
+
+#about-me-page{
+    position: relative;
+    width: 98.88vw;
+    height: 50vw;
+    background-color: #5c06a8;
 }
