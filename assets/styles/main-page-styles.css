@@ -22,7 +22,7 @@ header>#my-image>img{
 header>#header-navigations>nav>#list-navigations{
     /*border: 2px solid #ffffff;*/
     width: 40%;
-    margin-left: 32%;
+    margin-left: 31%;
     font-size: 100%;
 }
 
@@ -126,6 +126,7 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>h2:nth-child(1){
     left: 0;
     right: 0;
     top: 0;
+    font-weight: lighter;
 }
 
 main>#main-page>#main-page-introduction>section:nth-child(2)>h2:nth-child(2){
@@ -140,11 +141,21 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>h2:nth-child(2){
     top: 30px;
 }
 
+
+/*main-page-contact-btn*/
 main>#main-page>#main-page-introduction>section:nth-child(2)>button{
     position: absolute;
+    background-color: white;
     text-align: center;
     margin: auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(122, 20, 220, 0.87);
+    border-color: transparent;
+    border-radius: 25px;
+    color: white;
     width: 200px;
+    font-size: 15px;
+    font-weight: lighter;
     height: 40px;
     left: 0;
     right: 0;
