@@ -165,9 +165,6 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>button{
     bottom: 40px;
 }
 
-#about-me-page{
-    position: relative;
-    width: 98.88vw;
-    height: 50vw;
-    background-color: #5c06a8;
-}
+
+
+/*-------------------------------------------------------------------------------*/
