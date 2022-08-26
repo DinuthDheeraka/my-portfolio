@@ -3,8 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        section{
+            display: flex;
+            height:400px;
+            width: 1000px;
+            justify-content: space-between;
+            border: 1px solid rebeccapurple;
+        }
+        div{
+            width:70px;
+            height: 70px;
+            border: 1px solid red;
+        }
+
+        section>div:nth-child(1){
+            align-self: self-start;
+        }
+
+        section>div:nth-child(2){
+            align-self: center;
+        }
+
+        section>div:nth-child(3){
+            align-self: self-end;
+        }
+
+        section>div:nth-child(4){
+            align-self: self-start;
+        }
+
+        section>div:nth-child(5){
+            align-self: center;
+        }
+
+        section>div:nth-child(6){
+            align-self: self-end;
+        }
+    </style>
 </head>
 <body>
-
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
 </body>
 </html>
