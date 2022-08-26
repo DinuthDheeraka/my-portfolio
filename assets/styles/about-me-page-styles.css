@@ -2,8 +2,8 @@
 #about-me-page{
     position: relative;
     width: 98.88vw;
-    height: 50vw;
-    background-color: #5c06a8;
+    height: 40vw;
+    background-color: #58018d;
 }
 
 #about-me-page>article{
@@ -18,13 +18,13 @@
 
 #about-me-page>article>#about-me-page-my-image{
     position: absolute;
-    top: 110px;
-    right: 40px;
+    top: -50px;
+    left: 42%;
 }
 
 #about-me-page>article>#about-me-page-my-image>img{
-    width: 550px;
-    height: 500px;
+    width: 240px;
+    height: 220px;
     border-radius: 100%;
 }
 
@@ -35,8 +35,8 @@
     /*text-align: center;*/
     /*left: 0;*/
     /*right: 0;*/
-    font-size: 200%;
-    /*text-transform: uppercase;*/
+    font-size: 400%;
+    text-transform: uppercase;
     background-image: linear-gradient(
             -225deg,
             #04faf2 0%,

@@ -24,7 +24,7 @@ header>#my-image>h2{
 header>#header-navigations>nav>#list-navigations{
     /*border: 2px solid #ffffff;*/
     width: 40%;
-    margin-left: 31%;
+    margin-left: 1%;
     font-size: 100%;
 }
 
@@ -33,7 +33,7 @@ header>#header-navigations>nav>#list-navigations>li{
     display: inline-block;
     margin-right: 30px;
     font-family: 'Poppins', sans-serif;
-    /*font-weight: bold;*/
+    font-weight: bold;
 }
 
 main{
@@ -117,7 +117,7 @@ main>#main-page>#main-page-introduction>section:nth-child(2){
     height: 130px;
     margin: auto;
     background-color: #ffffff;
-    bottom: 50px;
+    bottom: 30px;
 }
 
 main>#main-page>#main-page-introduction>section:nth-child(2)>h2:nth-child(1){
@@ -129,7 +129,7 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>h2:nth-child(1){
     left: 0;
     right: 0;
     top: 0;
-    font-weight: lighter;
+    /*font-weight: bold;*/
 }
 
 main>#main-page>#main-page-introduction>section:nth-child(2)>h2:nth-child(2){
@@ -141,6 +141,7 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>h2:nth-child(2){
     font-size: 15px;
     padding-top: 10px;
     right: 0;
+    font-weight: bold;
     top: 30px;
 }
 
@@ -148,21 +149,41 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>h2:nth-child(2){
 /*main-page-contact-btn*/
 main>#main-page>#main-page-introduction>section:nth-child(2)>button{
     position: absolute;
-    background-color: white;
     text-align: center;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(3, 150, 229, 0.96);
-    border-color: transparent;
+    background-color: rgba(245, 235, 10, 0.89);
+    border:transparent;
     border-radius: 25px;
-    color: white;
+    color: #211d1d;
     width: 200px;
     font-size: 15px;
     font-weight: lighter;
     height: 40px;
     left: 0;
     right: 0;
-    bottom: 40px;
+    bottom: 10px;
+}
+
+#say-hello-btn{
+    position: absolute;
+    margin: auto;
+    right: 4%;
+    background-color: white;
+    top: 16px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 3px solid #9c26e5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#say-hello-btn:hover{
+    background-color: #9c26e5;
+    border-color: transparent;
+    color: white;
 }
 
 
