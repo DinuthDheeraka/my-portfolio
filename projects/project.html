@@ -2,59 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Grid Layout</title>
     <style>
-        section{
-            display: flex;
-            height:400px;
-            width: 1000px;
-            justify-content: space-between;
-            border: 1px solid rebeccapurple;
-        }
-        div{
-            width:70px;
-            height: 70px;
+        section {
+            width: 900px;
+            height: 500px;
+            border: 2px solid red;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
         }
 
-        section>div:nth-child(1){
-            border: 1px solid #630ead;
-            order: 2;
-            align-self: self-start;
+        section > div {
+            border: 1px solid orangered;
+            background-image: url("assets/imges/close-up-handsome-young-business-man-wearing-suit-standing-isolated-looking-away_171337-70394.webp");
+            background-size: cover;
         }
 
-        section>div:nth-child(2){
-            border: 1px solid #69bf34;
-            order: 1;
-            align-self: center;
-        }
-
-        section>div:nth-child(3){
-            border: 1px solid red;
-            order: 3;
-            align-self: self-end;
-        }
-
-        section>div:nth-child(4){
-            border: 1px solid #47149a;
-            order: 4;
-            align-self: self-start;
-        }
-
-        section>div:nth-child(5){
-            border: 1px solid #12aca7;
-            order: 6;
-            align-self: center;
-        }
-
-        section>div:nth-child(6){
-            border: 1px solid #82640c;
-            order: 5;
-            align-self: self-end;
-        }
     </style>
 </head>
 <body>
 <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
     <div></div>
     <div></div>
     <div></div>
