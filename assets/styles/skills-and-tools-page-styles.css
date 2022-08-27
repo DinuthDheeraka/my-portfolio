@@ -1,0 +1,19 @@
+main>#skills-and-tools-page{
+    width:98.88vw;
+    height: 1000px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#skills-and-tools-page>h1{
+    font-family: 'DM Mono', monospace;
+    display: inline-block;
+    position: sticky;
+    margin: auto;
+    left: 13%;
+    top: 30%;
+    font-size: 128px;
+    color: rgba(255, 255, 255, 0.91);
+    -webkit-text-stroke:0.2px rgba(120, 34, 206, 0.91);
+    text-transform: uppercase;
+}

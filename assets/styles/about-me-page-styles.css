@@ -3,7 +3,7 @@
     position: relative;
     width: 98.88vw;
     height: 40vw;
-    background-color: #58018d;
+    background-color: rgba(120, 34, 206, 0.91);
 }
 
 #about-me-page>article{
@@ -13,12 +13,14 @@
 }
 
 #about-me-page>article>#about-me-page-text-contents{
+    z-index: 1;
     position: absolute;
+    top: 220px;
 }
 
 #about-me-page>article>#about-me-page-my-image{
     position: absolute;
-    top: -50px;
+    top: -60px;
     left: 42%;
 }
 
@@ -31,47 +33,33 @@
 .page-main-header{
     font-family: 'DM Mono', monospace;
     display: inline-block;
-    /*position: absolute;*/
+    position: sticky;
+    margin: auto;
     /*text-align: center;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    font-size: 400%;
+    left: 30%;
+    top:30%;
+    font-size: 800%;
+    color: rgba(120, 34, 206, 0.91);
+    -webkit-text-stroke:0.2px rgba(255, 255, 255, 0.91);
     text-transform: uppercase;
-    background-image: linear-gradient(
-            -225deg,
-            #04faf2 0%,
-            #4a08e5 29%,
-            #b20bd7 67%,
-            rgba(241, 14, 139, 0.93) 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-}
-
-@keyframes textclip {
-    to {
-        background-position: 200% center;
-    }
 }
 
 #about-me-page>article>#about-me-page-text-contents>h1{
-    margin-left: 100px;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     color: white;
+    text-align: center;
 }
 
 #about-me-page>article>#about-me-page-text-contents>p{
-    margin-left: 100px;
-    font-size: 20px;
-    font-family: 'DM Mono', monospace;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     font-weight: lighter;
-    color: #dbd7d7;
+    color: #e5e1e1;
+}
+
+#about-me-page>article>#about-me-page-text-contents>p:first-child{
+    font-size: 30px;
+    font-family: "Blackadder ITC";
 }
