@@ -15,14 +15,14 @@
 #about-me-page>article>#about-me-page-text-contents{
     z-index: 2;
     position: absolute;
-    top: 220px;
+    top: 190px;
 }
 
 #about-me-page>article>#about-me-page-my-image{
     position: absolute;
     top: -60px;
     left: 42%;
-    z-index: 3;
+    z-index: 10;
 }
 
 #about-me-page>article>#about-me-page-my-image>img{
@@ -38,7 +38,7 @@
     position: sticky;
     margin: auto;
     /*text-align: center;*/
-    left: 34%;
+    left: 5%;
     top:30%;
     font-size: 800%;
     color: rgba(35, 24, 24, 0.46);
@@ -68,7 +68,7 @@
 #about-me-page-btn-section{
     margin: auto;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 46%;
 }
 

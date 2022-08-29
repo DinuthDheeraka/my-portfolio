@@ -8,10 +8,10 @@ main>#skills-and-tools-page{
 #skills-and-tools-page>h1{
     font-family: Chiller;
     display: inline-block;
-    position: sticky;
+    position: relative;
     margin: auto;
     left: 27%;
-    top: 30%;
+    top: 3%;
     font-size: 128px;
     color: rgba(36, 191, 111, 0.51);
     text-transform: uppercase;
@@ -34,10 +34,11 @@ main>#skills-and-tools-page{
 #skills-and-tools-page>#skills-section>div{
     position: relative;
     height: 100%;
-    width: 400px;
+    width: 430px;
     /*width: calc(100%/3);*/
     /*flex-grow: 1;*/
-    background-color: rgb(67, 239, 145);
+    background-color: white;
+    border: 2px solid rgba(7, 217, 102, 0.68);
     /*border: 1px solid rebeccapurple;*/
     border-radius: 20px;
     z-index: 2;
@@ -46,7 +47,7 @@ main>#skills-and-tools-page{
 #skills-and-tools-page>#skills-section>div>.skill-header{
     position: relative;
     top: 50px;
-    color: #fcf9f9;
+    color: #0c0c0c;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     text-align: center;
