@@ -5,7 +5,7 @@
 }
 
 #contact-me-page-topic{
-    font-family: 'DM Mono', monospace;
+    font-family: Chiller;
     display: inline-block;
     position: sticky;
     margin: auto;
@@ -13,7 +13,6 @@
     left: 24%;
     top:30%;
     font-size: 800%;
-    color: rgba(120, 34, 206, 0.91);
-    -webkit-text-stroke:0.2px rgba(255, 255, 255, 0.91);
+    color: rgba(255, 255, 255, 0.53);
     text-transform: uppercase;
 }

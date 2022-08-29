@@ -13,7 +13,7 @@
 }
 
 #about-me-page>article>#about-me-page-text-contents{
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 220px;
 }
@@ -22,6 +22,7 @@
     position: absolute;
     top: -60px;
     left: 42%;
+    z-index: 3;
 }
 
 #about-me-page>article>#about-me-page-my-image>img{
@@ -31,16 +32,16 @@
 }
 
 .page-main-header{
-    font-family: 'DM Mono', monospace;
+    z-index: 1;
+    font-family: Chiller;
     display: inline-block;
     position: sticky;
     margin: auto;
     /*text-align: center;*/
-    left: 30%;
+    left: 34%;
     top:30%;
     font-size: 800%;
-    color: rgba(120, 34, 206, 0.91);
-    -webkit-text-stroke:0.2px rgba(255, 255, 255, 0.91);
+    color: rgba(35, 24, 24, 0.46);
     text-transform: uppercase;
 }
 
@@ -63,3 +64,21 @@
     font-size: 30px;
     font-family: "Blackadder ITC";
 }
+
+#about-me-page-btn-section{
+    margin: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 46%;
+}
+
+#about-me-page-btn-section>button{
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+}
+
