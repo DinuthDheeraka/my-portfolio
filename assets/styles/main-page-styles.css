@@ -4,7 +4,7 @@ header{
     width: 100vw;
     height: 60px;
     z-index: 8;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(24, 21, 24);
 }
 
 /*header-side-image*/
@@ -32,7 +32,7 @@ header>#header-navigations>nav>#list-navigations{
     position: absolute;
     margin: auto;
     top: 4px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(24, 21, 24);
     width: 600px;
 }
 
@@ -42,6 +42,7 @@ header>#header-navigations>nav>#list-navigations>li{
     margin-right: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    color: white;
 }
 
 main{
@@ -70,7 +71,7 @@ main>#main-page>#main-page-introduction>#main-page-name{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #0e0b10;
     margin: auto;
     top: 0;
     right: 0;
@@ -94,7 +95,7 @@ main>#main-page>#main-page-introduction>#main-page-name>h1{
     text-transform: uppercase;
     background-image: linear-gradient(
             -225deg,
-            #f1b318 0%,
+            #18f13c 0%,
             #44107a 29%,
             #ff1361 67%,
             #fff800 100%
@@ -124,8 +125,12 @@ main>#main-page>#main-page-introduction>section:nth-child(2){
     width: 100%;
     height: 130px;
     margin: auto;
-    background-color: #ffffff;
+    background-color: #0e0b10;
     bottom: 30px;
+}
+
+main>#main-page>#main-page-introduction>section:nth-child(2)>h2{
+    color: white;
 }
 
 main>#main-page>#main-page-introduction>section:nth-child(2)>h2:nth-child(1){
@@ -182,10 +187,11 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>button{
     width: 150px;
     height: 40px;
     border-radius: 20px;
-    border: 3px solid rgba(120, 34, 206, 0.91);
+    border: 2px solid #6a04dc;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: bold;
+    color: white;
 }
 
 #say-hello-btn:hover{

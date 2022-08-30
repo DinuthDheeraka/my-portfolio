@@ -1,18 +1,24 @@
 #contact-me-page{
-    background-color:rgba(120, 34, 206, 0.91);
+    position: relative;
+    background-color: #1f1f1f;
     width: 98.9vw;
     height:800px;
 }
 
 #contact-me-page-topic{
-    font-family: Chiller;
+    font-family: 'Poppins', sans-serif;
     display: inline-block;
-    position: sticky;
+    position: absolute;
     margin: auto;
     /*text-align: center;*/
-    left: 24%;
-    top:30%;
-    font-size: 800%;
+    left: 30%;
+    top:-63px;
+    font-size: 600%;
     color: rgba(255, 255, 255, 0.53);
     text-transform: uppercase;
+}
+
+#contact-form-section{
+    position: absolute;
+    top: 100px;
 }

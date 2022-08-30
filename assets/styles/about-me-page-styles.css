@@ -2,8 +2,8 @@
 #about-me-page{
     position: relative;
     width: 98.88vw;
-    height: 40vw;
-    background-color: rgba(120, 34, 206, 0.91);
+    height: 55vw;
+    background-color: #1f1f1f;
 }
 
 #about-me-page>article{
@@ -16,13 +16,15 @@
     z-index: 2;
     position: absolute;
     top: 190px;
+    width: 1000px;
+    left: 17%;
 }
 
 #about-me-page>article>#about-me-page-my-image{
     position: absolute;
     top: -60px;
     left: 42%;
-    z-index: 10;
+    z-index: 0;
 }
 
 #about-me-page>article>#about-me-page-my-image>img{
@@ -48,7 +50,7 @@
 #about-me-page>article>#about-me-page-text-contents>h1{
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
-    color: white;
+    color: #f1eeee;
     text-align: center;
 }
 
@@ -57,7 +59,7 @@
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
-    color: #e5e1e1;
+    color: #f1f0f0;
 }
 
 #about-me-page>article>#about-me-page-text-contents>p:first-child{
@@ -68,15 +70,15 @@
 #about-me-page-btn-section{
     margin: auto;
     position: absolute;
-    bottom: 20px;
-    left: 46%;
+    bottom: 200px;
+    left: 45%;
 }
 
 #about-me-page-btn-section>button{
     border-radius: 20px;
-    border: 2px solid white;
+    border: 2px solid #5707b3;
     background-color: transparent;
-    color: white;
+    color: #fdfdfd;
     height: 40px;
     width: 150px;
     font-family: 'Poppins', sans-serif;

@@ -1,19 +1,19 @@
 main>#skills-and-tools-page{
     width:98.88vw;
-    height: 1000px;
-    background-color: #ffffff;
+    height: 800px;
+    background-color: #000000;
     position: relative;
 }
 
 #skills-and-tools-page>h1{
-    font-family: Chiller;
+    font-family: 'Poppins', sans-serif;
     display: inline-block;
     position: relative;
     margin: auto;
-    left: 27%;
-    top: 3%;
-    font-size: 128px;
-    color: rgba(36, 191, 111, 0.51);
+    left: 37%;
+    top: 6%;
+    font-size: 60px;
+    color: rgb(120, 34, 206);
     text-transform: uppercase;
     z-index: 1;
 }
@@ -23,31 +23,35 @@ main>#skills-and-tools-page{
     margin: auto;
     left: 0;
     right: 0;
+    top:-150px;
     width: 1400px;
-    height: 500px;
+    height: 700px;
     /*border: 1px solid rebeccapurple;*/
     display: flex;
     justify-content: space-between;
     z-index: 2;
+    background-color: #8c08d2;
+    border-radius: 20px;
 }
 
 #skills-and-tools-page>#skills-section>div{
     position: relative;
     height: 100%;
     width: 430px;
+    flex-grow: 1;
     /*width: calc(100%/3);*/
     /*flex-grow: 1;*/
-    background-color: white;
-    border: 2px solid rgba(7, 217, 102, 0.68);
+    background-color: #9105cd;
+    border: 1px solid rgba(38, 38, 38, 0.91);
     /*border: 1px solid rebeccapurple;*/
-    border-radius: 20px;
+    /*border-radius:20px;*/
     z-index: 2;
 }
 
 #skills-and-tools-page>#skills-section>div>.skill-header{
     position: relative;
     top: 50px;
-    color: #0c0c0c;
+    color: #fafafa;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     text-align: center;
@@ -63,18 +67,29 @@ main>#skills-and-tools-page{
     margin: auto;
 }
 
-#desktop-app-dev-img{
-    background-image: url("images/download.jpg");
-    bottom: -30px;
-    left: -20px;
+#skill-page-desktop-app-dev{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-#mobile-app-dev-img{
-    background-image: url("images/zymr8_steps_the_mobile_app_dev_lifecycle_cover.jpg");
-    bottom: -40px;
-    right: -20px;
+
+#skill-page-mobile-app-dev{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-#web-app-dev-img{
-    right: -20px;
-    top: -40px;
-    background-image: url("images/21-215275_mobile-app-development-png.png");
-}
+
+/*#desktop-app-dev-img{*/
+/*    background-image: url("images/download.jpg");*/
+/*    top:100px;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*}*/
+/*#mobile-app-dev-img{*/
+/*    background-image: url("images/zymr8_steps_the_mobile_app_dev_lifecycle_cover.jpg");*/
+/*    bottom: -40px;*/
+/*    right: -20px;*/
+/*}*/
+/*#web-app-dev-img{*/
+/*    right: -20px;*/
+/*    top: -40px;*/
+/*    background-image: url("images/21-215275_mobile-app-development-png.png");*/
+/*}*/
