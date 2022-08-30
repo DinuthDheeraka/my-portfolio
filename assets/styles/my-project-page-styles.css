@@ -1,20 +1,20 @@
 #my-projects-page{
-    border-color: #02ac0f;
+    position: relative;
+    background-color: #1f1f1f;
     width: 98.88vw;
     height: 1000px;
 }
 
 #my-projects-page-topic{
-    font-family: 'DM Mono', monospace;
+    font-family: Poppins;
     display: inline-block;
-    position: sticky;
+    position: absolute;
     margin: auto;
     /*text-align: center;*/
-    left: 21.5%;
-    top:30%;
-    font-size: 800%;
+    left: 41%;
+    top:10%;
+    font-size: 300%;
     color: rgba(255, 255, 255, 0.91);
-    -webkit-text-stroke:0.2px rgba(120, 34, 206, 0.91);
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 

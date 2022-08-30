@@ -1,8 +1,8 @@
 #contact-me-page{
     position: relative;
-    background-color: #1f1f1f;
+    background-color: rgba(16, 16, 16, 0.97);
     width: 98.9vw;
-    height:800px;
+    height:700px;
 }
 
 #contact-me-page-topic{
@@ -11,11 +11,11 @@
     position: absolute;
     margin: auto;
     /*text-align: center;*/
-    left: 30%;
-    top:-63px;
-    font-size: 600%;
-    color: rgba(255, 255, 255, 0.53);
-    text-transform: uppercase;
+    left: 40%;
+    top:100px;
+    font-size: 300%;
+    color: #d7d6d6;
+    /*text-transform: uppercase;*/
 }
 
 #contact-form-section{
