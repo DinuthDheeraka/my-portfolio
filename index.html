@@ -119,20 +119,37 @@
         <section>
             <section id="contact-me-page-text-content"></section>
             <section id="contact-form-section">
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
-
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email">
-
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject">
-
-                    <label for="message">Message</label>
-                    <input type="text" id="message" name="message">
-                    <textarea cols=10 rows="10"></textarea>
-                </form>
+                <div class="container">
+                    <div class="row input-container">
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <input type="text" required />
+                                <label>Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input">
+                                <input type="text" required />
+                                <label>Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input" style="float:right;">
+                                <input type="text" required />
+                                <label>Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <textarea required></textarea>
+                                <label>Message</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="btn-lrg submit-btn">Send Message</div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
         <section>
