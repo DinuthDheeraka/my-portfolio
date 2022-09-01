@@ -32,7 +32,7 @@ main>#skills-and-tools-page{
     z-index: 2;
     background-color: #8c08d2;
     border-radius: 20px;
-    box-shadow:0px 4px 4px 0px #5f5e5f;
+    /*box-shadow:0px 4px 4px 0px #5f5e5f;*/
 }
 
 #skills-and-tools-page>#skills-section>div{
@@ -52,7 +52,7 @@ main>#skills-and-tools-page{
 #skills-and-tools-page>#skills-section>div>.skill-header{
     position: relative;
     top: 50px;
-    color: #e7e5e7;
+    color: #f5f3f5;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     text-align: center;
@@ -76,6 +76,54 @@ main>#skills-and-tools-page{
 #skill-page-mobile-app-dev{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.skill-page-text-contents{
+    position: absolute;
+    margin: auto;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    text-align: center;
+}
+
+.skill-page-text-contents>p{
+    color: #e3e3e3;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skill-and-tools{
+    width: 370px;
+    height: 350px;
+    position: absolute;
+    margin: auto;
+    /*background-color: white;*/
+    /*border: 2px solid #e3dfdf;*/
+    top:280px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.skill-and-tools>h2{
+    color: #9610ea;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    /*position: absolute;*/
+    /*margin: auto;*/
+    /*text-align: center;*/
+}
+
+.skill-and-tools>p{
+    color: #efeeef;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    /*position: absolute;*/
+    /*margin: auto;*/
+    /*text-align: center;*/
 }
 
 /*#desktop-app-dev-img{*/
