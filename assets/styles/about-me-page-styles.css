@@ -57,7 +57,7 @@
 
 #about-me-page>article>#about-me-page-text-contents>p{
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     color: #f1f0f0;
@@ -77,7 +77,7 @@
 
 #about-me-page-btn-section>button{
     border-radius: 20px;
-    border: 2px solid #e0dfe2;
+    border: 2px solid #9005d5;
     background-color: transparent;
     color: #fdfdfd;
     height: 40px;

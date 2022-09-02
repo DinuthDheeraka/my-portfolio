@@ -49,6 +49,10 @@ main>#skills-and-tools-page{
     z-index: 2;
 }
 
+#skills-and-tools-page>#skills-section>div:hover{
+    background-color: #131313;
+}
+
 #skills-and-tools-page>#skills-section>div>.skill-header{
     position: relative;
     top: 50px;
