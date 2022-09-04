@@ -2,7 +2,7 @@
     position: relative;
     background-color: #1f1f1f;
     width: 98.88vw;
-    height: 1300px;
+    height: 1380px;
 }
 
 #my-projects-page-topic{
@@ -156,10 +156,27 @@
     width: 180px;
     height: 40px;
     background-color: transparent;
-    border: 1px solid #ec0ace;
+    border: 1px solid #680aec;
     border-radius: 20px;
 }
 
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#my-projects-page>button{
+    position: absolute;
+    margin: auto;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    width: 280px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #fdfdfd;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    border-radius: 20px;
+}
 
 
 
