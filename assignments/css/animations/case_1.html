@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_1</title>
+    <link rel="stylesheet" href="../../../assets/styles/normalize.css">
+
+    <style>
+        section{
+            position: relative;
+            width: 100vw;
+            height:760px;
+            background-color: #9c26e5;
+        }
+
+        section>div{
+            position: absolute;
+            margin: auto;
+            width: 160px;
+            height: 50px;
+            background-color: black;
+            animation-name: my-anime;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+
+        @-webkit-keyframes my-anime {
+            10%{
+                margin-top: 1px;
+                margin-left: 1px;
+                background-color: #00fdd5;
+                transform: rotate(360deg);
+            }
+
+            20%{
+                margin-top: 1px;
+                margin-left:1372px;
+                background-color: red;
+                transform: rotate(-360deg);
+            }
+
+            30%{
+                margin-top: 650px;
+                margin-left: 1372px;
+                background-color: #02ac0f;
+                transform: rotate(360deg);
+            }
+
+            40%{
+                margin-top: 650px;
+                margin-left: 1px;
+                background-color: #ecb902;
+                transform: rotate(-360deg);
+            }
+
+            50%{
+                margin-top: 1px;
+                margin-left: 1px;
+                background-color: #ecb902;
+                transform: rotate(360deg);
+            }
+
+            60%{
+                margin-top: 650px;
+                margin-left: 1px;
+                background-color: #ecb902;
+                transform: rotate(-360deg);
+            }
+
+            70%{
+                margin-top: 650px;
+                margin-left: 1372px;
+                background-color: #ecb902;
+                transform: rotate(360deg);
+            }
+
+            80%{
+                margin-top: 1px;
+                margin-left: 1372px;
+                background-color: #ecb902;
+                transform: rotate(-360deg);
+            }
+
+            90%{
+                margin-top: 1px;
+                margin-left: 1px;
+                background-color: #ecb902;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div>
+
+    </div>
+</section>
+</body>
+</html>
