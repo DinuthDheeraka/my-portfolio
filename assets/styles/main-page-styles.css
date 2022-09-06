@@ -204,3 +204,63 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>button{
 
 
 /*-------------------------------------------------------------------------------*/
+
+#main-page>#main-page-social-links{
+    position: absolute;
+    margin: auto;
+    width: 240px;
+    height: 400px;
+    background-color: transparent;
+    top: -50px;
+    bottom: 0;
+    left: -120px;
+    display: flex;
+    flex-flow: column;
+}
+
+#main-page>#main-page-social-links>div{
+    margin: auto;
+    border: 1px solid red;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+#main-page>#main-page-social-links>div>div{
+    margin: auto;
+    border: 1px solid #00ffff;
+    height: 100%;
+    width: 49%;
+}
+
+.social-img>img{
+    width: 40px;
+    height: 40px;
+    margin-left: 38px;
+    margin-top: 7px;
+}
+
+.social-name>p{
+    color: whitesmoke;
+    margin-left: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+footer{
+    /*position: relative;*/
+    width: 98.9vw;
+    height: 50px;
+    background-color: rgba(16, 16, 16, 0.97);
+}
+
+footer>section>p{
+    position: relative;
+    text-align: center;
+    margin:auto;
+    top: 15px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #d4d1d1;
+}

@@ -24,7 +24,7 @@
     /*border: 1px solid red;*/
     position: absolute;
     margin: auto;
-    top: 12%;
+    top: 16%;
     left: 0;
     right: 0;
     display: flex;
@@ -74,7 +74,7 @@
     color: #f5f5f5;
     font-size: 16px;
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     margin: auto;
     left: 0;
     right: 0;
@@ -82,7 +82,7 @@
     height: 40px;
     background-color: transparent;
     border: 1px solid #5405e3;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 
 /*project-hms-styles*/
@@ -112,7 +112,7 @@
     color: #f5f5f5;
     font-size: 16px;
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     margin: auto;
     left: 0;
     right: 0;
@@ -120,7 +120,7 @@
     height: 40px;
     background-color: transparent;
     border: 1px solid #f0f1f0;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 
 /*gms-project-styles*/
@@ -149,7 +149,7 @@
     color: #f5f5f5;
     font-size: 16px;
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     margin: auto;
     left: 0;
     right: 0;
@@ -157,7 +157,7 @@
     height: 40px;
     background-color: transparent;
     border: 1px solid #680aec;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 
 
@@ -175,7 +175,7 @@
     border: 1px solid #fdfdfd;
     font-family: 'Poppins', sans-serif;
     color: whitesmoke;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 
 
