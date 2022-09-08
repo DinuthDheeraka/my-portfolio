@@ -1,6 +1,7 @@
 #my-projects-page{
     position: relative;
-    background-color: #1f1f1f;
+    /*background-color: #1f1f1f;*/
+    background-color: rgba(16, 16, 16, 0.97);
     width: 98.88vw;
     height: 1380px;
 }
@@ -11,7 +12,10 @@
     position: absolute;
     margin: auto;
     /*text-align: center;*/
-    left: 41%;
+    border: 1px solid whitesmoke;
+    width: 270px;
+    left:0;
+    right: 0;
     top:5%;
     font-size: 300%;
     color: rgba(255, 255, 255, 0.91);
@@ -19,7 +23,9 @@
 }
 
 #projects-container{
-    width: 1440px;
+    /*width: 1440px;*/
+    /*height: 1000px;*/
+    width: 90vw;
     height: 1000px;
     /*border: 1px solid red;*/
     position: absolute;
@@ -29,6 +35,7 @@
     right: 0;
     display: flex;
     flex-flow: column;
+    border: 1px solid whitesmoke;
 }
 
 #projects-container>.project-area{
@@ -64,7 +71,7 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #f3f0f0;
-    font-size: 16px;
+    /*font-size: 16px;*/
     position: absolute;
     top: 30%;
 }
@@ -81,12 +88,11 @@
     width: 180px;
     height: 40px;
     background-color: transparent;
-    border: 1px solid #5405e3;
+    border: 1px solid #e2e1e3;
     /*border-radius: 20px;*/
 }
 
 /*project-hms-styles*/
-
 #project-hms>#hms-image>img{
     width: 90%;
     height: 98%;
@@ -102,7 +108,7 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #f3f0f0;
-    font-size: 16px;
+    /*font-size: 16px;*/
     position: absolute;
     top: 30%;
 }
@@ -139,7 +145,7 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #f3f0f0;
-    font-size: 16px;
+    /*font-size: 16px;*/
     position: absolute;
     top: 30%;
 }
@@ -156,10 +162,13 @@
     width: 180px;
     height: 40px;
     background-color: transparent;
-    border: 1px solid #680aec;
+    border: 1px solid #e1e0e3;
     /*border-radius: 20px;*/
 }
 
+.project-desc>p{
+    font-size: 100%;
+}
 
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -179,4 +188,52 @@
 }
 
 
+/*------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 1320px){
+    #my-projects-page{
+        height: 2000px;
+    }
+    #projects-container{
+        /*width: 1440px;*/
+        /*height: 1000px;*/
+        /*border: 1px solid red;*/
+        height: 1500px;
+        position: absolute;
+        margin: auto;
+        top: 16%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-flow: column;
+        border: 1px solid whitesmoke;
+    }
+
+    #projects-container>.project-area{
+        border: 1px solid yellow;
+        height: calc(100%/3);
+        flex-flow: column;
+    }
+
+    #projects-container>.project-area>.project-image{
+        width: 100%;
+        height: 920px;
+    }
+
+    #project-pos>#pos-image>img{
+        width: 800px;
+        height: 400px;
+        position: absolute;
+        margin: auto;
+        top: 5px;
+        right: 0;
+        left: 0;
+        box-shadow: 1px 1px 1px 1px #a3a3a3;
+    }
+
+    #projects-container>.project-area>.project-desc{
+        width: 100%;
+    }
+}
 

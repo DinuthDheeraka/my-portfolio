@@ -24,8 +24,10 @@ main>#skills-and-tools-page{
     left: 0;
     right: 0;
     top:-150px;
-    width: 1400px;
+    /*width: 1400px;*/
     height: 700px;
+    width: 95vw;
+    /*height: 45vw;*/
     /*border: 1px solid rebeccapurple;*/
     display: flex;
     justify-content: space-between;
@@ -38,7 +40,8 @@ main>#skills-and-tools-page{
 #skills-and-tools-page>#skills-section>div{
     position: relative;
     height: 100%;
-    width: 430px;
+    /*width: 430px;*/
+    width: 2687.5%;
     flex-grow: 1;
     /*width: calc(100%/3);*/
     /*flex-grow: 1;*/
@@ -58,19 +61,20 @@ main>#skills-and-tools-page{
     top: 50px;
     color: #f5f3f5;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 121%;
     text-align: center;
 }
 
-.skills-theme-img{
-    position: absolute;
-    background-position: center;
-    background-size: cover;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    margin: auto;
-}
+/*.skills-theme-img{*/
+/*    position: absolute;*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    border-radius: 100%;*/
+/*    margin: auto;*/
+/*}*/
 
 #skill-page-desktop-app-dev{
     border-top-left-radius: 20px;
@@ -89,24 +93,25 @@ main>#skills-and-tools-page{
     bottom: 0;
     left: 0;
     right: 0;
-    width: 400px;
+    width: 80%;
     text-align: center;
 }
 
 .skill-page-text-contents>p{
     color: #e3e3e3;
-    font-size: 17px;
+    /*font-size: 17px;*/
+    font-size: 101%;
     font-family: 'Poppins', sans-serif;
 }
 
 .skill-and-tools{
-    width: 370px;
+    width: 90%;
     height: 350px;
     position: absolute;
     margin: auto;
     /*background-color: white;*/
     /*border: 2px solid #e3dfdf;*/
-    top:280px;
+    top:300px;
     right: 0;
     left: 0;
     text-align: center;
@@ -146,3 +151,6 @@ main>#skills-and-tools-page{
 /*    top: -40px;*/
 /*    background-image: url("images/21-215275_mobile-app-development-png.png");*/
 /*}*/
+
+
+/*-----------------------------------------------------------------------------*/

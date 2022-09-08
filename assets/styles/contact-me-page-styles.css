@@ -1,7 +1,8 @@
 #contact-me-page{
     position: relative;
     background-color: rgba(16, 16, 16, 0.97);
-    width: 98.9vw;
+    /*background-color: rgba(201, 71, 9, 0.97);*/
+    width: 98.88vw;
     height:740px;
 }
 
@@ -10,8 +11,11 @@
     display: inline-block;
     position: absolute;
     margin: auto;
+    border: 1px solid whitesmoke;
+    width: 290px;
     /*text-align: center;*/
-    left: 40.6%;
+    left:0;
+    right: 0;
     top:100px;
     font-size: 300%;
     color: #d7d6d6;

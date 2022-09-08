@@ -1,7 +1,11 @@
+/*body{*/
+/*    background-color:  rgba(16, 16, 16, 0.97);*/
+/*}*/
+
 header{
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 98.88vw;
     height: 60px;
     z-index: 8;
     background-color: rgb(26, 26, 26);
@@ -48,6 +52,7 @@ header>#header-navigations>nav>#list-navigations>li{
 
 main{
     position: relative;
+    width: 98.88vw;
 }
 
 main>#main-page{
@@ -266,9 +271,9 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>button{
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 footer{
     /*position: relative;*/
-    width: 98.9vw;
+    width: 98.88vw;
     height: 50px;
-    background-color: rgba(16, 16, 16, 0.97);
+    background-color: rgba(0, 0, 0, 0.97);
 }
 
 footer>section>p{
@@ -279,4 +284,12 @@ footer>section>p{
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     color: #d4d1d1;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media all and (max-width: 669px){
+    #header-navigations{
+        display: none;
+    }
 }
