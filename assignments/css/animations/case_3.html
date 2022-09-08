@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_3</title>
+    <link rel="stylesheet" href="../../../assets/styles/normalize.css">
+    <style>
+        section {
+            position: relative;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 1px solid red;
+            width: 1000px;
+            height: 200px;
+            display: flex;
+        }
+
+        section>div{
+            height: 100%;
+            flex-grow: 1;
+            border: 1px solid black;
+        }
+
+        section>#div-1{
+            background: url("../../../assets/images/tsunami.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+        section>#div-2{
+            background: url("../../../assets/images/shutterstock_155054834.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+        section>#div-3{
+            background: url("../../../assets/images/image_processing20200107-4-6l9tbm.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        section>#div-4{
+            background: url("../../../assets/images/Blog11.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div id="div-1"></div>
+    <div id="div-2"></div>
+    <div id="div-3"></div>
+    <div id="div-4"></div>
+</section>
+</body>
+</html>
