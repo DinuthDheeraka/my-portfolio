@@ -1,9 +1,10 @@
 #my-projects-page{
     position: relative;
-    /*background-color: #1f1f1f;*/
-    background-color: rgba(16, 16, 16, 0.97);
+    background-color: #1f1f1f;
+    /*background-color: rgba(16, 16, 16, 0.97);*/
     width: 98.88vw;
-    height: 1380px;
+    /*height: 1380px;*/
+    height: 790px;
 }
 
 #my-projects-page-topic{
@@ -12,7 +13,7 @@
     position: absolute;
     margin: auto;
     /*text-align: center;*/
-    border: 1px solid whitesmoke;
+    /*border: 1px solid whitesmoke;*/
     width: 270px;
     left:0;
     right: 0;
@@ -175,7 +176,7 @@
 #my-projects-page>button{
     position: absolute;
     margin: auto;
-    bottom: 2%;
+    bottom: 60px;
     left: 0;
     right: 0;
     width: 280px;
@@ -184,7 +185,7 @@
     border: 1px solid #fdfdfd;
     font-family: 'Poppins', sans-serif;
     color: whitesmoke;
-    /*border-radius: 20px;*/
+    border-radius: 20px;
 }
 
 

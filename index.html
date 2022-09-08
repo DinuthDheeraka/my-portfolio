@@ -12,6 +12,13 @@
     <link rel="icon" href="assets/images.jpg">
 
 <!--    style sheets-->
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+
     <link rel="stylesheet" href="assets/styles/skills-and-tools-page-styles.css">
     <link rel="stylesheet" href="assets/styles/my-project-page-styles.css">
     <link rel="stylesheet" href="assets/styles/contact-me-page-styles.css">
@@ -277,55 +284,145 @@
 
     <section id="my-projects-page">
         <h1 id="my-projects-page-topic">My Projects</h1>
-        <section id="projects-container">
-            <section class="project-area" id="project-pos">
-                <section class="project-image" id="pos-image">
-                    <img src="assets/images/projects/pos.png">
-                </section>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay" id="project-pos"></span>
 
-                <section id="pos-desc" class="project-desc">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aliquam atque deserunt eaque, expedita illo itaque placeat quae quod sed vel.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, sunt!
-                    </p>
+                            <div class="card-image">
+<!--                                <img src="images/profile1.jpg" alt="" class="card-img">-->
+                            </div>
+                        </div>
 
-                    <button>Github Repo</button>
-                </section>
-            </section>
+                        <div class="card-content">
+                            <h2 class="name" style="color: #fdfdfd">Point Of Sale System</h2>
+                            <p class="description" style="color: #e8e8e8">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
 
-            <section class="project-area" id="project-hms">
-                <section id="hms-desc" class="project-desc">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aliquam atque deserunt eaque, expedita illo itaque placeat quae quod sed vel.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, sunt!
-                    </p>
+                            <button class="button">Github Repo</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay" id="project-hms"></span>
 
-                    <button>Github Repo</button>
-                </section>
+                            <div class="card-image">
+<!--                                <img src="images/profile2.jpg" alt="" class="card-img">-->
+                            </div>
+                        </div>
 
-                <section class="project-image" id="hms-image">
-                    <img src="assets/images/projects/2.JPG">
-                </section>
-            </section>
+                        <div class="card-content">
+                            <h2 class="name" style="color: #ffffff">Hostel Management System</h2>
+                            <p class="description" style="color: #eae9e9">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
 
-            <section class="project-area" id="project-gms">
-                <section class="project-image" id="gms-image">
-                    <img src="assets/images/projects/Capture.JPG">
-                </section>
+                            <button class="button">Github Repo</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay" id="project-gms"></span>
 
-                <section id="gms-desc" class="project-desc">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aliquam atque deserunt eaque, expedita illo itaque placeat quae quod sed vel.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, sunt!
-                    </p>
+                            <div class="card-image">
+<!--                                <img src="images/profile3.jpg" alt="" class="card-img">-->
+                            </div>
+                        </div>
 
-                    <button>Github Repo</button>
-                </section>
-            </section>
-        </section>
+                        <div class="card-content">
+                            <h2 class="name" style="color: #ffffff">GYM Management System</h2>
+                            <p class="description" style="color:#eae8e8">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">Github Repo</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+<!--                                <img src="images/profile4.jpg" alt="" class="card-img">-->
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+<!--                                <img src="images/profile5.jpg" alt="" class="card-img">-->
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+<!--        <section id="projects-container">-->
+<!--            <section class="project-area" id="project-pos">-->
+<!--                <section class="project-image" id="pos-image">-->
+<!--                    <img src="assets/images/projects/pos.png">-->
+<!--                </section>-->
+
+<!--                <section id="pos-desc" class="project-desc">-->
+<!--                    <p>-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--                        Aliquam atque deserunt eaque, expedita illo itaque placeat quae quod sed vel.-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, sunt!-->
+<!--                    </p>-->
+
+<!--                    <button>Github Repo</button>-->
+<!--                </section>-->
+<!--            </section>-->
+
+<!--            <section class="project-area" id="project-hms">-->
+<!--                <section id="hms-desc" class="project-desc">-->
+<!--                    <p>-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--                        Aliquam atque deserunt eaque, expedita illo itaque placeat quae quod sed vel.-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, sunt!-->
+<!--                    </p>-->
+
+<!--                    <button>Github Repo</button>-->
+<!--                </section>-->
+
+<!--                <section class="project-image" id="hms-image">-->
+<!--                    <img src="assets/images/projects/2.JPG">-->
+<!--                </section>-->
+<!--            </section>-->
+
+<!--            <section class="project-area" id="project-gms">-->
+<!--                <section class="project-image" id="gms-image">-->
+<!--                    <img src="assets/images/projects/Capture.JPG">-->
+<!--                </section>-->
+
+<!--                <section id="gms-desc" class="project-desc">-->
+<!--                    <p>-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--                        Aliquam atque deserunt eaque, expedita illo itaque placeat quae quod sed vel.-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, sunt!-->
+<!--                    </p>-->
+
+<!--                    <button>Github Repo</button>-->
+<!--                </section>-->
+<!--            </section>-->
+<!--        </section>-->
 
         <button>View more projects</button>
     </section>
@@ -336,4 +433,9 @@
     </section>
 </footer>
 </body>
+<!-- Swiper JS -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="assets/js/script.js"></script>
 </html>
