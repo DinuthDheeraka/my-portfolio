@@ -4,8 +4,8 @@
     width: 98.88vw;
     /*width: 100vw;*/
     height: 870px;
-    /*background-color: #1f1f1f;*/
-    background-color: #0d0124;
+    background-color: #1f1f1f;
+    /*background-color: #1d0644;*/
     /*border-top-left-radius: 40px;*/
     /*border-top-right-radius: 40px;*/
     /*background-color: #ffffff;*/
@@ -26,12 +26,12 @@
     /*left: 17%;*/
     left: 0;
     right: 0;
-    border: 1px solid #c7bfbf;
+    /*border: 1px solid #c7bfbf;*/
 }
 
 #about-me-page>article>#about-me-page-my-image{
     position: absolute;
-    border: 1px solid whitesmoke;
+    /*border: 1px solid whitesmoke;*/
     width: 242px;
     height: 222px;
     margin: auto;
@@ -85,7 +85,7 @@
 #about-me-page-btn-section{
     margin: auto;
     position: absolute;
-    border: 1px solid whitesmoke;
+    /*border: 1px solid whitesmoke;*/
     margin: auto;
     width: 151px;
     height: 41px;
@@ -95,21 +95,22 @@
 }
 
 #about-me-page-btn-section>button{
-    border-radius: 20px;
-    border: 2px solid #9005d5;
-    background-color: transparent;
+    /*border-radius: 20px;*/
+    background-color: #249a03;
+    border: none;
+    /*background-color: transparent;*/
     color: #fdfdfd;
     height: 40px;
-    width: 150px;
+    width: 170px;
     font-family: 'Poppins', sans-serif;
 }
 
 .project-desc{
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 
 .project-image{
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
 }
 /*-----------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------*/

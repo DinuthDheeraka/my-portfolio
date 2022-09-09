@@ -1,6 +1,6 @@
 main>#skills-and-tools-page{
     width:98.88vw;
-    height: 553px;
+    height: 500px;
     background-color: rgba(16, 16, 16, 0.97);
     position: relative;
 }
@@ -23,7 +23,7 @@ main>#skills-and-tools-page{
     margin: auto;
     left: 0;
     right: 0;
-    top:-150px;
+    top:-120px;
     /*width: 1400px;*/
     height: 700px;
     width: 95vw;

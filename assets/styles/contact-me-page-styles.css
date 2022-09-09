@@ -3,7 +3,7 @@
     background-color: rgba(16, 16, 16, 0.97);
     /*background-color: rgba(201, 71, 9, 0.97);*/
     width: 98.88vw;
-    height:720px;
+    height:680px;
 }
 
 #contact-me-page-topic{
@@ -16,7 +16,7 @@
     /*text-align: center;*/
     left:0;
     right: 0;
-    top:100px;
+    top:70px;
     font-size: 300%;
     color: #d7d6d6;
     /*text-transform: uppercase;*/
