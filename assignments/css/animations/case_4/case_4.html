@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_4</title>
+    <style>
+        body{
+            background: url("assets/sky.jpg");
+            overflow-x: hidden;
+        }
+
+        #city{
+            position: absolute;
+            display: flex;
+            margin: auto;
+            width: calc(4*100vw);
+            height: 320px;
+            top: 150px;
+            animation-name: city;
+            animation-duration: 30s;
+            animation-iteration-count: 1;
+        }
+
+        #city>div{
+            width: calc(100%/4);
+            height: 100%;
+            background: url("assets/city.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        #road{
+            position: absolute;
+            background-size: cover;
+            width: calc(100vw*4);
+            height: 270px;
+            bottom: 0;
+            left: 1px;
+            display: flex;
+            animation-name: city;
+            animation-duration: 30s;
+            animation-iteration-count: 1;
+        }
+
+        #road>div{
+            width: calc(100%/4);
+            height: 100%;
+            background: url("assets/road.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        #car{
+            position: absolute;
+            background: url("assets/car.png") no-repeat;
+            margin: auto;
+            background-position: center;
+            background-size: cover;
+            width: 30vw;
+            height: 200px;
+            bottom: 180px;
+            left: 0;
+            right: 0;
+        }
+
+        #wheel-1{
+            position: absolute;
+            background: url("assets/wheel.png") no-repeat;
+            margin: auto;
+            background-position: center;
+            background-size: cover;
+            width: 80px;
+            height: 80px;
+            bottom: 190px;
+            left: 573px;
+            animation-name: wheels;
+            animation-iteration-count: 18;
+            animation-duration: 200ms;
+        }
+
+        #wheel-2{
+            position: absolute;
+            background: url("assets/wheel.png") no-repeat;
+            margin: auto;
+            background-position: center;
+            background-size: cover;
+            width: 80px;
+            height: 80px;
+            bottom: 190px;
+            left: 867px;
+            animation-name: wheels;
+            animation-iteration-count: 18;
+            animation-duration:200ms;
+        }
+
+        @keyframes city {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: -100vw;
+            }
+            50%{
+                left: -200vw;
+            }
+            75%{
+                left: -300vw;
+            }
+
+            100%{
+                left: -300vw;
+            }
+        }
+
+        @keyframes road {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: -100vw;
+            }
+            50%{
+                left: -200vw;
+            }
+            75%{
+                left: -300vw;
+            }
+
+            100%{
+                left: -300vw;
+            }
+        }
+
+        @keyframes wheels {
+            0%{
+               transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(-90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(+180deg);
+            }
+            80%{
+                transform: rotate(+290deg);
+            }
+            80%{
+                transform: rotate(+290deg);
+            }
+            81%{
+                transform: rotate(180deg);
+            }
+            82%{
+                transform: rotate(180deg);
+            }
+            83%{
+                transform: rotate(180deg);
+            }
+            84%{
+                transform: rotate(180deg);
+            }
+            85%{
+                transform: rotate(180deg);
+            }
+            86%{
+                transform: rotate(180deg);
+            }
+            87%{
+                transform: rotate(180deg);
+            }
+            88%{
+                transform: rotate(180deg);
+            }
+            89%{
+                transform: rotate(270deg);
+            }
+            90%{
+                transform: rotate(420deg);
+            }
+            91%{
+                transform: rotate(500deg);
+            }
+            92%{
+                transform: rotate(700deg);
+            }
+            93%{
+                transform: rotate(800deg);
+            }
+            94%{
+                transform: rotate(500deg);
+            }
+            95%{
+                transform: rotate(400deg);
+            }
+            96%{
+                transform: rotate(5deg);
+            }
+            97%{
+                transform: rotate(4deg);
+            }
+            98%{
+                transform: rotate(3deg);
+            }
+            99%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<section id="city">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<section id="road">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<section id="car">
+</section>
+
+<section id="wheel-1">
+</section>
+
+<section id="wheel-2">
+</section>
+</body>
+</html>
