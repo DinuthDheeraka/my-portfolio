@@ -75,7 +75,7 @@
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .project-area>.project-image>img{
-    width: 98%;
+    width: 95%;
     height: 98%;
     position: absolute;
     margin: auto;
@@ -243,7 +243,7 @@
     #my-projects-page>#projects-container>.project-area{
         flex-flow: column;
         margin-top: 20px;
-        border: 2px solid hotpink;
+        /*border: 2px solid hotpink;*/
     }
 
     #my-projects-page>#projects-container>.project-area>.project-image{

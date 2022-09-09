@@ -5,23 +5,30 @@
     <title>case_3</title>
     <link rel="stylesheet" href="../../../assets/styles/normalize.css">
     <style>
+        body{
+            /*overflow-x:hidden;*/
+        }
         section {
             position: relative;
             margin: auto;
             top: 0;
             bottom: 0;
-            left: 0;
+            left: 0px;
             right: 0;
-            border: 1px solid red;
-            width: 1000px;
-            height: 200px;
+            /*border: 1px solid red;*/
+            width: calc(3*100vw);
+            height: 714px;
             display: flex;
+            animation-name: slider;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
         }
 
         section>div{
+            position: relative;
+            margin: auto;
             height: 100%;
-            flex-grow: 1;
-            border: 1px solid black;
+            width: calc(100%/3);
         }
 
         section>#div-1{
@@ -39,10 +46,23 @@
             background-position: center;
             background-size: cover;
         }
-        section>#div-4{
-            background: url("../../../assets/images/Blog11.jpg");
-            background-position: center;
-            background-size: cover;
+        
+        @keyframes slider {
+            25%{
+                left: -100vw;
+            }
+
+            50%{
+                left: -200vw;
+            }
+
+            75%{
+                left: -100vw;
+            }
+
+            100%{
+                left: 0vw;
+            }
         }
     </style>
 </head>
@@ -51,7 +71,6 @@
     <div id="div-1"></div>
     <div id="div-2"></div>
     <div id="div-3"></div>
-    <div id="div-4"></div>
 </section>
 </body>
 </html>
