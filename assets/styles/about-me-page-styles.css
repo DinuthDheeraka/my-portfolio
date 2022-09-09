@@ -4,8 +4,8 @@
     width: 98.88vw;
     /*width: 100vw;*/
     height: 870px;
-    background-color: #1f1f1f;
-    /*background-color: #0d0124;*/
+    /*background-color: #1f1f1f;*/
+    background-color: #0d0124;
     /*border-top-left-radius: 40px;*/
     /*border-top-right-radius: 40px;*/
     /*background-color: #ffffff;*/
@@ -89,7 +89,7 @@
     margin: auto;
     width: 151px;
     height: 41px;
-    bottom: 230px;
+    bottom: 25%;
     left: 0;
     right: 0;
 }
@@ -116,21 +116,12 @@
 
 @media all and (max-width: 1000px){
     #about-me-page{
-        background-color: red;
-        height: 1000px;
+        background-color: #127806;
     }
 
     /*#projects-container{*/
     /*    width: 1200px;*/
     /*    height: 1000px;*/
     /*}*/
-
-    .project-desc{
-        margin-right: 30px;
-    }
-
-    .project-desc{
-        border: 2px solid red;
-    }
 }
 

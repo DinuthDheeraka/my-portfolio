@@ -1,10 +1,10 @@
 #my-projects-page{
     position: relative;
-    background-color: #1f1f1f;
-    /*background-color: rgba(16, 16, 16, 0.97);*/
+    /*background-color: #1f1f1f;*/
+    background-color: rgba(16, 16, 16, 0.97);
     width: 98.88vw;
-    /*height: 1380px;*/
-    height: 790px;
+    height: 1380px;
+    /*height: 790px;*/
 }
 
 #my-projects-page-topic{
@@ -17,7 +17,7 @@
     width: 270px;
     left:0;
     right: 0;
-    top:5%;
+    top:10%;
     font-size: 300%;
     color: rgba(255, 255, 255, 0.91);
     /*text-transform: uppercase;*/
@@ -176,7 +176,7 @@
 #my-projects-page>button{
     position: absolute;
     margin: auto;
-    bottom: 60px;
+    bottom: 40px;
     left: 0;
     right: 0;
     width: 280px;

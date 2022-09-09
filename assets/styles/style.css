@@ -2,7 +2,7 @@
 
 .slide-container{
   position: relative;
-  top: 130px;
+  top: 160px;
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
@@ -14,7 +14,7 @@
 }
 .card{
   border-radius: 25px;
-  background-color: #2a2929;
+  background-color: #232222;
 }
 .image-content,
 .card-content{
@@ -55,16 +55,16 @@
   background-color: #2a2929;
   border-radius: 25px 25px 0 25px;
 }
-.overlay::before,
-.overlay::after{
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #2a2929;
-}
+/*.overlay::before,*/
+/*.overlay::after{*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  right: 0;*/
+/*  bottom: -40px;*/
+/*  height: 40px;*/
+/*  width: 40px;*/
+/*  background-color: #2a2929;*/
+/*}*/
 .overlay::after{
   /*border-radius: 0 25px 0 0;*/
   /*background-color: #282727;*/
@@ -94,21 +94,23 @@
 }
 .description{
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
+  font-weight: bold;
 }
 .button{
   /*border: none;*/
   font-family: 'Poppins', sans-serif;
+  font-weight: bold;
   font-size: 16px;
-  color: #f6f6f6;
+  color: #aca9a9;
   background-color: transparent;
   padding: 8px 16px;
-  border:2px solid  #680cc2;
+  border:2px solid #969599;
   border-radius: 20px;
   margin: 14px;
   cursor: pointer;
-  width: 240px;
+  width: 100%;
   transition: all 0.3s ease;
 }
 .button:hover{

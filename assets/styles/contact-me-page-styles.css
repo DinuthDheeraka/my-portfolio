@@ -3,7 +3,7 @@
     background-color: rgba(16, 16, 16, 0.97);
     /*background-color: rgba(201, 71, 9, 0.97);*/
     width: 98.88vw;
-    height:740px;
+    height:720px;
 }
 
 #contact-me-page-topic{
@@ -30,7 +30,7 @@
 }
 
 #contact-form-section{
-    height: 1000px;
+    height: 500px;
     position: absolute;
     top: 200px;
     left: 0;
