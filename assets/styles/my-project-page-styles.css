@@ -313,3 +313,79 @@
     }
 }
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media all and (max-width: 890px){
+    main>#my-projects-page{
+        background-color: rgba(58, 184, 3, 0.97);
+    }
+
+    .project-area>.project-image>img{
+        width: 600px;
+        height: 300px;
+        /*border: 2px solid #7007bb;*/
+        /*box-shadow: 4px 4px 4px 4px #adacac;*/
+    }
+
+    .project-area>.project-desc>p{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #f3f0f0;
+        /*font-size: 16px;*/
+        position: absolute;
+        top: -220px;
+    }
+
+    .project-area>.project-desc>button{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #f3f0f0;
+        /*font-size: 16px;*/
+        position: absolute;
+        top: -160px;
+    }
+
+    #my-projects-page>#projects-container>.project-area{
+        flex-flow: column;
+        margin-top: -130px;
+        /*border: 2px solid hotpink;*/
+    }
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 665px){
+    main>#my-projects-page{
+        background-color: rgba(132, 82, 6, 0.97);
+        height: 1800px;
+    }
+
+    .project-area>.project-image>img{
+        margin-top: 100px;
+        width: 400px;
+        height: 200px;
+    }
+
+    .project-area>.project-desc>p{
+        top: -10px;
+    }
+
+    .project-area>.project-desc>button{
+        /*text-align: center;*/
+        /*font-family: 'Poppins', sans-serif;*/
+        /*color: #f3f0f0;*/
+        /*!*font-size: 16px;*!*/
+        /*position: absolute;*/
+        top: 170px;
+    }
+
+    #my-projects-page>#projects-container>.project-area{
+        margin-top: -10px;
+    }
+
+    #my-projects-page>#projects-container{
+        margin-top: -160px;
+        height: 1400px;
+    }
+
+}
