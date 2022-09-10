@@ -32,23 +32,24 @@
 #contact-me-page-text-content{
     position: absolute;
     margin: auto;
-    left: 0;
+    left: 0%;
     right: 0;
-    width: 990px;
+    width: 930px;
     top: 140px;
-    text-align: center;
-    border: 1px solid whitesmoke;
+    text-align: left;
+    /*border: 1px solid whitesmoke;*/
 }
 
 #contact-me-page-text-content>p{
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
     color: #c7c6c6;
 }
 
 fieldset{
-    height: 340px;
-    border-color: red;
+    height: 400px;
+    /*border-color: red;*/
+    border: none;
 }
 
 input{
@@ -64,10 +65,10 @@ input{
     position: absolute;
     margin: auto;
     top:250px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     left: 0;
     right: 0;
-    height: 52%;
+    height: 410px;
     width:960px;
 }
 
@@ -92,4 +93,20 @@ input{
     width: 910px;
     height: 150px;
     margin-top: 30px;
+}
+
+#send-message-btn{
+    width: 180px;
+    height: 40px;
+    margin-top: 30px;
+    position: absolute;
+    margin: auto;
+    right: 18px;
+    top: 350px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: #9610ea;
+    color: whitesmoke;
 }
