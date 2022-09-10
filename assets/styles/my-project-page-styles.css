@@ -318,6 +318,7 @@
 @media all and (max-width: 890px){
     main>#my-projects-page{
         background-color: rgba(58, 184, 3, 0.97);
+        height: 1900px;
     }
 
     .project-area>.project-image>img{

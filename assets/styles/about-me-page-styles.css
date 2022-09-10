@@ -115,9 +115,13 @@
 /*-----------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------*/
 
-@media all and (max-width: 1000px){
+@media all and (max-width: 960px){
     #about-me-page{
         background-color: #127806;
+    }
+
+    #about-me-page-btn-section{
+        bottom: 20%;
     }
 
     /*#projects-container{*/
@@ -126,3 +130,39 @@
     /*}*/
 }
 
+/*--------------------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 700px){
+    #about-me-page{
+        background-color: #127806;
+        height: 950px;
+    }
+
+    #about-me-page-btn-section{
+        bottom: 20%;
+    }
+
+    /*#projects-container{*/
+    /*    width: 1200px;*/
+    /*    height: 1000px;*/
+    /*}*/
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+@media all and (max-width: 580px){
+    #about-me-page{
+        background-color: #127806;
+        height: 1000px;
+    }
+
+    #about-me-page-btn-section{
+        bottom: 20%;
+    }
+
+    /*#projects-container{*/
+    /*    width: 1200px;*/
+    /*    height: 1000px;*/
+    /*}*/
+}
