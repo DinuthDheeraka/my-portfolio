@@ -160,3 +160,55 @@ main>#skills-and-tools-page{
         background-color: rgba(234, 9, 9, 0.97);
     }
 }
+
+/*--------------------------------------------------------------------------------*/
+@media all and (max-width: 830px){
+    main>#skills-and-tools-page{
+        background-color: rgba(96, 2, 130, 0.97);
+        height: 1800px;
+    }
+
+    #skills-and-tools-page>#skills-section{
+        position: relative;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top:-120px;
+        height: 2000px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    #skills-and-tools-page>#skills-section>div{
+        position: relative;
+        height: calc(100%/3);
+        /*width: 430px;*/
+        width: 100%;
+        /*flex-grow: 1;*/
+        /*width: calc(100%/3);*/
+        /*flex-grow: 1;*/
+        background-color: rgb(36, 36, 36);
+        border: 1px solid rgba(45, 45, 45, 0.93);
+        /*border: 1px solid rebeccapurple;*/
+        /*border-radius:20px;*/
+        z-index: 2;
+    }
+
+    .skill-and-tools{
+        /*background-color: white;*/
+        /*border: 2px solid #e3dfdf;*/
+        top:240px;
+    }
+
+    #skill-page-desktop-app-dev{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 1px;
+    }
+
+    #skill-page-mobile-app-dev{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+}
