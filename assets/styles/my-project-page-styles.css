@@ -28,10 +28,10 @@
     /*height: 1000px;*/
     width: 90vw;
     height: 2750px;
-    /*border: 1px solid red;*/
+    border: 1px solid whitesmoke;
     position: absolute;
     margin: auto;
-    top: 300px;
+    top: 380px;
     left: 0;
     right: 0;
     display: flex;
@@ -46,7 +46,7 @@
     /*border: 2px solid hotpink;*/
     display: flex;
     flex-flow: column;
-    margin-top: -40px;
+    margin-top: -100px;
 }
 
 #projects-container>.project-area>section{
@@ -58,9 +58,12 @@
 }
 
 #projects-container>.project-area>.project-desc{
-    width: 100%;
+    width: 80%;
     height: 20%;
     position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
     /*border: 1px solid white;*/
     /*background: url("images/image_processing20200107-4-6l9tbm.jpg");*/
 }
@@ -75,8 +78,8 @@
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .project-area>.project-image>img{
-    width: 95%;
-    height: 98%;
+    width: 950px;
+    height: 500px;
     position: absolute;
     margin: auto;
     top: 5px;
@@ -105,7 +108,7 @@
     color: #f3f0f0;
     /*font-size: 16px;*/
     position: absolute;
-    top: 10%;
+    top: -150px;
 }
 
 #project-pos>#pos-desc>button{
@@ -113,7 +116,7 @@
     color: #f5f5f5;
     font-size: 16px;
     position: absolute;
-    bottom: 25%;
+    bottom: 100%;
     margin: auto;
     left: 0;
     right: 0;
@@ -151,7 +154,7 @@
     color: #f5f5f5;
     font-size: 16px;
     position: absolute;
-    bottom: 25%;
+    bottom: 100%;
     margin: auto;
     left: 0;
     right: 0;
@@ -189,7 +192,7 @@
     color: #f5f5f5;
     font-size: 16px;
     position: absolute;
-    bottom: 25%;
+    bottom: 100%;
     margin: auto;
     left: 0;
     right: 0;
@@ -262,7 +265,7 @@
         color: #f3f0f0;
         /*font-size: 16px;*/
         position: absolute;
-        top: 2%;
+        top: -10px;
     }
 
     .project-area>.project-desc>button{
@@ -271,7 +274,42 @@
         color: #f3f0f0;
         /*font-size: 16px;*/
         position: absolute;
-        top: 65%;
+        top: 80%;
+    }
+}
+
+
+
+/*===============================================================================*/
+
+@media all and (max-width: 1040px){
+    main>#my-projects-page{
+        background-color: rgba(234, 9, 9, 0.97);
+    }
+
+    .project-area>.project-image>img{
+        width: 800px;
+        height: 400px;
+        /*border: 2px solid #7007bb;*/
+        /*box-shadow: 4px 4px 4px 4px #adacac;*/
+    }
+
+    .project-area>.project-desc>p{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #f3f0f0;
+        /*font-size: 16px;*/
+        position: absolute;
+        top: -80px;
+    }
+
+    .project-area>.project-desc>button{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #f3f0f0;
+        /*font-size: 16px;*/
+        position: absolute;
+        top: 40%;
     }
 }
 
