@@ -6,6 +6,10 @@
     height:680px;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #contact-me-page-topic{
     font-family: 'Poppins', sans-serif;
     display: inline-block;
@@ -34,7 +38,7 @@
     margin: auto;
     left: 0%;
     right: 0;
-    width: 930px;
+    width: 62%;
     top: 140px;
     text-align: left;
     /*border: 1px solid whitesmoke;*/
@@ -47,9 +51,12 @@
 }
 
 fieldset{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
     height: 400px;
-    /*border-color: red;*/
-    border: none;
+    border:none;
 }
 
 input{
@@ -109,4 +116,74 @@ input{
     font-weight: bold;
     background-color: #9610ea;
     color: whitesmoke;
+}
+/*-----------------------------------------------------------------------------------*/
+@media all and (max-width: 985px){
+    #contact-me-page{
+        /*background-color: rgba(3, 49, 78, 0.97);*/
+        height:900px;
+    }
+    #contact-me-page>img{
+        display: none;
+    }
+    #contact-form-section{
+        width:660px;
+        height: 500px;
+        top: 300px;
+    }
+    fieldset{
+        width: 100px;
+    }
+    #input-name{
+        width: 600px;
+    }
+    #input-email{
+        width: 600px;
+        margin-left: -1px;
+        margin-top: 30px;
+    }
+
+    #input-header{
+        width: 600px;
+    }
+    #input-message{
+        width: 600px;
+    }
+    #send-message-btn{
+        top:450px;
+        right: 30px;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 680px){
+    #contact-me-page{
+        /*background-color: rgba(51, 2, 94, 0.97);*/
+        height:900px;
+    }
+    #contact-form-section{
+        width:400px;
+        height: 500px;
+        top: 300px;
+    }
+    fieldset{
+        width: 100px;
+    }
+    #input-name{
+        width: 350px;
+    }
+    #input-email{
+        width: 350px;
+    }
+
+    #input-header{
+        width: 350px;
+    }
+    #input-message{
+        width: 350px;
+    }
+    #send-message-btn{
+        right: 10px;
+    }
 }

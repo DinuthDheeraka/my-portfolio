@@ -14,7 +14,7 @@
     margin: auto;
     /*text-align: center;*/
     /*border: 1px solid whitesmoke;*/
-    width: 270px;
+    width: 300px;
     left:0;
     right: 0;
     top:150px;
@@ -217,7 +217,7 @@
 #my-projects-page>button{
     position: absolute;
     margin: auto;
-    bottom: 40px;
+    bottom: 60px;
     left: 0;
     right: 0;
     width: 180px;
@@ -284,7 +284,7 @@
 
 @media all and (max-width: 1040px){
     main>#my-projects-page{
-        background-color: rgba(234, 9, 9, 0.97);
+        /*background-color: rgba(234, 9, 9, 0.97);*/
     }
 
     .project-area>.project-image>img{
@@ -317,7 +317,7 @@
 
 @media all and (max-width: 890px){
     main>#my-projects-page{
-        background-color: rgba(58, 184, 3, 0.97);
+        /*background-color: rgba(58, 184, 3, 0.97);*/
         height: 1900px;
     }
 
@@ -357,7 +357,7 @@
 
 @media all and (max-width: 665px){
     main>#my-projects-page{
-        background-color: rgba(132, 82, 6, 0.97);
+        /*background-color: rgba(132, 82, 6, 0.97);*/
         height: 1800px;
     }
 
