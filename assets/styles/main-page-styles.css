@@ -293,3 +293,19 @@ footer>section>p{
         display: none;
     }
 }
+
+/*----------------------------------------------------------------*/
+@media all and (max-width: 560px){
+    main>#main-page>#main-page-introduction>#main-page-name>h1{
+        font-size: 100px;
+        padding-top: 80px;
+    }
+}
+
+/*-------------------------------------------------------------------*/
+@media all and (max-width: 320px){
+    main>#main-page>#main-page-introduction>#main-page-name>h1{
+        font-size: 60px;
+        padding-top: 150px;
+    }
+}

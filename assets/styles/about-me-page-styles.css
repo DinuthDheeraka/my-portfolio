@@ -166,3 +166,27 @@
     /*    height: 1000px;*/
     /*}*/
 }
+
+/*------------------------------------------------------------------------------------------*/
+@media all and (max-width: 500px){
+    #about-me-page{
+        /*background-color: #127806;*/
+        height: 1100px;
+    }
+
+    #about-me-page-btn-section{
+        bottom: 18%;
+    }
+}
+
+/*-------------------------------------------------------------------------------------*/
+@media all and (max-width: 415px){
+    #about-me-page{
+        /*background-color: #127806;*/
+        height: 1160px;
+    }
+
+    #about-me-page-btn-section{
+        bottom: 15%;
+    }
+}
