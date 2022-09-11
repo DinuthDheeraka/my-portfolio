@@ -190,3 +190,16 @@
         bottom: 15%;
     }
 }
+
+
+/*-------------------------------------------------------------------------------------*/
+@media all and (max-width: 320px){
+    #about-me-page{
+        /*background-color: #127806;*/
+        height: 1180px;
+    }
+
+    #about-me-page-btn-section{
+        bottom: 12%;
+    }
+}
