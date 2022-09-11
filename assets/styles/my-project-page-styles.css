@@ -390,3 +390,13 @@
     }
 
 }
+
+/*-------------------------------------------------------------------------------------------------*/
+@media all and (max-width: 665px){
+
+    .project-area>.project-image>img{
+        margin-top: 100px;
+        width: 350px;
+        height: 200px;
+    }
+}
