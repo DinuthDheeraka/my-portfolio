@@ -1,6 +1,25 @@
 /*body{*/
 /*    background-color:  rgba(16, 16, 16, 0.97);*/
 /*}*/
+/* width */
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(16, 16, 16, 0.97);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 header{
     position: fixed;
@@ -303,9 +322,9 @@ footer>section>p{
 }
 
 /*-------------------------------------------------------------------*/
-@media all and (max-width: 320px){
+@media all and (max-width: 450px){
     main>#main-page>#main-page-introduction>#main-page-name>h1{
-        font-size: 60px;
+        font-size: 30px;
         padding-top: 150px;
     }
 }

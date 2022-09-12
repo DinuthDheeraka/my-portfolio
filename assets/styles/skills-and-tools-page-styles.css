@@ -160,19 +160,22 @@ main>#skills-and-tools-page{
     main>#skills-and-tools-page{
         background-color: rgba(234, 9, 9, 0.97);
     }
+
+    #skills-and-tools-page>#skills-section{
+    }
 }
 
 /*--------------------------------------------------------------------------------*/
 @media all and (max-width: 830px){
     main>#skills-and-tools-page{
-        background-color: rgba(96, 2, 130, 0.97);
+        background-color: rgba(2, 119, 130, 0.97);
         height: 1800px;
     }
 
     #skills-and-tools-page>#skills-section{
         position: relative;
         margin: auto;
-        left: -6px;
+        left: 0px;
         right: 0;
         top:-120px;
         height: 2000px;
