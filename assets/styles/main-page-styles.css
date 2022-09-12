@@ -8,8 +8,8 @@ header{
     width: 98.88vw;
     height: 60px;
     z-index: 8;
-    background-color: rgb(26, 26, 26);
-    /*background-color: rgba(17, 17, 17, 0.99);*/
+    /*background-color: rgb(26, 26, 26);*/
+    background-color: #151515;
 }
 
 /*header-side-image*/
@@ -37,7 +37,7 @@ header>#header-navigations>nav>#list-navigations{
     position: absolute;
     margin: auto;
     top: 4px;
-    background-color: rgb(26,26, 26);
+    background-color:#151515;
     width: 600px;
 }
 

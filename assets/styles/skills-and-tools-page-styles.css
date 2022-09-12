@@ -172,7 +172,7 @@ main>#skills-and-tools-page{
     #skills-and-tools-page>#skills-section{
         position: relative;
         margin: auto;
-        left: 0;
+        left: -6px;
         right: 0;
         top:-120px;
         height: 2000px;
