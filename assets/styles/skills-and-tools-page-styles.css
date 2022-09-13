@@ -158,7 +158,7 @@ main>#skills-and-tools-page{
 
 @media all and (max-width: 1040px){
     main>#skills-and-tools-page{
-        background-color: rgba(234, 9, 9, 0.97);
+        background-color: #9610ea;
     }
 
     #skills-and-tools-page>#skills-section{
@@ -168,7 +168,7 @@ main>#skills-and-tools-page{
 /*--------------------------------------------------------------------------------*/
 @media all and (max-width: 830px){
     main>#skills-and-tools-page{
-        background-color: rgba(2, 119, 130, 0.97);
+        background-color: #9610ea;
         height: 1800px;
     }
 

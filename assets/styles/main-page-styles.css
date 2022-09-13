@@ -13,12 +13,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #646366;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #bcbbbd;
 }
 
 header{
@@ -68,6 +68,18 @@ header>#header-navigations>nav>#list-navigations>li{
     font-weight: bold;
     color:#e8e8e8;
 }
+
+header>#header-navigations>nav>#list-navigations>li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#e8e8e8;
+    text-decoration: None;
+}
+
+header>#header-navigations>nav>#list-navigations>li a:hover{
+    color: #ee0974;
+}
+
 
 main{
     position: relative;
@@ -324,7 +336,7 @@ footer>section>p{
 /*-------------------------------------------------------------------*/
 @media all and (max-width: 450px){
     main>#main-page>#main-page-introduction>#main-page-name>h1{
-        font-size: 30px;
+        font-size: 70px;
         padding-top: 150px;
     }
 }

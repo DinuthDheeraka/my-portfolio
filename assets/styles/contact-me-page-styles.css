@@ -187,3 +187,48 @@ input{
         right: 10px;
     }
 }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media all and (max-width: 400px){
+    #contact-me-page{
+        /*background-color: rgba(51, 2, 94, 0.97);*/
+        height:900px;
+    }
+    #contact-form-section{
+        width:300px;
+        height: 500px;
+        top: 300px;
+        /*border:2px solid whitesmoke;*/
+    }
+    fieldset{
+        width: 100px;
+    }
+    #input-name{
+        width: 270px;
+    }
+    #input-email{
+        width: 270px;
+    }
+
+    #input-header{
+        width: 270px;
+    }
+    #input-message{
+        width: 270px;
+    }
+    #send-message-btn{
+        right: 20px;
+        width: 270px;
+    }
+    #contact-me-page-text-content{
+        position: absolute;
+        margin: auto;
+        left: 0%;
+        right: 0;
+        width: 80%;
+        top: 140px;
+        text-align: center;
+        /*border: 1px solid whitesmoke;*/
+    }
+}
