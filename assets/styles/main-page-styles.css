@@ -2,6 +2,9 @@
 /*    background-color:  rgba(16, 16, 16, 0.97);*/
 /*}*/
 /* width */
+html{
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
     width: 18px;
 }
@@ -77,7 +80,7 @@ header>#header-navigations>nav>#list-navigations>li a{
 }
 
 header>#header-navigations>nav>#list-navigations>li a:hover{
-    color: #ee0974;
+    color: #9005cb;
 }
 
 
@@ -132,8 +135,8 @@ main>#main-page>#main-page-introduction>#main-page-name>h1{
     text-transform: uppercase;
     background-image: linear-gradient(
             -225deg,
-            #18f13c 0%,
-            #44107a 29%,
+            #18f19a 0%,
+            #7d2ade 29%,
             #ff1361 67%,
             #fff800 100%
     );
