@@ -17,3 +17,43 @@
 .function-div>div{
     height: 100%;
 }
+
+#inner-function-div-1{
+    background: url("../../images/items.jpg");
+    /*background: url("../../images/icon-items.jpg");*/
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+#inner-function-div-2{
+    background: url("../../images/customers.jpg");
+    /*background: url("../../images/icon-customers.jpg");*/
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+#inner-function-div-3{
+    background: url("../../images/orders.png");
+    /*background: url("../../images/composition-variety-grocery-products-white-background-31618886.jpg");*/
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+#inner-function-div-4{
+    background: url("../../images/order-details.jpg");
+    /*background: url("../../images/composition-variety-grocery-products-white-background-31618886.jpg");*/
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+#-inner-function-div-5{
+    background: url("../../images/order-history.jpg");
+    /*background: url("../../images/icon-report.webp");*/
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
