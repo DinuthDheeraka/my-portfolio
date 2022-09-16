@@ -5,7 +5,15 @@
 
 #main-functions-section{
     position: relative;
-    height: 500px;
     top: 10px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+}
+
+.function-div{
+    /*border: 1px solid black;*/
+    height: 300px;
+}
+
+.function-div>div{
+    height: 100%;
 }
