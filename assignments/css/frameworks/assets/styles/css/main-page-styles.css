@@ -32,7 +32,42 @@
     width: 180px;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-    /*font-weight: bold;*/
+    font-weight: bold;
+}
+
+#func-name-1{
+    margin: auto;
+    top: 40%;
+    bottom: 0;
+    left: 40%;
+}
+
+#func-name-2{
+    margin: auto;
+    top: 40%;
+    left: 10%;
+    right: 0;
+}
+
+#func-name-3{
+    margin: auto;
+    top: 40%;
+    left: 10%;
+    right: 0;
+}
+
+#func-name-4{
+    margin: auto;
+    top: 42%;
+    left:5%;
+    right: 0;
+}
+
+#func-name-5{
+    margin: auto;
+    top: 42%;
+    left: 5%;
+    right: 0;
 }
 
 .func-aside-img{
