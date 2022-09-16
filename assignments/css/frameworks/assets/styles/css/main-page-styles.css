@@ -1,0 +1,11 @@
+#main-page-section{
+    height: 645px;
+    background-color: #efeeee;
+}
+
+#main-functions-section{
+    position: relative;
+    height: 500px;
+    top: 10px;
+    border: 1px solid black;
+}
