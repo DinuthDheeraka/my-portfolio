@@ -10,3 +10,23 @@ main{
     height: 100%;
     background-color: #cda1e8;
 }
+
+#form-section{
+    height: 200px;
+    background-color: #ffffff;
+    position: relative;
+    margin: auto;
+    top: 20px;
+}
+
+#item-table-section{
+    height: 370px;
+    background-color: #b2bd1e;
+    position: relative;
+    margin: auto;
+    top: 60px;
+}
+
+.input-col{
+    /*height: 40px;*/
+}
