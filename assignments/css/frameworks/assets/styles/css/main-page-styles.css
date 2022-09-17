@@ -4,6 +4,23 @@
     background-color: #efeeee;
 }
 
+header{
+    position: relative;
+}
+
+#nav-div>a{
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    padding-right: 20px;
+}
+
+#nav-div{
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
 #main-functions-section{
     /*border: 1px solid black;*/
 }
@@ -27,6 +44,9 @@
 }
 
 .func-name{
+    background: -webkit-linear-gradient(left, #760fea, #d602ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: absolute;
     font-size: 25px;
     width: 180px;
