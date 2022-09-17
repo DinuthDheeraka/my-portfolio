@@ -8,7 +8,7 @@ main{
     position: relative;
     margin: auto;
     height: 100%;
-    background-color: #f3f2f2;
+    background-color: #e5e3e3;
 }
 
 #input-fields-section{
@@ -23,20 +23,20 @@ main{
     height: 40px;
     width: 50%;
     top: 30px;
-    border: 1px solid firebrick;
+    /*border: 1px solid firebrick;*/
 }
 
 .btn-div{
     position: relative;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 40px;
 }
 
 .m-btn{
     width: 100%;
-    height: 100%;
-    background-color: #5e05ef;
+    height: 105%;
     color: #ffffff;
+    border: transparent;
 }
 
 #form-section{
@@ -48,13 +48,46 @@ main{
 }
 
 #item-table-section{
-    height: 370px;
-    background-color: #b2bd1e;
+    height: 445px;
+    background-color: #ffffff;
     position: relative;
     margin: auto;
-    top: 60px;
+    top: 30px;
+}
+
+#add-btn{
+    background-color: #23b603;
+}
+
+#update-btn{
+    background-color: #fda103;
+}
+
+#delete-btn{
+    background-color: #f52500;
 }
 
 .input-col{
     /*height: 40px;*/
+}
+
+#search-bar-section{
+    position: relative;
+    margin: auto;
+    top: 10px;
+    height: 70px;
+    border: 1px solid red;
+}
+
+#tbl-section{
+    position: relative;
+    margin: auto;
+    top: 30px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+table{
+    overflow: scroll;
+    height: 100%;
 }
