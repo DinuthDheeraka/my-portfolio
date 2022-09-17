@@ -1,0 +1,12 @@
+main{
+    position: relative;
+    top: 90px;
+    height: 645px;
+    background-color: black;
+}
+#item-page-section{
+    position: relative;
+    margin: auto;
+    height: 100%;
+    background-color: #cda1e8;
+}

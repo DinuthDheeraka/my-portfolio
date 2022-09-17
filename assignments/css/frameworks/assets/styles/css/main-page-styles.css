@@ -28,7 +28,7 @@
 }
 
 .func-name{
-    background: -webkit-linear-gradient(left, #080110, #2d2b2f);
+    background: -webkit-linear-gradient(left, #3c02d9, #3901f8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: absolute;
@@ -36,7 +36,7 @@
     width: 180px;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-    /*font-weight: bold;*/
+    font-weight: bold;
 }
 
 #func-name-1{
