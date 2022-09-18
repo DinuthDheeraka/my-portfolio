@@ -2,8 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Customer-Page</title>
+
+    <!--    google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita&family=Bilbo+Swash+Caps&family=DM+Mono&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita&family=DM+Mono&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/css/item-page-styles.css">
+    <link rel="stylesheet" href="assets/styles/css/normalize.css">
+    <link rel="stylesheet" href="assets/styles/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
+<main>
+    <section id="item-page-section" class="container-fluid">
+        <section id="up-btn-section"></section>
+        <section id="form-section" class="container-fluid">
+            <section id="input-fields-section" class="container-fluid">
+                <div class="row">
+                    <div class="col-3 input-col">
+
+                        <label for="exampleInputPassword1" class="form-label">Customer Code</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+
+                    </div>
+                    <div class="col-3 input-col">
+
+                        <label for="exampleInputPassword2" class="form-label">Customer Name</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2">
+
+                    </div>
+                    <div class="col-3 input-col">
+                        <label for="exampleInputPassword3" class="form-label">Customer Address</label>
+                        <input type="password" class="form-control" id="exampleInputPassword3">
+                    </div>
+                    <div class="col-3 input-col">
+                        <label for="exampleInputPassword4" class="form-label">Customer Salary</label>
+                        <input type="password" class="form-control" id="exampleInputPassword4">
+                    </div>
+                </div>
+            </section>
+            <section id="btn-section" class="container">
+                <section class="row">
+                    <div class="col-4 btn-div">
+                        <button class="m-btn" id="add-btn">Add Customer</button>
+                    </div>
+                    <div class="col-4 btn-div">
+                        <button class="m-btn" id="update-btn">Update</button>
+                    </div>
+                    <div class="col-4 btn-div">
+                        <button class="m-btn" id="delete-btn">Delete</button>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section id="item-table-section" class="container-fluid">
+            <section id="search-bar-section">
+                <section class="container-fluid">
+                    <section class="row">
+                        <div class="col-10 search-col">
+                            <input type="text" class="form-control" placeholder="Search Item-code/name">
+                        </div>
+                        <!--                      <div class="col-3 search-col">-->
+                        <!--                          <button></button>-->
+                        <!--                      </div>-->
+                        <div class="col-2 search-col">
+                            <button>Search</button>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section id="tbl-section" class="container-fluid">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>Customer Code</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Customer Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>I-000-001</td>
+                        <td>Chocolate</td>
+                        <td>100.00</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>I-000-001</td>
+                        <td>Chocolate</td>
+                        <td>100.00</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>I-000-001</td>
+                        <td>Chocolate</td>
+                        <td>100.00</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>I-000-001</td>
+                        <td>Chocolate</td>
+                        <td>100.00</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>I-000-001</td>
+                        <td>Chocolate</td>
+                        <td>100.00</td>
+                        <td>10</td>
+                    </tr><tr>
+                        <td>I-000-001</td>
+                        <td>Chocolate</td>
+                        <td>100.00</td>
+                        <td>10</td>
+                    </tr><tr>
+                        <td>I-000-001</td>
+                        <td>Chocolate</td>
+                        <td>100.00</td>
+                        <td>10</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </section>
+</main>
 </body>
 </html>

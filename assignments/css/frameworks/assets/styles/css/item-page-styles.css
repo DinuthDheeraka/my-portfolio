@@ -65,7 +65,7 @@ label{
 }
 
 #update-btn{
-    background-color: #ff8c00;
+    background-color: #f6a504;
 }
 
 #delete-btn{
@@ -108,6 +108,7 @@ table{
     background-color: #b30def;
     color: whitesmoke;
     border:transparent;
+    font-family: 'Poppins', sans-serif;
 }
 
 .search-col>input{
@@ -116,4 +117,16 @@ table{
     height: 40px;
     border-radius: 10px;
     padding-left: 10px;
+}
+
+.search-col>input::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+
+th{
+    font-family: 'Poppins', sans-serif;
+}
+
+td{
+    font-family: 'Poppins', sans-serif;
 }
