@@ -28,9 +28,6 @@
 }
 
 .func-name{
-    background: -webkit-linear-gradient(left, #3c02d9, #3901f8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     position: absolute;
     font-size: 25px;
     width: 180px;
@@ -40,6 +37,9 @@
 }
 
 #func-name-1{
+    background: -webkit-linear-gradient( #4104b6, #cc18ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: auto;
     top: 40%;
     bottom: 0;
@@ -47,6 +47,9 @@
 }
 
 #func-name-2{
+    background: -webkit-linear-gradient(left, #3c02d9, #002aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: auto;
     top: 40%;
     left: 10%;
@@ -54,6 +57,9 @@
 }
 
 #func-name-3{
+    background: -webkit-linear-gradient(left, #3c02d9, #0901f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: auto;
     top: 40%;
     left: 10%;
@@ -61,6 +67,9 @@
 }
 
 #func-name-4{
+    background: -webkit-linear-gradient(left, #3c02d9, #014fc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: auto;
     top: 42%;
     left:5%;
@@ -68,6 +77,9 @@
 }
 
 #func-name-5{
+    background: -webkit-linear-gradient(left, #3c02d9, #0053dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: auto;
     top: 42%;
     left: 5%;

@@ -1,0 +1,76 @@
+main{
+    position: relative;
+    background-color: #1f0101;
+    height: 645px;
+    top: 90px;
+}
+
+#make-order-page-section{
+    position: relative;
+    height: 100%;
+    background-color: #e72121;
+}
+
+#order-invoice-section{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #eaeaea;
+}
+
+#table-section{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 335px;
+    background-color: #fcfcfc;
+}
+
+#m-table{
+    position: relative;
+    top: 10px;
+}
+
+th,td{
+    font-family: 'Poppins', sans-serif;
+}
+
+#order-detail-section{
+    border: 1px solid red;
+}
+
+.detail-div{
+    /*height: 50px;*/
+    border: 1px solid black;
+}
+
+.inner-detail,.inner-detail-1{
+    border: 1px solid maroon;
+    /*height: 20px;*/
+}
+
+.input-col{
+    margin-top: 10px;
+}
+
+#cus-row-2,#cus-row-3{
+    margin-top: 10px;
+}
+
+#item-row-2,#item-row-3{
+    margin-top: 10px;
+}
+
+#add-item-btn{
+    margin-top: 34px;
+    height: 50%;
+    width: 100%;
+    border: none;
+    background-color: #9610ea;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+}
