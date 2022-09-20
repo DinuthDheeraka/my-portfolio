@@ -8,14 +8,14 @@ main{
 #make-order-page-section{
     position: relative;
     height: 100%;
-    /*background-color: #e72121;*/
+    background-color: #d9d9d9;
 }
 
 #order-invoice-section{
     position: relative;
     width: 100%;
     height: 300px;
-    background-color: #eaeaea;
+    background-color: #ffffff;
 }
 
 #table-section{
@@ -23,7 +23,7 @@ main{
     top: 10px;
     width: 100%;
     height: 335px;
-    background-color: #eae8e8;
+    background-color: #ffffff;
 }
 
 #m-table{

@@ -113,7 +113,7 @@ input{
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
     border: none;
-    font-weight: bold;
+    /*font-weight: bold;*/
     background-color: #9610ea;
     color: whitesmoke;
 }

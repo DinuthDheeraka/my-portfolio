@@ -148,7 +148,7 @@ main>#main-page>#main-page-introduction>#main-page-name>h1{
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 6s linear infinite;
+    animation: textclip 4s linear infinite;
     display: inline-block;
     /*font-size: 190px;*/
 

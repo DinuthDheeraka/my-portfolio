@@ -96,13 +96,17 @@
 
 #about-me-page-btn-section>button{
     /*border-radius: 20px;*/
-    background-color: #3e0676;
+    background-color: #5202a1;
     border: none;
     /*background-color: transparent;*/
     color: #fdfdfd;
     height: 40px;
     width: 170px;
     font-family: 'Poppins', sans-serif;
+}
+
+#about-me-page-btn-section>button:hover{
+
 }
 
 .project-desc{
