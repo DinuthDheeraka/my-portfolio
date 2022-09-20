@@ -3,6 +3,15 @@ main{
     height: 675px;
 }
 
+#home-page-section{
+    background-color: #9610ea;
+}
+
+#customer-page-section{
+    background-color: black;
+    visibility: hidden;
+}
+
 a{
     font-family: 'Poppins', sans-serif;
 }
