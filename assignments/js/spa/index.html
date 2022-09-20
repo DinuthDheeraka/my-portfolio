@@ -16,12 +16,13 @@
 <!--    style sheets-->
     <link rel="stylesheet" href="assets/styles/css/normalize.css">
     <link rel="stylesheet" href="assets/styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/css/main-styles.css">
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar w/ text</a>
+            <a class="navbar-brand" href="#">Keels</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,19 +32,45 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Customers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Make orders</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
-        Navbar text with an inline element
+        Keels point of sale system
       </span>
             </div>
         </div>
     </nav>
 </header>
+
+<main class="container-fluid" style="border: 1px solid black">
+
+    <section id="home-page-section" class="container-fluid main-section" style="border: 1px solid red">
+        <section id="home-page-content-section" class="container-fluid" style="border: 1px solid blue">
+            <section class="row" id="home-page-row-1">
+                <div class="col-4 home-page-col-1"></div>
+                <div class="col-4 home-page-col-1"></div>
+                <div class="col-4 home-page-col-1"></div>
+            </section>
+            <section class="row" id="home-page-row-2">
+                <div class="col-6 home-page-col-2"></div>
+                <div class="col-6 home-page-col-2"></div>
+            </section>
+        </section>
+    </section>
+
+
+<!--    <section id="customer-page-section" class="container-fluid main-section" style="border: 1px solid #bad70f">-->
+<!--        <section id="customer-page-content-section" class="container-fluid" style="border: 1px solid #784713"></section>-->
+<!--    </section>-->
+
+</main>
 
 <script src="assets/styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/styles/js/jquery-3.6.1.min.js"></script>

@@ -1,0 +1,42 @@
+main{
+    position: relative;
+    height: 675px;
+}
+
+.main-section{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 672px;
+}
+
+#home-page-content-section{
+    position: relative;
+    top: 20px;
+}
+
+#home-page-row-1{
+    border: 1px solid brown;
+}
+
+.home-page-col-1{
+    height: 315px;
+    border: 1px solid aqua;
+}
+
+#home-page-row-2{
+    border: 1px solid #00ef7f;
+}
+
+.home-page-col-2{
+    height: 315px;
+    border: 1px solid #1518e3;
+}
+
+/*#customer-page-section{*/
+/*    height: 675px;*/
+/*    position: absolute;*/
+/*}*/
