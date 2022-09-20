@@ -3,6 +3,10 @@ main{
     height: 675px;
 }
 
+a{
+    font-family: 'Poppins', sans-serif;
+}
+
 .main-section{
     position: absolute;
     margin: auto;
@@ -71,20 +75,40 @@ main{
     font-family: 'Poppins', sans-serif;
 }
 
+.main-h2{
+    position: absolute;
+    font-size: 30px;
+    margin: auto;
+    top: 0;
+    right: 10px;
+    color: #400697;
+    border: 1px solid white;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#order-detail-h2,#order-history-h2{
+    left: 10px;
+}
+
 #items-h1{
     width: 100px;
 }
 
 #customers-h1{
-    width: 200px;
+    width: 220px;
 }
 
 #make-orders-h1{
-    width: 237px;
+    width: 260px;
 }
 
-#order-history-h1,#order-detail-h1{
+#order-detail-h1{
     width: 260px;
+}
+
+#order-history-h1{
+    width: 300px;
 }
 
 
