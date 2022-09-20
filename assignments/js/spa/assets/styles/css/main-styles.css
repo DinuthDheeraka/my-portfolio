@@ -38,6 +38,10 @@ main{
     position: relative;
 }
 
+.home-img{
+    opacity:0.6;
+}
+
 #img-4,#img-5{
     width: 99%;
 }
@@ -52,6 +56,38 @@ main{
     top: 0;
     bottom: 0;
 }
+
+.main-h1{
+    position: absolute;
+    font-size: 40px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #000000;
+    border: 1px solid white;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#items-h1{
+    width: 100px;
+}
+
+#customers-h1{
+    width: 200px;
+}
+
+#make-orders-h1{
+    width: 237px;
+}
+
+#order-history-h1,#order-detail-h1{
+    width: 260px;
+}
+
+
 
 /*#customer-page-section{*/
 /*    height: 675px;*/
