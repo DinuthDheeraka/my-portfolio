@@ -24,16 +24,33 @@ main{
 
 .home-page-col-1{
     height: 315px;
-    border: 1px solid aqua;
+    border: 1px solid #b300ff;
+    position: relative;
 }
 
 #home-page-row-2{
-    border: 1px solid #00ef7f;
+    border: 1px solid #09ad61;
 }
 
 .home-page-col-2{
     height: 315px;
-    border: 1px solid #1518e3;
+    border: 1px solid #050674;
+    position: relative;
+}
+
+#img-4,#img-5{
+    width: 99%;
+}
+
+.home-img{
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 /*#customer-page-section{*/
