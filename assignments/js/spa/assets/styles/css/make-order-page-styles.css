@@ -1,0 +1,38 @@
+#make-order-page-content-section{
+    position: relative;
+    height: 660px;
+}
+
+#order-form-section{
+    position: relative;
+    height: 300px;
+    top: 10px;
+}
+
+#order-table-section{
+    position: relative;
+    height: 330px;
+    top: 20px;
+}
+
+.order-form-col{
+    height: 290px;
+    border: 1px solid blue;
+}
+
+.invoice-row{
+    position: relative;
+    border: 1px solid chartreuse;
+}
+
+#invoice-detail-text-section-col{
+    background-color: #02ac0f;
+}
+
+#invoice-row-1{
+    height: 30px;
+}
+
+.invoice-col{
+    border: 1px solid black;
+}
