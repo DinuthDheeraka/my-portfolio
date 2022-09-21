@@ -5,6 +5,11 @@ main{
 
 #home-page-section{
     background-color: #ece6e6;
+    visibility: visible;
+}
+
+#make-order-page-section{
+    background-color: #eeebeb;
     visibility: hidden;
 }
 
