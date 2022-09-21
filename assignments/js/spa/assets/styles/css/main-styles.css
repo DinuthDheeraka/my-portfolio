@@ -4,12 +4,12 @@ main{
 }
 
 #home-page-section{
-    background-color: #000000;
+    background-color: #ece6e6;
 }
 
 #customer-page-section{
     background-color: #eeebeb;
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 
 #item-page-section{
@@ -37,22 +37,22 @@ a{
 }
 
 #home-page-row-1{
-    border: 1px solid brown;
+    /*border: 1px solid brown;*/
 }
 
 .home-page-col-1{
     height: 315px;
-    border: 1px solid #b300ff;
+    /*border: 1px solid #b300ff;*/
     position: relative;
 }
 
 #home-page-row-2{
-    border: 1px solid #09ad61;
+    /*border: 1px solid #09ad61;*/
 }
 
 .home-page-col-2{
     height: 315px;
-    border: 1px solid #050674;
+    /*border: 1px solid #050674;*/
     position: relative;
 }
 
@@ -84,7 +84,7 @@ a{
     bottom: 0;
     right: 0;
     color: #000000;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     height: 50px;
     font-family: 'Poppins', sans-serif;
 }
@@ -93,10 +93,10 @@ a{
     position: absolute;
     font-size: 30px;
     margin: auto;
-    top: 0;
+    top: 5px;
     right: 10px;
-    color: #400697;
-    border: 1px solid white;
+    color: #7014f6;
+    /*border: 1px solid white;*/
     height: 50px;
     font-family: 'Poppins', sans-serif;
 }

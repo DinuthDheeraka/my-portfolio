@@ -53,40 +53,40 @@
 
 <main class="container-fluid" style="border: 1px solid black">
 
-<!--    <section id="home-page-section" class="container-fluid main-section" style="border: 1px solid red">-->
-<!--        <section id="home-page-content-section" class="container-fluid" style="border: 1px solid blue">-->
-<!--            <section class="row" id="home-page-row-1">-->
-<!--                <div class="col-4 home-page-col-1">-->
-<!--                    <img src="assets/images/items.jpg" id="img-1" class="home-img">-->
-<!--                    <h1 id="items-h1" class="main-h1">Items</h1>-->
-<!--                    <h2 id="items-h2" class="main-h2">100+</h2>-->
-<!--                </div>-->
-<!--                <div class="col-4 home-page-col-1">-->
-<!--                    <img src="assets/images/customers.jpg" id="img-2" class="home-img">-->
-<!--                    <h1 id="customers-h1" class="main-h1">Customers</h1>-->
-<!--                    <h2 id="customer-h2" class="main-h2">50+</h2>-->
+    <section id="home-page-section" class="container-fluid main-section">
+        <section id="home-page-content-section" class="container-fluid">
+            <section class="row" id="home-page-row-1">
+                <div class="col-4 home-page-col-1">
+                    <img src="assets/images/items.jpg" id="img-1" class="home-img">
+                    <h1 id="items-h1" class="main-h1">Items</h1>
+                    <h2 id="items-h2" class="main-h2">100+</h2>
+                </div>
+                <div class="col-4 home-page-col-1">
+                    <img src="assets/images/customers.jpg" id="img-2" class="home-img">
+                    <h1 id="customers-h1" class="main-h1">Customers</h1>
+                    <h2 id="customer-h2" class="main-h2">50+</h2>
 
-<!--                </div>-->
-<!--                <div class="col-4 home-page-col-1">-->
-<!--                    <img src="assets/images/make-orders.png" id="img-3" class="home-img">-->
-<!--                    <h1 id="make-orders-h1" class="main-h1">Make Orders</h1>-->
-<!--                    <h2 id="make-orders-h2" class="main-h2">20+ today</h2>-->
-<!--                </div>-->
-<!--            </section>-->
-<!--            <section class="row" id="home-page-row-2">-->
-<!--                <div class="col-6 home-page-col-2">-->
-<!--                    <img src="assets/images/order-detail.png" id="img-4" class="home-img">-->
-<!--                    <h1 id="order-detail-h1" class="main-h1">Order Details</h1>-->
-<!--                    <h2 id="order-detail-h2" class="main-h2">40+</h2>-->
-<!--                </div>-->
-<!--                <div class="col-6 home-page-col-2">-->
-<!--                    <img src="assets/images/interpret-survey-results.jpg" id="img-5" class="home-img">-->
-<!--                    <h1 id="order-history-h1" class="main-h1">Orders History</h1>-->
-<!--                    <h2 id="order-history-h2" class="main-h2">500+ orders</h2>-->
-<!--                </div>-->
-<!--            </section>-->
-<!--        </section>-->
-<!--    </section>-->
+                </div>
+                <div class="col-4 home-page-col-1">
+                    <img src="assets/images/make-orders.png" id="img-3" class="home-img">
+                    <h1 id="make-orders-h1" class="main-h1">Make Orders</h1>
+                    <h2 id="make-orders-h2" class="main-h2">20+ today</h2>
+                </div>
+            </section>
+            <section class="row" id="home-page-row-2">
+                <div class="col-6 home-page-col-2">
+                    <img src="assets/images/order-detail.png" id="img-4" class="home-img">
+                    <h1 id="order-detail-h1" class="main-h1">Order Details</h1>
+                    <h2 id="order-detail-h2" class="main-h2">40+</h2>
+                </div>
+                <div class="col-6 home-page-col-2">
+                    <img src="assets/images/interpret-survey-results.jpg" id="img-5" class="home-img">
+                    <h1 id="order-history-h1" class="main-h1">Orders History</h1>
+                    <h2 id="order-history-h2" class="main-h2">500+ orders</h2>
+                </div>
+            </section>
+        </section>
+    </section>
 
 
     <section id="customer-page-section" class="container-fluid main-section">
@@ -205,7 +205,7 @@
                 </section>
                 <section class="container-fluid" id="item-btn-section">
                     <section class="row">
-                        <div class="col-4 customer-btn-div"><button id="itm-add-btn" class="cus-btn">Add Customer</button></div>
+                        <div class="col-4 customer-btn-div"><button id="itm-add-btn" class="cus-btn">Add Item</button></div>
                         <div class="col-4 customer-btn-div"><button id="itm-update-btn" class="cus-btn">Update</button></div>
                         <div class="col-4 customer-btn-div"><button id="itm-delete-btn" class="cus-btn">Delete</button></div>
                     </section>
@@ -215,7 +215,7 @@
                 <section class="container-fluid" id="item-search-bar-section">
                     <section class="row" id="i-search-bar-input-n-btn-section">
                         <div class="col-10">
-                            <input class="form-control" id="input-itm-search" placeholder="Search Customer-Code/Name">
+                            <input class="form-control" id="input-itm-search" placeholder="Search Item-Code/Name">
                         </div>
                         <div class="col-2">
                             <button id="item-search-btn">Search</button>
@@ -235,39 +235,45 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>C-000-001</td>
-                            <td>Dinuth Dheeraka</td>
-                            <td>Kalutara</td>
-                            <td>100,000</td>
+                            <td>I-000-001</td>
+                            <td>Munchee Kome</td>
+                            <td>Rs.500.00</td>
+                            <td>10</td>
                         </tr>
                         <tr>
-                            <td>C-000-001</td>
-                            <td>Dinuth Dheeraka</td>
-                            <td>Kalutara</td>
-                            <td>100,000</td>
+                            <td>I-000-001</td>
+                            <td>Munchee Kome</td>
+                            <td>Rs.500.00</td>
+                            <td>10</td>
                         </tr>
                         <tr>
-                            <td>C-000-001</td>
-                            <td>Dinuth Dheeraka</td>
-                            <td>Kalutara</td>
-                            <td>100,000</td>
+                            <td>I-000-001</td>
+                            <td>Munchee Kome</td>
+                            <td>Rs.500.00</td>
+                            <td>10</td>
                         </tr>
                         <tr>
-                            <td>C-000-001</td>
-                            <td>Dinuth Dheeraka</td>
-                            <td>Kalutara</td>
-                            <td>100,000</td>
+                            <td>I-000-001</td>
+                            <td>Munchee Kome</td>
+                            <td>Rs.500.00</td>
+                            <td>10</td>
+                        </tr><tr>
+                            <td>I-000-001</td>
+                            <td>Munchee Kome</td>
+                            <td>Rs.500.00</td>
+                            <td>10</td>
                         </tr>
-                        <tr>
-                            <td>C-000-001</td>
-                            <td>Dinuth Dheeraka</td>
-                            <td>Kalutara</td>
-                            <td>100,000</td>
-                        </tr>
+
                         </tbody>
                     </table>
                 </section>
             </section>
+        </section>
+    </section>
+
+    <section id="make-order-page-section" class="container-fluid main-section">
+        <section id="make-order-page-content-section" class="container-fluid">
+
         </section>
     </section>
 
