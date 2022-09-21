@@ -88,27 +88,35 @@
 <!--    </section>-->
 
 
-    <section id="customer-page-section" class="container-fluid main-section" style="border: 1px solid #bad70f">
-        <section id="customer-page-content-section" class="container-fluid" style="border: 1px solid #784713">
+    <section id="customer-page-section" class="container-fluid main-section">
+        <section id="customer-page-content-section" class="container-fluid">
             <section class="row" id="customer-form-section">
-                <section class="row" id="customer-data-input-section">
-                    <div class="col-6 customer-input-col">
-                        <input class="form-control">
-                    </div>
-                    <div class="col-6 customer-input-col">
-                        <input class="form-control">
-                    </div>
-                    <div class="col-6 customer-input-col">
-                        <input class="form-control">
-                    </div>
-                    <div class="col-6 customer-input-col">
-                        <input class="form-control">
-                    </div>
+                <section class="container-fluid" id="customer-data-input-section">
+                    <section class="row">
+                        <div class="col-6 customer-input-col" id="inp-1-div">
+                            <label for="input-cus-id" class="form-label">Customer Code</label>
+                            <input class="form-control" id="input-cus-id" placeholder="Ex : C-000-000">
+                        </div>
+                        <div class="col-6 customer-input-col" id="inp-2-div">
+                            <label for="input-cus-id" class="form-label">Customer Name</label>
+                            <input class="form-control" id="input-cus-name" placeholder="Ex : Nimal Perera">
+                        </div>
+                        <div class="col-6 customer-input-col" id="inp-3-div">
+                            <label for="input-cus-id" class="form-label">Customer Address</label>
+                            <input class="form-control" id="input-cus-address" placeholder="Ex : Kalutara">
+                        </div>
+                        <div class="col-6 customer-input-col" id="inp-4-div">
+                            <label for="input-cus-id" class="form-label">Customer Telephone</label>
+                            <input class="form-control" id="input-cus-tele" placeholder="Ex : 0778765432">
+                        </div>
+                    </section>
                 </section>
-                <section class="row" id="customer-btn-section">
-                    <div class="col-4 customer-btn-div"><button>Add Customer</button></div>
-                    <div class="col-4 customer-btn-div"><button>Update</button></div>
-                    <div class="col-4 customer-btn-div"><button>Delete</button></div>
+                <section class="container-fluid" id="customer-btn-section">
+                    <section class="row">
+                        <div class="col-4 customer-btn-div"><button id="cus-add-btn" class="cus-btn">Add Customer</button></div>
+                        <div class="col-4 customer-btn-div"><button id="cus-update-btn" class="cus-btn">Update</button></div>
+                        <div class="col-4 customer-btn-div"><button id="cus-delete-btn" class="cus-btn">Delete</button></div>
+                    </section>
                 </section>
             </section>
             <section class="row" id="customer-table-section">
