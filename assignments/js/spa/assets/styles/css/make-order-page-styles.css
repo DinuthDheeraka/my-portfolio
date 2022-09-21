@@ -15,14 +15,20 @@
     top: 20px;
 }
 
+#main-col-2{
+    /*border-left: 1px solid moccasin;*/
+    /*border-right: 1px solid moccasin;*/
+    /*background-color: #dedede;*/
+}
+
 .order-form-col{
     height: 290px;
-    border: 1px solid blue;
+    /*border: 1px solid #a8a8a8;*/
 }
 
 .invoice-row{
     position: relative;
-    border: 1px solid chartreuse;
+    /*border: 1px solid chartreuse;*/
 }
 
 #invoice-row-2,#invoice-row-3,#invoice-row-4,#item-row-2,#item-row-3,#item-row-4,#payment-row-2,#payment-row-3,#payment-row-4{
@@ -38,8 +44,16 @@ section>p{
     /*font-size: 15px;*/
 }
 
-#invoice-detail-text-section-col,#item-detail-text-section-col,#payment-detail-text-section-col{
+#invoice-detail-text-section-col{
+    background-color: #e00396;
+}
+
+#payment-detail-text-section-col{
     background-color: #26ce02;
+}
+
+#item-detail-text-section-col{
+    background-color: #9610ea;
 }
 
 #purchase-btn,#add-item-btn{
@@ -56,7 +70,7 @@ section>p{
 }
 
 .invoice-col,.item-col,.payment-col{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 #add-item-btn{
