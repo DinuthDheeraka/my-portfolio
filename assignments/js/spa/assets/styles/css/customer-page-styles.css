@@ -18,3 +18,7 @@
     margin: auto;
     top:20px;
 }
+
+#customer-table-inner-section{
+    border: 1px solid black;
+}

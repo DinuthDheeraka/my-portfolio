@@ -125,6 +125,10 @@ a{
     width: 300px;
 }
 
+th,td{
+    font-family: 'Poppins', sans-serif;
+}
+
 
 
 /*#customer-page-section{*/
