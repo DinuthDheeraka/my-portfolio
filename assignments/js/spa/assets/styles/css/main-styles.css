@@ -4,11 +4,16 @@ main{
 }
 
 #home-page-section{
-    background-color: #9610ea;
+    background-color: #e4e7e4;
 }
 
 #customer-page-section{
-    background-color: black;
+    background-color: #efefef;
+    /*visibility: hidden;*/
+}
+
+#item-page-section{
+    background-color: #d40000;
     visibility: hidden;
 }
 

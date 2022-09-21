@@ -1,0 +1,20 @@
+#customer-page-content-section{
+    position: relative;
+    height: 650px;
+}
+
+#customer-form-section{
+    height: 280px;
+    border: 1px solid red;
+    position: relative;
+    margin: auto;
+    top: 10px;
+}
+
+#customer-table-section{
+    height: 340px;
+    border: 1px solid red;
+    position: relative;
+    margin: auto;
+    top:20px;
+}
