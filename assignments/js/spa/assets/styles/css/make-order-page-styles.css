@@ -29,8 +29,26 @@
     margin-top: 8px;
 }
 
+section>p{
+    position: relative;
+    top: 7px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    /*font-size: 15px;*/
+}
+
 #invoice-detail-text-section-col,#item-detail-text-section-col,#payment-detail-text-section-col{
-    background-color: #02ac0f;
+    background-color: #26ce02;
+}
+
+#purchase-btn,#add-item-btn{
+    margin-top: 32px;
+    width: 100%;
+    height: 56%;
+    color: white;
+    border: transparent;
+    font-family: 'Poppins', sans-serif;
 }
 
 #invoice-row-1,#item-row-1,#payment-row-1{
@@ -39,4 +57,11 @@
 
 .invoice-col,.item-col,.payment-col{
     border: 1px solid black;
+}
+
+#add-item-btn{
+    background-color: #9610ea;
+}
+#purchase-btn{
+    background-color: #26ce02;
 }
