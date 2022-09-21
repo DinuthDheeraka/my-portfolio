@@ -25,14 +25,18 @@
     border: 1px solid chartreuse;
 }
 
-#invoice-detail-text-section-col{
+#invoice-row-2,#invoice-row-3,#invoice-row-4,#item-row-2,#item-row-3,#item-row-4,#payment-row-2,#payment-row-3,#payment-row-4{
+    margin-top: 8px;
+}
+
+#invoice-detail-text-section-col,#item-detail-text-section-col,#payment-detail-text-section-col{
     background-color: #02ac0f;
 }
 
-#invoice-row-1{
-    height: 30px;
+#invoice-row-1,#item-row-1,#payment-row-1{
+    height: 40px;
 }
 
-.invoice-col{
+.invoice-col,.item-col,.payment-col{
     border: 1px solid black;
 }
