@@ -33,12 +33,51 @@
     top: 140px;
     border: 1px solid white;
     display: flex;
-    width: 80vw;
-    height: 500px;
+    width: 70vw;
+    height: 450px;
 }
 
 #assignments-section>div{
+    position: relative;
     border: 1px solid black;
     height: 100%;
     width: calc(100%/3);
+}
+
+#assignments-section>div>div{
+    position: relative;
+    margin: auto;
+    border: 1px solid black;
+    height: 96%;
+    width: calc(98%);
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#assignments-section>div>div>div{
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border: 1px solid fuchsia;
+    width: 98%;
+}
+
+.ass-img-div{
+    height:65%;
+}
+
+.ass-img-div>img{
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+.ass-desc-div{
+    top: 10px;
+    height: 30%;
 }
