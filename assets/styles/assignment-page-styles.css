@@ -1,0 +1,44 @@
+#assignments-page{
+    position: relative;
+    background-color: rgba(77, 5, 139, 0.97);
+    /*background-color: rgba(201, 71, 9, 0.97);*/
+    width: 98.88vw;
+    height:680px;
+}
+
+#assignments-topic-section{
+    display: inline-block;
+    font-family: 'Poppins';
+    font-size: 165%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 10px;
+    border: 1px solid #b6b3b3;
+    height: 100px;
+    width: 336px;
+    font-weight: bold;
+}
+
+#assignments-topic-section>h1{
+    color: #d7d6d6;
+}
+
+#assignments-section{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 140px;
+    border: 1px solid white;
+    display: flex;
+    width: 80vw;
+    height: 500px;
+}
+
+#assignments-section>div{
+    border: 1px solid black;
+    height: 100%;
+    width: calc(100%/3);
+}

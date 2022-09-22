@@ -6,6 +6,12 @@
     height:680px;
 }
 
+input{
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
     overflow-x: hidden;
 }
