@@ -31,7 +31,7 @@
     left: 0;
     right: 0;
     top: 150px;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     background-color:transparent;
     display: flex;
     width: 1200px;
@@ -149,18 +149,18 @@
     }
 
     #assignments-section .ass-img-div{
-        border: 1px solid white;
+        /*border: 1px solid white;*/
         height: 250px;
         width: 300px;
     }
     #assignments-section .ass-desc-div{
-        border: 1px solid white;
+        /*border: 1px solid white;*/
         height: 120px;
         width: 300px;
     }
 
     #assignments-topic-section{
-        border: 1px solid white;
+        /*border: 1px solid white;*/
         font-size: 135%;
         width: 277px;
     }
