@@ -38,23 +38,23 @@ $('#btn-c').click(function () {
 });
 // -----------------------------------------------------------------------
 $('#btn--').click(function () {
-    num1 = parseInt($('#result').val());
+    num1 = getvalue();
     operator = '-';
     clear();
 });
 $('#btn-x').click(function () {
-    num1 = parseInt($('#result').val());
+    num1 = getvalue();
     operator = 'x';
     clear();
     console.log(num1+1)
 });
 $('#btn-divide').click(function () {
-    num1 = parseInt($('#result').val());
+    num1 = getvalue();
     operator = '/';
     clear();
 });
 document.getElementById('btn-+').addEventListener('click',function () {
-    num1 = parseInt($('#result').val());
+    num1 = getvalue();
     operator = '+';
     clear();
 });
@@ -62,9 +62,13 @@ document.getElementById('btn-+').addEventListener('click',function () {
 // ---------------------------------------------------------
 
 $('#btn-total').click(function () {
-    num2 = parseInt($('#result').val());
+    num2 = getvalue();
     displayResult();
 });
+
+function getvalue() {
+    return parseFloat($('#result').val());
+}
 
 
 function displayResult(){

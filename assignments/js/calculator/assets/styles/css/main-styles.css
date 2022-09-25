@@ -56,7 +56,7 @@ input{
 }
 
 #btn-\+{
-    background-color: #6508e7;
+    background-color: #9208e7;
 }
 
 #btn-\-{
@@ -64,15 +64,14 @@ input{
     background-color: #9208e7;
 }
 #btn-x{
-    /*background-color: #6508e7;*/
-    background-color: #b708e7;
+    background-color: #9208e7;
 }
 #btn-divide{
-    background-color: #e708d1;
+    background-color: #9208e7;
 }
 #btn-total{
-    background-color: #d808e7;
+    background-color: #131213;
 }
 #btn-c{
-    background-color: #e312cf;
+    background-color: #9208e7;
 }
