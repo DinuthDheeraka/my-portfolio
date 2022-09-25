@@ -1,0 +1,22 @@
+#main-section{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 520px;
+    width: 450px;
+    border: 1px solid black;
+}
+
+#btn-section{
+    border: 1px solid red;
+    position: absolute;
+    bottom: 0;
+}
+
+#btn-section button{
+    height: 80px;
+    border: 1px solid greenyellow;
+}
