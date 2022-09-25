@@ -5,18 +5,72 @@
     right: 0;
     top: 0;
     bottom: 0;
-    height: 520px;
-    width: 450px;
-    border: 1px solid black;
+    height: 496px;
+    width: 430px;
+    /*border: 1px solid #c43f3f;*/
+    /*background: black;*/
+}
+
+body{
+    /*background: url("../../images/img.png");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+}
+
+input{
+    height: 95%;
+    width: 75%;
+}
+
+#c-btn{
+    height: 95%;
+    width: 24%;
+    border: 1px solid #dbd7d7;
+}
+
+#result-section{
+    position: relative;
+    /*border: 1px solid violet;*/
+    height: 95px;
 }
 
 #btn-section{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: absolute;
     bottom: 0;
 }
 
 #btn-section button{
     height: 80px;
-    border: 1px solid greenyellow;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    /*background-color: #393939;*/
+    color: white;
+}
+
+#btn-section .btn-num{
+    height: 80px;
+    border: 1px solid #ffffff;
+    background-color: #131213;
+    color: white;
+}
+
+#btn-\+{
+    background-color: #6508e7;
+}
+
+#btn-\-{
+    background-color: #6508e7;
+}
+#btn-x{
+    background-color: #6508e7;
+}
+#btn-\/{
+    background-color: #6508e7;
+}
+#btn-\={
+    background-color: #6508e7;
+}
+#btn-c{
+    background-color: #6508e7;
 }
