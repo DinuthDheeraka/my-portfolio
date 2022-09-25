@@ -60,17 +60,19 @@ input{
 }
 
 #btn-\-{
-    background-color: #6508e7;
+    /*background-color: #6508e7;*/
+    background-color: #9208e7;
 }
 #btn-x{
-    background-color: #6508e7;
+    /*background-color: #6508e7;*/
+    background-color: #b708e7;
 }
-#btn-\/{
-    background-color: #6508e7;
+#btn-divide{
+    background-color: #e708d1;
 }
 #btn-\={
-    background-color: #6508e7;
+    background-color: #d808e7;
 }
 #btn-c{
-    background-color: #6508e7;
+    background-color: #e312cf;
 }
