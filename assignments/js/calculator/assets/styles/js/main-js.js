@@ -36,12 +36,7 @@ $('#btn-point').click(function () {
 $('#btn-c').click(function () {
     $('#result').val('');
 });
-
-$('#btn-+').click(function () {
-    num1 = parseInt($('#result').val());
-    operator = '+';
-    clear();
-});
+// -----------------------------------------------------------------------
 $('#btn--').click(function () {
     num1 = parseInt($('#result').val());
     operator = '-';
@@ -58,9 +53,28 @@ $('#btn-divide').click(function () {
     operator = '/';
     clear();
 });
+document.getElementById('btn-+').addEventListener('click',function () {
+    num1 = parseInt($('#result').val());
+    operator = '+';
+    clear();
+});
+
+// ---------------------------------------------------------
+
+$('#btn-total').click(function () {
+    num2 = parseInt($('#result').val());
+    displayResult();
+});
 
 
-
+function displayResult(){
+    switch (operator){
+        case '+':$('#result').val(num1+num2);break;
+        case '-':$('#result').val(num1-num2);break;
+        case 'x':$('#result').val(num1*num2);break;
+        case '/':$('#result').val(num1/num2);break;
+    }
+}
 
 function clear() {
     $('#result').val('');
