@@ -49,14 +49,17 @@
             </section>
             <section id="btn-section" class="container">
                 <section class="row">
-                    <div class="col-4 btn-div">
+                    <div class="col-3 btn-div">
                         <button class="m-btn" id="add-btn">Add Customer</button>
                     </div>
-                    <div class="col-4 btn-div">
+                    <div class="col-3 btn-div">
                         <button class="m-btn" id="update-btn">Update</button>
                     </div>
-                    <div class="col-4 btn-div">
+                    <div class="col-3 btn-div">
                         <button class="m-btn" id="delete-btn">Delete</button>
+                    </div>
+                    <div class="col-3 btn-div">
+                        <button class="m-btn" id="get-all-btn" style="background-color: #9c26e5">Get All</button>
                     </div>
                 </section>
             </section>
@@ -78,7 +81,7 @@
                 </section>
             </section>
             <section id="tbl-section" class="container-fluid">
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered table-hover" id="customer-table">
                     <thead>
                     <tr>
                         <th>Customer Code</th>
@@ -87,13 +90,7 @@
                         <th>Customer Salary</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>C-000-001</td>
-                        <td>Dinuth Dheeraka</td>
-                        <td>Kalutara</td>
-                        <td>100,000</td>
-                    </tr>
+                    <tbody id="customer-table-body">
                     <tr>
                         <td>C-000-001</td>
                         <td>Dinuth Dheeraka</td>
