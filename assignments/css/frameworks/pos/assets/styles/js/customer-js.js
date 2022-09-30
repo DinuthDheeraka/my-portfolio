@@ -7,7 +7,7 @@ $('#add-btn').click(function () {
         salary : $('#inp-cus-salary').val()
     };
     customers.push(c);
-    printCustomers();
+    // printCustomers();
     loadCustomers();
 });
 
@@ -17,7 +17,6 @@ $('#get-all-btn').click(function () {
 });
 
 $('#customer-search-btn').click(function () {
-    alert("aaa");
     let customer = searchCustomer();
     $('#inp-cus-code').val(customer.code);
     $('#inp-cus-name').val(customer.name);
@@ -36,6 +35,7 @@ function loadCustomers() {
     for(var c of customers){
         var row =  "<tr><td>"+c.code+"</td><td>"+c.name+"</td><td>"+c.address+"</td><td>"+c.salary+"</td></tr>";
         $('#customer-table-body').append(row);
+        rowClickEvent();
     }
 }
 
@@ -46,5 +46,14 @@ function searchCustomer() {
             break;
         }
     }
+}
+
+function rowClickEvent() {
+    $('#customer-table-body>tr:last-child').click(function () {
+        $('#inp-cus-code').val(($(this)).children('td:nth-child(1)').text());
+        $('#inp-cus-name').val(($(this)).children('td:nth-child(2)').text());
+        $('#inp-cus-address').val(($(this)).children('td:nth-child(3)').text());
+        $('#inp-cus-salary').val(($(this)).children('td:nth-child(4)').text());
+    });
 }
 
