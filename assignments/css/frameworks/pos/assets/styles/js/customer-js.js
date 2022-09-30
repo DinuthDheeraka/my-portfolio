@@ -36,6 +36,7 @@ function loadCustomers() {
         var row =  "<tr><td>"+c.code+"</td><td>"+c.name+"</td><td>"+c.address+"</td><td>"+c.salary+"</td></tr>";
         $('#customer-table-body').append(row);
         rowClickEvent();
+        doubleClickEvent();
     }
 }
 
@@ -56,4 +57,35 @@ function rowClickEvent() {
         $('#inp-cus-salary').val(($(this)).children('td:nth-child(4)').text());
     });
 }
+
+function doubleClickEvent() {
+    $('#customer-table-body>tr:last-child').dblclick(function () {
+        $('#customer-table-body>tr:last-child').remove();
+    });
+}
+
+$(document).ready(function(){
+    $('input').on('keypress', function(e) {
+        if(e.which == 13) {
+            switch($(this).attr('id')){
+                case 'inp-cus-code':
+                    $('#inp-cus-name').focus();
+                    e.preventDefault();
+                    break;
+                case 'inp-cus-name':
+                    $('#inp-cus-address').focus();
+                    e.preventDefault();
+                    break;
+                case 'inp-cus-address':
+                    $('#inp-cus-salary').focus();
+                    e.preventDefault();
+                    break;
+                case 'inp-cus-salary':
+                    $('#inp-cus-code').focus();
+                    e.preventDefault();
+                    break;
+            }
+        }
+    });
+});
 
