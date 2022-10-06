@@ -276,6 +276,7 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>button{
 }
 
 #main-page>#main-page-social-links>div:hover{
+    cursor: pointer;
     transition-duration:300ms;
     margin-left: 120px;
     transition-property: margin-left;
