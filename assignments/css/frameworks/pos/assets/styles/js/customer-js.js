@@ -1,14 +1,6 @@
 var customers = new Array();
 $('#add-btn').click(function () {
-    var c = {
-        code : $('#inp-cus-code').val(),
-        name : $('#inp-cus-name').val(),
-        address : $('#inp-cus-address').val(),
-        salary : $('#inp-cus-salary').val()
-    };
-    customers.push(c);
-    // printCustomers();
-    loadCustomers();
+    addAndLoad();
 });
 
 $('#get-all-btn').click(function () {
@@ -49,6 +41,18 @@ function searchCustomer() {
     }
 }
 
+function addAndLoad() {
+    var c = {
+        code : $('#inp-cus-code').val(),
+        name : $('#inp-cus-name').val(),
+        address : $('#inp-cus-address').val(),
+        salary : $('#inp-cus-salary').val()
+    };
+    customers.push(c);
+    // printCustomers();
+    loadCustomers();
+}
+
 function rowClickEvent() {
     $('#customer-table-body>tr:last-child').click(function () {
         $('#inp-cus-code').val(($(this)).children('td:nth-child(1)').text());
@@ -62,6 +66,13 @@ function doubleClickEvent() {
     $('#customer-table-body>tr:last-child').dblclick(function () {
         $('#customer-table-body>tr:last-child').remove();
     });
+}
+
+function clearInputs() {
+    $('#inp-cus-code').val('');
+    $('#inp-cus-name').val('');
+    $('#inp-cus-address').val('');
+    $('#inp-cus-salary').val('');
 }
 
 $(document).ready(function(){
@@ -83,9 +94,18 @@ $(document).ready(function(){
                 case 'inp-cus-salary':
                     $('#inp-cus-code').focus();
                     e.preventDefault();
+                    addAndLoad();
+                    clearInputs();
                     break;
             }
         }
     });
+});
+
+$(window).on('mousemove',function (event) {
+    // $('#id-cus-code').css('position','relative');
+    // $('#id-cus-code').css('top',event.pageY-100);
+    // $('#id-cus-code').css('left',event.pageX);
+    // console.log(event.pageX+" "+event.pageY);
 });
 

@@ -33,6 +33,7 @@ main{
 }
 
 label{
+    z-index: 2;
     font-family: 'Poppins', sans-serif;
 }
 
