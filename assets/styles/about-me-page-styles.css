@@ -1,5 +1,5 @@
 /*about-me-page-styles*/
-#about-me-page{
+#about-me-page {
     position: relative;
     width: 98.88vw;
     /*width: 100vw;*/
@@ -11,16 +11,16 @@
     /*background-color: #ffffff;*/
 }
 
-#about-me-page>article{
+#about-me-page > article {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-#about-me-page>article>#about-me-page-text-contents{
+#about-me-page > article > #about-me-page-text-contents {
     z-index: 2;
     position: absolute;
-    margin:auto;
+    margin: auto;
     top: 190px;
     width: 70%;
     /*left: 17%;*/
@@ -29,7 +29,7 @@
     /*border: 1px solid #c7bfbf;*/
 }
 
-#about-me-page>article>#about-me-page-my-image{
+#about-me-page > article > #about-me-page-my-image {
     position: absolute;
     /*border: 1px solid whitesmoke;*/
     width: 242px;
@@ -38,17 +38,17 @@
     top: -60px;
     /*left: 42%;*/
     left: 0;
-    right:0;
+    right: 0;
     z-index: 0;
 }
 
-#about-me-page>article>#about-me-page-my-image>img{
+#about-me-page > article > #about-me-page-my-image > img {
     width: 240px;
     height: 220px;
     border-radius: 100%;
 }
 
-.page-main-header{
+.page-main-header {
     z-index: 1;
     font-family: Chiller;
     display: inline-block;
@@ -56,20 +56,20 @@
     margin: auto;
     /*text-align: center;*/
     left: 5%;
-    top:30%;
+    top: 30%;
     font-size: 800%;
     color: rgba(35, 24, 24, 0.46);
     text-transform: uppercase;
 }
 
-#about-me-page>article>#about-me-page-text-contents>h1{
+#about-me-page > article > #about-me-page-text-contents > h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     color: #f1eeee;
     text-align: center;
 }
 
-#about-me-page>article>#about-me-page-text-contents>p{
+#about-me-page > article > #about-me-page-text-contents > p {
     text-align: center;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
@@ -77,54 +77,124 @@
     color: #f1f0f0;
 }
 
-#about-me-page>article>#about-me-page-text-contents>p:first-child{
+#about-me-page > article > #about-me-page-text-contents > p:first-child {
     font-size: 30px;
     font-family: "Blackadder ITC";
 }
 
-#about-me-page-btn-section{
+#about-me-page-btn-section {
     margin: auto;
     position: absolute;
     /*border: 1px solid whitesmoke;*/
     margin: auto;
-    width: 151px;
+    width: 176px;
     height: 41px;
     bottom: 25%;
     left: 0;
     right: 0;
 }
 
-#about-me-page-btn-section>button{
+#about-me-page-btn-section > button {
     /*border-radius: 20px;*/
     background-color: #5202a1;
     border: none;
     /*background-color: transparent;*/
     color: #fdfdfd;
     height: 40px;
-    width: 170px;
+    width: 176px;
     font-family: 'Poppins', sans-serif;
 }
 
-#about-me-page-btn-section>button:hover{
+#about-me-page-btn-section > button:hover {
 
 }
 
-.project-desc{
+
+ /*CSS */
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(
+            45deg,
+            #880ebb,
+            #c146ef,
+            #cb0b84,
+            #ff00fb,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #6a00ff
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.project-desc {
     /*border: 2px solid red;*/
 }
 
-.project-image{
+.project-image {
     /*border: 2px solid blue;*/
 }
+
 /*-----------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------*/
 
-@media all and (max-width: 960px){
-    #about-me-page{
+@media all and (max-width: 960px) {
+    #about-me-page {
         /*background-color: #127806;*/
     }
 
-    #about-me-page-btn-section{
+    #about-me-page-btn-section {
         bottom: 20%;
     }
 
@@ -136,13 +206,13 @@
 
 /*--------------------------------------------------------------------------------------------------*/
 
-@media all and (max-width: 700px){
-    #about-me-page{
+@media all and (max-width: 700px) {
+    #about-me-page {
         /*background-color: #127806;*/
         height: 950px;
     }
 
-    #about-me-page-btn-section{
+    #about-me-page-btn-section {
         bottom: 20%;
     }
 
@@ -155,13 +225,13 @@
 
 /*----------------------------------------------------------------------------------*/
 
-@media all and (max-width: 580px){
-    #about-me-page{
+@media all and (max-width: 580px) {
+    #about-me-page {
         /*background-color: #127806;*/
         height: 1000px;
     }
 
-    #about-me-page-btn-section{
+    #about-me-page-btn-section {
         bottom: 20%;
     }
 
@@ -172,38 +242,42 @@
 }
 
 /*------------------------------------------------------------------------------------------*/
-@media all and (max-width: 500px){
-    #about-me-page{
+@media all and (max-width: 500px) {
+    #about-me-page {
         /*background-color: #127806;*/
         height: 1100px;
     }
 
-    #about-me-page-btn-section{
+    #about-me-page-btn-section {
         bottom: 18%;
     }
 }
 
 /*-------------------------------------------------------------------------------------*/
-@media all and (max-width: 415px){
-    #about-me-page{
+@media all and (max-width: 415px) {
+    #about-me-page {
         /*background-color: #127806;*/
         height: 1160px;
     }
 
-    #about-me-page-btn-section{
+    #about-me-page-btn-section {
         bottom: 15%;
     }
 }
 
 
 /*-------------------------------------------------------------------------------------*/
-@media all and (max-width: 320px){
-    #about-me-page{
+@media all and (max-width: 320px) {
+    #about-me-page {
         /*background-color: #127806;*/
         height: 1180px;
     }
 
-    #about-me-page-btn-section{
+    #about-me-page-btn-section {
         bottom: 12%;
     }
 }
+
+
+
+
