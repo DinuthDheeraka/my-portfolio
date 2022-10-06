@@ -223,7 +223,7 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>button{
 #say-hello-btn{
     position: absolute;
     margin: auto;
-    right: 4%;
+    right: 3%;
     background-color: transparent;
     top: 10px;
     width: 150px;
@@ -234,6 +234,11 @@ main>#main-page>#main-page-introduction>section:nth-child(2)>button{
     font-size: 16px;
     font-weight: bold;
     color: #e8e8e8;
+}
+
+#say-hello-btn a{
+    text-decoration: none;
+    color: white;
 }
 
 #say-hello-btn:hover{
