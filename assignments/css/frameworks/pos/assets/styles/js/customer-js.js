@@ -1,4 +1,16 @@
 var customers = new Array();
+var customerRegex = new Map([
+    [$('#inp-cus-code'),/C-[0-9]{3}$/],
+    [$('#inp-cus-name'),/[A-Za-z .]{3,}/],
+    [$('#inp-cus-address'),/[A-Za-z .,/0-9]{3,}/],
+    [$('#inp-cus-salary'),/[0-9]{3,}/]
+]);
+var customerRegex = new Map([
+    [$('#inp-cus-code'),$('#cus-code-valid-format')],
+    [$('#inp-cus-name'),$('#cus-name-valid-format')],
+    [$('#inp-cus-address'),$('#cus-address-valid-format')],
+    [$('#inp-cus-salary'),$('#cus-salary-valid-format')]
+]);
 $('#add-btn').click(function () {
     addAndLoad();
 });
