@@ -225,10 +225,16 @@
     height: 40px;
     /*background-color: rgba(77, 5, 139, 0.97);*/
     background-color:transparent;
-    border: none;
+    border: transparent;
     font-family: 'Poppins', sans-serif;
     color: whitesmoke;
     /*border-radius: 20px;*/
+}
+
+#my-projects-page > button:hover{
+    border-bottom: 4px solid white;
+    /*border-radius: 20px;*/
+    /*background-color: #9610ea;*/
 }
 
 .project-desc > button a {

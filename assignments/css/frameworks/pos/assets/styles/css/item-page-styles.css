@@ -11,6 +11,10 @@ main{
     background-color: #e5e3e3;
 }
 
+.p-valid-format{
+    visibility: hidden;
+}
+
 #input-fields-section{
     position: relative;
     margin: auto;
@@ -22,7 +26,7 @@ main{
     margin: auto;
     height: 40px;
     width: 50%;
-    top: 30px;
+    top: 0px;
     /*border: 1px solid firebrick;*/
 }
 
