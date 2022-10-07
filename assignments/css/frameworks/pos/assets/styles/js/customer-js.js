@@ -1,15 +1,15 @@
 var customers = new Array();
 var customerRegex = new Map([
-    [$('#inp-cus-code'),/C-[0-9]{3}$/],
-    [$('#inp-cus-name'),/[A-Za-z .]{3,}/],
-    [$('#inp-cus-address'),/[A-Za-z .,/0-9]{3,}/],
-    [$('#inp-cus-salary'),/[0-9]{3,}/]
+    [$('#inp-cus-code'), /C-[0-9]{3}$/],
+    [$('#inp-cus-name'), /[A-Za-z .]{3,}/],
+    [$('#inp-cus-address'), /[A-Za-z .,/0-9]{3,}/],
+    [$('#inp-cus-salary'), /[0-9]{3,}/]
 ]);
-var customerRegex = new Map([
-    [$('#inp-cus-code'),$('#cus-code-valid-format')],
-    [$('#inp-cus-name'),$('#cus-name-valid-format')],
-    [$('#inp-cus-address'),$('#cus-address-valid-format')],
-    [$('#inp-cus-salary'),$('#cus-salary-valid-format')]
+var customerValidFormat = new Map([
+    [$('#inp-cus-code'), $('#cus-code-valid-format')],
+    [$('#inp-cus-name'), $('#cus-name-valid-format')],
+    [$('#inp-cus-address'), $('#cus-address-valid-format')],
+    [$('#inp-cus-salary'), $('#cus-salary-valid-format')]
 ]);
 $('#add-btn').click(function () {
     addAndLoad();
@@ -29,15 +29,15 @@ $('#customer-search-btn').click(function () {
 });
 
 function printCustomers() {
-    for(var i = 0; i<customers.length; ++i){
+    for (var i = 0; i < customers.length; ++i) {
         console.log(customers[i].code);
     }
 }
 
 function loadCustomers() {
     $('#customer-table-body').empty();
-    for(var c of customers){
-        var row =  "<tr><td>"+c.code+"</td><td>"+c.name+"</td><td>"+c.address+"</td><td>"+c.salary+"</td></tr>";
+    for (var c of customers) {
+        var row = "<tr><td>" + c.code + "</td><td>" + c.name + "</td><td>" + c.address + "</td><td>" + c.salary + "</td></tr>";
         $('#customer-table-body').append(row);
         rowClickEvent();
         doubleClickEvent();
@@ -45,8 +45,8 @@ function loadCustomers() {
 }
 
 function searchCustomer() {
-    for(var c of customers){
-        if(c.code==$('#customer-search-bar').val()){
+    for (var c of customers) {
+        if (c.code == $('#customer-search-bar').val()) {
             return c;
             break;
         }
@@ -55,10 +55,10 @@ function searchCustomer() {
 
 function addAndLoad() {
     var c = {
-        code : $('#inp-cus-code').val(),
-        name : $('#inp-cus-name').val(),
-        address : $('#inp-cus-address').val(),
-        salary : $('#inp-cus-salary').val()
+        code: $('#inp-cus-code').val(),
+        name: $('#inp-cus-name').val(),
+        address: $('#inp-cus-address').val(),
+        salary: $('#inp-cus-salary').val()
     };
     customers.push(c);
     // printCustomers();
@@ -87,10 +87,10 @@ function clearInputs() {
     $('#inp-cus-salary').val('');
 }
 
-$(document).ready(function(){
-    $('input').on('keypress', function(e) {
-        if(e.which == 13) {
-            switch($(this).attr('id')){
+$(document).ready(function () {
+    $('input').on('keypress', function (e) {
+        if (e.which == 13) {
+            switch ($(this).attr('id')) {
                 case 'inp-cus-code':
                     $('#inp-cus-name').focus();
                     e.preventDefault();
@@ -114,28 +114,43 @@ $(document).ready(function(){
     });
 });
 
-$(window).on('mousemove',function (event) {
+$(window).on('mousemove', function (event) {
     // $('#id-cus-code').css('position','relative');
     // $('#id-cus-code').css('top',event.pageY-100);
     // $('#id-cus-code').css('left',event.pageX);
     // console.log(event.pageX+" "+event.pageY);
 });
 
-$('.main-input').on('keyup',function () {
-    if(validate($('#inp-cus-code').val(),/C-[0-9]{3}$/)){
-        $('#cus-code-valid-format').css('visibility','hidden');
-        $(this).css('box-shadow','0 0 5pt 2pt #22ee0b');
-    }else{
-        $('#cus-code-valid-format').css('visibility','visible');
-        $(this).css('box-shadow','0 0 5pt 2pt red');
-    }
-    if($('#inp-cus-code').val()==''){
-        $(this).css('border','1px solid white');
-    }
+
+// if(validate($('#inp-cus-code').val(),/C-[0-9]{3}$/)){
+//     $('#cus-code-valid-format').css('visibility','hidden');
+//     $(this).css('box-shadow','0 0 5pt 2pt #22ee0b');
+// }else{
+//     $('#cus-code-valid-format').css('visibility','visible');
+//     $(this).css('box-shadow','0 0 5pt 2pt red');
+// }
+// if($('#inp-cus-code').val()==''){
+//     $(this).css('border','1px solid white');
+// }
+
+$('.main-input').on('keyup', function () {
+    validate();
 });
 
 
-function validate(input,regex) {
-    return (regex.test(input));
+function validate() {
+    for (var key of customerRegex.keys()) {
+        if (key.val() != '') {
+            if(customerRegex.get(key).test(key.val())){
+                key.css('box-shadow','0 0 5pt 2pt #22ee0b');
+            }else{
+                key.css('box-shadow','0 0 5pt 2pt red');
+                console.log(customerValidFormat.get(key));
+            }
+            // console.log(customerRegex.get(key).test(key.val()));
+        }else{
+            key.css('box-shadow','0 0 5pt 2pt transparent');
+        }
+    }
 }
 
