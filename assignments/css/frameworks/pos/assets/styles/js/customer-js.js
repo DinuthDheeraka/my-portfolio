@@ -109,3 +109,21 @@ $(window).on('mousemove',function (event) {
     // console.log(event.pageX+" "+event.pageY);
 });
 
+$('.main-input').on('keyup',function () {
+    if(validate($('#inp-cus-code').val(),/C-[0-9]{3}$/)){
+        $('#cus-code-valid-format').css('visibility','hidden');
+        $(this).css('box-shadow','0 0 5pt 2pt #22ee0b');
+    }else{
+        $('#cus-code-valid-format').css('visibility','visible');
+        $(this).css('box-shadow','0 0 5pt 2pt red');
+    }
+    if($('#inp-cus-code').val()==''){
+        $(this).css('border','1px solid white');
+    }
+});
+
+
+function validate(input,regex) {
+    return (regex.test(input));
+}
+
