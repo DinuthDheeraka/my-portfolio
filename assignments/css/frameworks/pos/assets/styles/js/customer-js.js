@@ -5,12 +5,6 @@ var customerRegex = new Map([
     [$('#inp-cus-address'), /[A-Za-z .,/0-9]{3,}/],
     [$('#inp-cus-salary'), /[0-9]{3,}/]
 ]);
-var customerValidFormat = new Map([
-    [$('#inp-cus-code'), $('#cus-code-valid-format')],
-    [$('#inp-cus-name'), $('#cus-name-valid-format')],
-    [$('#inp-cus-address'), $('#cus-address-valid-format')],
-    [$('#inp-cus-salary'), $('#cus-salary-valid-format')]
-]);
 $('#add-btn').click(function () {
     addAndLoad();
 });
@@ -143,14 +137,24 @@ function validate() {
         if (key.val() != '') {
             if(customerRegex.get(key).test(key.val())){
                 key.css('box-shadow','0 0 5pt 2pt #22ee0b');
+                visibleValidFormat(key.attr('id'),true);
             }else{
                 key.css('box-shadow','0 0 5pt 2pt red');
-                console.log(customerValidFormat.get(key));
+                visibleValidFormat(key.attr('id'),false);
             }
             // console.log(customerRegex.get(key).test(key.val()));
         }else{
             key.css('box-shadow','0 0 5pt 2pt transparent');
         }
+    }
+}
+
+function visibleValidFormat(inputId ,status) {
+    switch (inputId){
+        case 'inp-cus-code':status==false? $('#cus-code-valid-format').css('visibility','visible'):$('#cus-code-valid-format').css('visibility','hidden');break;
+        case 'inp-cus-name':status==false? $('#cus-name-valid-format').css('visibility','visible'):$('#cus-name-valid-format').css('visibility','hidden');break;
+        case 'inp-cus-address':status==false? $('#cus-address-valid-format').css('visibility','visible'):$('#cus-address-valid-format').css('visibility','hidden');break;
+        case 'inp-cus-salary':status==false? $('#cus-salary-valid-format').css('visibility','visible'):$('#cus-salary-valid-format').css('visibility','hidden');break;
     }
 }
 
