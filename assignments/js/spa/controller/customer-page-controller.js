@@ -44,9 +44,11 @@ function printAllCustomers() {
 }
 
 function loadCustomerTblData() {
-    let c = customers[customers.length-1];
-    let row = "<tr><td>" + c.code + "</td><td>" + c.name + "</td><td>" + c.address + "</td><td>" + c.salary + "</td></tr>";
-    $('#customer-tbl-body').append(row);
+    $('#customer-tbl-body').empty();
+    for(let c of customers){
+        let row = "<tr><td>" + c.code + "</td><td>" + c.name + "</td><td>" + c.address + "</td><td>" + c.salary + "</td></tr>";
+        $('#customer-tbl-body').append(row);
+    }
 }
 
 function clearInputFieldsData() {
