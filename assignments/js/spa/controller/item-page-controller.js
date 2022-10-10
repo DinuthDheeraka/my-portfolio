@@ -14,6 +14,15 @@ $('#itm-update-btn').click(function () {
     loadItemTblData();
 });
 
+$('#itm-delete-btn').click(function () {
+    deleteItem(searchIndex($('#input-itm-id').val()));
+    loadItemTblData();
+});
+
+function deleteItem(itemIndex) {
+    items.splice(itemIndex,1);
+}
+
 function updateItem(itemIndex) {
     items[itemIndex] = {
         code: $('#input-itm-id').val(),
