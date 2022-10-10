@@ -1,6 +1,8 @@
 $('#itm-add-btn').click(function () {
     addNewItem();
     loadItemTblData();
+    clearInputFieldsData($('#input-itm-id'),$('#input-itm-name'),
+        $('#input-itm-price'),$('#input-itm-qty'));
 });
 
 function addNewItem() {
@@ -23,4 +25,10 @@ function loadItemTblData() {
     let i = items[items.length-1];
     let row = "<tr><td>" + i.code + "</td><td>" + i.name + "</td><td>" + i.price + "</td><td>" + i.qty + "</td></tr>";
     $('#itm-tbl-body').append(row);
+}
+
+function clearInputFieldsData() {
+    for(let i = 0; i<arguments.length; i++){
+        arguments[i].val('');
+    }
 }
