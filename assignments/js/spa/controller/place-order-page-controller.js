@@ -27,6 +27,7 @@ $(document).ready(function () {
 $('#order-page-add-item-btn').click(function () {
     addNewItemForOrderTbl();
     loadOrderItemTblData();
+    $('#order-page-total').val(calculateTotalPrice());
 });
 
 function addNewItemForOrderTbl() {
@@ -45,4 +46,12 @@ function loadOrderItemTblData() {
         let row = "<tr><td>" + o.code + "</td><td>" + o.name + "</td><td>" + o.price + "</td><td>" + o.qty + "</td></tr>";
         $('#order-page-tbl-body').append(row);
     }
+}
+
+function calculateTotalPrice() {
+    let total = 0;
+    for(let o of orders){
+        total+=(o.qty*o.price);
+    }
+    return total;
 }
