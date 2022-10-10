@@ -9,6 +9,29 @@ $('#customer-search-btn').click(function () {
     setCustomerData(searchCustomer($('#input-cus-search').val()));
 });
 
+$('#cus-update-btn').click(function () {
+    updateCustomer(searchCustomerIndex($('#input-cus-id').val()));
+    loadCustomerTblData();
+});
+
+function updateCustomer(customerIndex) {
+    customers[customerIndex] = {
+        code: $('#input-cus-id').val(),
+        name: $('#input-cus-name').val(),
+        address: $('#input-cus-address').val(),
+        salary: $('#input-cus-tele').val()
+    }
+}
+
+function searchCustomerIndex(customerId) {
+    for(let i = 0; i<customers.length; i++){
+        if(customers[i].code==customerId){
+            return i;
+        }
+    }
+    return -1;
+}
+
 function searchCustomer(customerId) {
     for(let customer of customers){
         if(customer.code==customerId){
