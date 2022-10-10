@@ -65,7 +65,7 @@ section>p{
     background-color: #9610ea;
 }
 
-#purchase-btn,#add-item-btn{
+#purchase-btn,#order-page-add-item-btn{
     margin-top: 32px;
     width: 100%;
     height: 56%;
@@ -82,7 +82,7 @@ section>p{
     /*border: 1px solid black;*/
 }
 
-#add-item-btn{
+#order-page-add-item-btn{
     background-color: #9610ea;
 }
 #purchase-btn{

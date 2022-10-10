@@ -23,3 +23,26 @@ $(document).ready(function () {
         }
     });
 });
+
+$('#order-page-add-item-btn').click(function () {
+    addNewItemForOrderTbl();
+    loadOrderItemTblData();
+});
+
+function addNewItemForOrderTbl() {
+    let orderItem = {
+        code: $('#order-page-item-code').val(),
+        name: $('#order-page-item-name').val(),
+        price: $('#order-page-item-price').val(),
+        qty: $('#order-page-item-qty').val()
+    }
+    orders.push(orderItem);
+}
+
+function loadOrderItemTblData() {
+    $('#order-page-tbl-body').empty();
+    for(let o of orders){
+        let row = "<tr><td>" + o.code + "</td><td>" + o.name + "</td><td>" + o.price + "</td><td>" + o.qty + "</td></tr>";
+        $('#order-page-tbl-body').append(row);
+    }
+}
