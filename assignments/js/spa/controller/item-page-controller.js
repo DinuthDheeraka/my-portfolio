@@ -5,6 +5,28 @@ $('#itm-add-btn').click(function () {
         $('#input-itm-price'),$('#input-itm-qty'));
 });
 
+$('#item-search-btn').click(function () {
+    setItemData(searchItem($('#input-itm-search').val()));
+});
+
+function searchItem(itemId) {
+    for(let item of items){
+        if(item.code==itemId){
+            return item;
+        }
+    }
+    return null;
+}
+
+function setItemData(item) {
+    if(item!=null){
+        $('#input-itm-id').val(item.code);
+        $('#input-itm-name').val(item.name);
+        $('#input-itm-price').val(item.price);
+        $('#input-itm-qty').val(item.qty);
+    }
+}
+
 function addNewItem() {
     let newItem = {
         code: $('#input-itm-id').val(),

@@ -6,6 +6,7 @@ $('#cus-add-btn').click(function () {
 });
 
 $('#customer-search-btn').click(function () {
+    setCustomerData(searchCustomer($('#input-cus-search').val()));
 });
 
 function searchCustomer(customerId) {
