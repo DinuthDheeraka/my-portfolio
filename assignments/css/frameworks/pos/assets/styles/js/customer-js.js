@@ -86,7 +86,15 @@ $(document).ready(function () {
         if (e.which == 13) {
             switch ($(this).attr('id')) {
                 case 'inp-cus-code':
-                    $('#inp-cus-name').focus();
+                    for(var c of customerRegex.keys()){
+                        if(c.attr('id')=='inp-cus-code'){
+                            if((customerRegex.get(c).test(c.val()))){
+                                $('#inp-cus-name').focus();
+                                e.preventDefault();
+                            }
+                        }
+                    }
+                    // $('#inp-cus-name').focus();
                     e.preventDefault();
                     break;
                 case 'inp-cus-name':
