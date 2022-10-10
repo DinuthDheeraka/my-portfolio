@@ -14,6 +14,15 @@ $('#cus-update-btn').click(function () {
     loadCustomerTblData();
 });
 
+$('#cus-delete-btn').click(function () {
+    deleteCustomer(searchCustomerIndex($('#input-cus-id').val()));
+    loadCustomerTblData();
+});
+
+function deleteCustomer(customerIndex) {
+    customers.splice(customerIndex,1);
+}
+
 function updateCustomer(customerIndex) {
     customers[customerIndex] = {
         code: $('#input-cus-id').val(),
