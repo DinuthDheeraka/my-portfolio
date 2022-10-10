@@ -10,3 +10,16 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    $('#order-page-item-code').on('keypress', function (e) {
+        if (e.which == 13) {
+            let item = searchItem($('#order-page-item-code').val());
+            if(item!=null){
+                $('#order-page-item-name').val(item.name);
+                $('#order-page-item-price').val(item.price);
+                $('#order-page-item-qoh').val(item.qty);
+            }
+        }
+    });
+});
