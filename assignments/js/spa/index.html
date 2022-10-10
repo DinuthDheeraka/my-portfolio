@@ -166,11 +166,11 @@
                         </div>
                         <div class="col-6 customer-input-col" id="i-inp-3-div">
                             <label for="input-cus-id" class="form-label">Item Unit Price</label>
-                            <input class="form-control" id="input-itm-address" placeholder="Ex : 500.00">
+                            <input class="form-control" id="input-itm-price" placeholder="Ex : 500.00">
                         </div>
                         <div class="col-6 customer-input-col" id="i-inp-4-div">
                             <label for="input-cus-id" class="form-label">Item Quantity</label>
-                            <input class="form-control" id="input-itm-tele" placeholder="Ex : 10">
+                            <input class="form-control" id="input-itm-qty" placeholder="Ex : 10">
                         </div>
                     </section>
                 </section>
@@ -204,37 +204,7 @@
                             <th>Item Quantity On Hand</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td>I-000-001</td>
-                            <td>Munchee Kome</td>
-                            <td>Rs.500.00</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>I-000-001</td>
-                            <td>Munchee Kome</td>
-                            <td>Rs.500.00</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>I-000-001</td>
-                            <td>Munchee Kome</td>
-                            <td>Rs.500.00</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>I-000-001</td>
-                            <td>Munchee Kome</td>
-                            <td>Rs.500.00</td>
-                            <td>10</td>
-                        </tr><tr>
-                            <td>I-000-001</td>
-                            <td>Munchee Kome</td>
-                            <td>Rs.500.00</td>
-                            <td>10</td>
-                        </tr>
-
+                        <tbody id="itm-tbl-body">
                         </tbody>
                     </table>
                 </section>
@@ -420,6 +390,7 @@
 <script src="assets/styles/js/jquery-3.6.1.min.js"></script>
 <script src="assets/styles/js/home-page-js.js"></script>
 <script src="controller/customer-page-controller.js"></script>
+<script src="controller/item-page-controller.js"></script>
 <script src="db/db.js"></script>
 </body>
 </html>

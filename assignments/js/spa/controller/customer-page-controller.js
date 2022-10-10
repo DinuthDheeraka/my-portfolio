@@ -1,8 +1,6 @@
 $('#cus-add-btn').click(function () {
     addNewCustomer();
-    printAllCustomers();
     loadCustomerTblData();
-    // alert(111);
 });
 
 function addNewCustomer() {
