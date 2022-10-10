@@ -37,7 +37,11 @@ function addNewItemForOrderTbl() {
         price: $('#order-page-item-price').val(),
         qty: $('#order-page-item-qty').val()
     }
-    orders.push(orderItem);
+    if(getOrderItemIndex($('#order-page-item-code').val())!=-1){
+        updateItemQTY(getOrderItemIndex($('#order-page-item-code').val()),orderItem.qty);
+    }else{
+        orders.push(orderItem);
+    }
 }
 
 function loadOrderItemTblData() {
@@ -54,4 +58,18 @@ function calculateTotalPrice() {
         total+=(o.qty*o.price);
     }
     return total;
+}
+
+function getOrderItemIndex(itemCode) {
+    for(let i = 0; i<orders.length; i++){
+        if(orders[i].code==itemCode){
+            return i;
+        }
+    }
+    return -1;
+}
+
+function updateItemQTY(orderItemIndex,newQty) {
+    let orderItem = orders[orderItemIndex];
+    orderItem.qty =parseInt(orderItem.qty)+parseInt(newQty);
 }
