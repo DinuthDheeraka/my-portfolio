@@ -1,6 +1,7 @@
 $('#cus-add-btn').click(function () {
     addNewCustomer();
     printAllCustomers();
+    loadCustomerTblData();
     // alert(111);
 });
 
@@ -21,8 +22,7 @@ function printAllCustomers() {
 }
 
 function loadCustomerTblData() {
-    for (let customer of customers) {
-        var row = "<tr><td>" + c.code + "</td><td>" + c.name + "</td><td>" + c.address + "</td><td>" + c.salary + "</td></tr>";
-        $('#customer-table-body').append(row);
-    }
+    let c = customers[customers.length-1];
+    let row = "<tr><td>" + c.code + "</td><td>" + c.name + "</td><td>" + c.address + "</td><td>" + c.salary + "</td></tr>";
+    $('#customer-tbl-body').append(row);
 }
