@@ -5,6 +5,7 @@ $(document).ready(function () {
     loadCustomerIdsToCmbx();
     loadCustomerTblData();
     loadItemTblData();
+    autoGenerateOrderId();
 });
 
 $(document).ready(function () {
@@ -46,6 +47,7 @@ $('#purchase-btn').click(function () {
     clearInputFieldsData($('#order-page-total'),$('#order-page-sub-total'),$('#order-page-discount'),
     $('#order-page-cash'),$('#order-page-balance'),$('#order-page-item-name'),$('#order-page-item-price'),$('#order-page-item-qoh'),$('#order-page-item-qty'),$('#order-page-customer-name'),
     $('#order-page-customer-address'),$('#order-page-customer-tele'))
+    autoGenerateOrderId();
 });
 
 function setSearchedPaymentsDetails(orderHistory) {
@@ -210,3 +212,13 @@ $('#customer-id-cmbx').change(function (e) {
     setSearchedCustomerData(e.target.value);
     selectedCustomer = e.target.value;
 });
+
+function autoGenerateOrderId() {
+    if(ordersHistory.length!=0){
+        let oldId = ordersHistory[ordersHistory.length-1].orderCode;
+        let newNumber = parseInt(oldId.substring(3,oldId.length))+1;
+        $('#order-page-order-code').val('OR-'+("000" + newNumber).slice(-4));
+    }else{
+        $('#order-page-order-code').val('OR-0000');
+    }
+}
