@@ -42,6 +42,8 @@ function addNewItemForOrderTbl() {
     }else{
         orders.push(orderItem);
     }
+    updateItemQOH(orderItem.code,'decrease',orderItem.qty);
+    loadItemTblData();
 }
 
 function loadOrderItemTblData() {

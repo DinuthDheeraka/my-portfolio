@@ -88,3 +88,12 @@ function clearInputFieldsData() {
         arguments[i].val('');
     }
 }
+
+function updateItemQOH(itemCode,operation,qty) {
+    let item = items[searchIndex(itemCode)];
+    if(operation=='decrease'){
+        item.qty = parseInt(item.qty)-parseInt(qty);
+    }else{
+        item.qty = parseInt(item.qty)+parseInt(qty);
+    }
+}
