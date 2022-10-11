@@ -12,12 +12,36 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    $('#order-page-discount').on('keypress', function (e) {
+        if (e.which == 13) {
+            setSubTotal();
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('#order-page-cash').on('keypress', function (e) {
+        if (e.which == 13) {
+            setBalance();
+        }
+    });
+});
+
+$(document).ready(function () {
     $('#order-page-item-code').on('keypress', function (e) {
         if (e.which == 13) {
             setSearchedItemData();
         }
     });
 });
+
+function setBalance() {
+    $('#order-page-balance').val( parseInt($('#order-page-cash').val())-parseInt($('#order-page-sub-total').val()) );
+}
+
+function setSubTotal() {
+    $('#order-page-sub-total').val( parseInt($('#order-page-total').val())-parseInt($('#order-page-discount').val()) );
+}
 
 function setSearchedItemData() {
     let itemId = $('#order-page-item-code').val();
