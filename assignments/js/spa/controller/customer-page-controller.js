@@ -3,6 +3,7 @@ $('#cus-add-btn').click(function () {
     loadCustomerTblData();
     clearInputFieldsData($('#input-cus-id'),$('#input-cus-name'),
         $('#input-cus-address'),$('#input-cus-tele'));
+    loadCustomerIdsToCmbx();
 });
 
 $('#customer-search-btn').click(function () {

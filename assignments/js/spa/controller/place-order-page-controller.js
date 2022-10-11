@@ -1,5 +1,6 @@
 $(document).ready(function () {
     loadItemIdsToCmbx();
+    loadCustomerIdsToCmbx();
 });
 
 
@@ -40,6 +41,14 @@ function loadItemIdsToCmbx() {
     for(let i of items){
         let option = "<option>"+i.code+"</option>";
         $('#item-id-cmbx').append(option);
+    }
+}
+
+function loadCustomerIdsToCmbx() {
+    $('#customer-id-cmbx').empty();
+    for(let c of customers){
+        let option = "<option>"+c.code+"</option>";
+        $('#customer-id-cmbx').append(option);
     }
 }
 
