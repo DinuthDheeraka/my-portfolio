@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    loadItemIdsToCmbx();
+});
+
+
+$(document).ready(function () {
     $('#order-page-customer-code').on('keypress', function (e) {
         if (e.which == 13) {
             let customer = searchCustomer($('#order-page-customer-code').val());
@@ -27,13 +32,21 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $('#order-page-item-code').on('keypress', function (e) {
-        if (e.which == 13) {
-            setSearchedItemData();
-        }
-    });
-});
+// $(document).ready(function () {
+//     $('#order-page-item-code').on('keypress', function (e) {
+//         if (e.which == 13) {
+//             setSearchedItemData();
+//         }
+//     });
+// });
+
+function loadItemIdsToCmbx() {
+    $('#item-id-cmbx').empty();
+    for(let i of items){
+        let option = "<option>"+i.code+"</option>";
+        $('#item-id-cmbx').append(option);
+    }
+}
 
 function setBalance() {
     $('#order-page-balance').val( parseInt($('#order-page-cash').val())-parseInt($('#order-page-sub-total').val()) );
@@ -43,8 +56,8 @@ function setSubTotal() {
     $('#order-page-sub-total').val( parseInt($('#order-page-total').val())-parseInt($('#order-page-discount').val()) );
 }
 
-function setSearchedItemData() {
-    let itemId = $('#order-page-item-code').val();
+function setSearchedItemData(itemCode) {
+    let itemId = itemCode;
     clearInputItemData();
     let item = searchItem(itemId);
     if(item!=null){
@@ -114,3 +127,7 @@ function updateItemQTY(orderItemIndex,newQty) {
     let orderItem = orders[orderItemIndex];
     orderItem.qty =parseInt(orderItem.qty)+parseInt(newQty);
 }
+
+$('#item-id-cmbx').change(function (e) {
+    setSearchedItemData(e.target.value);
+});

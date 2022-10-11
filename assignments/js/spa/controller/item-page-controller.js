@@ -3,6 +3,7 @@ $('#itm-add-btn').click(function () {
     loadItemTblData();
     clearInputFieldsData($('#input-itm-id'),$('#input-itm-name'),
         $('#input-itm-price'),$('#input-itm-qty'));
+    loadItemIdsToCmbx();
 });
 
 $('#item-search-btn').click(function () {
