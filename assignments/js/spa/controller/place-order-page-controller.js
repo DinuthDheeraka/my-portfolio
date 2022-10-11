@@ -43,6 +43,9 @@ $('#purchase-btn').click(function () {
     addNewOrderHistory(itemList);
     $('#order-page-tbl-body').empty();
     orders = new Array();
+    clearInputFieldsData($('#order-page-total'),$('#order-page-sub-total'),$('#order-page-discount'),
+    $('#order-page-cash'),$('#order-page-balance'),$('#order-page-item-name'),$('#order-page-item-price'),$('#order-page-item-qoh'),$('#order-page-item-qty'),$('#order-page-customer-name'),
+    $('#order-page-customer-address'),$('#order-page-customer-tele'))
 });
 
 function setSearchedPaymentsDetails(orderHistory) {
