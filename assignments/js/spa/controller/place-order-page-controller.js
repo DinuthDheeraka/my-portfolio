@@ -143,3 +143,7 @@ function updateItemQTY(orderItemIndex,newQty) {
 $('#item-id-cmbx').change(function (e) {
     setSearchedItemData(e.target.value);
 });
+
+$('#customer-id-cmbx').change(function (e) {
+    setSearchedCustomerData(e.target.value);
+});
