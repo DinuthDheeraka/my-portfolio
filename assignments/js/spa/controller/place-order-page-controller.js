@@ -26,6 +26,32 @@ $(document).ready(function () {
     });
 });
 
+$('#order-page-search-bar').on('keypress',function (e) {
+    if(e.which==13){
+        let orderHistory = findOrder($('#order-page-search-bar').val());
+        if(orderHistory!=null){
+
+        }
+    }
+});
+
+function findOrder(orderId) {
+    for(let o of ordersHistory){
+        if(o.orderCode==orderId){
+            return o;
+        }
+    }
+    return null;
+}
+
+function setSearchedOrderItems(itemList) {
+    $('#order-page-tbl-body').empty();
+    for(let o of itemList){
+        let row = "<tr><td>" + o.code + "</td><td>" + o.name + "</td><td>" + o.price + "</td><td>" + o.qty + "</td><td>" + o.price*o.qty + "</td></tr>";
+        $('#order-page-tbl-body').append(row);
+    }
+}
+
 function loadItemIdsToCmbx() {
     $('#item-id-cmbx').empty();
     for(let i of items){
@@ -106,7 +132,7 @@ function addNewItemForOrderTbl() {
 function loadOrderItemTblData() {
     $('#order-page-tbl-body').empty();
     for(let o of orders){
-        let row = "<tr><td>" + o.code + "</td><td>" + o.name + "</td><td>" + o.price + "</td><td>" + o.qty + "</td></tr>";
+        let row = "<tr><td>" + o.code + "</td><td>" + o.name + "</td><td>" + o.price + "</td><td>" + o.qty + "</td><td>" + o.price*o.qty + "</td></tr>";
         $('#order-page-tbl-body').append(row);
     }
 }

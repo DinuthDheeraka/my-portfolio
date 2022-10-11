@@ -9,3 +9,13 @@ items.push({code:'I-000-001',name:'Toffee',price:500, qty:20});
 items.push({code:'I-000-002',name:'Coke',price:600, qty:30});
 
 var orders = new Array();
+
+var ordersHistory = new Array();
+var test = new Array();
+test.push({code:'I-000-001',name:'Kome',price: 100, qty:10});
+test.push({code:'I-000-002',name:'Toffee',price: 5, qty:50});
+ordersHistory.push({
+    orderCode : 'O-000-001',
+    customerCode : 'C-000-000',
+    itemsList : test
+});
