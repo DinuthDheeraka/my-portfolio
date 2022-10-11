@@ -17,5 +17,10 @@ test.push({code:'I-000-002',name:'Toffee',price: 5, qty:50});
 ordersHistory.push({
     orderCode : 'O-000-001',
     customerCode : 'C-000-000',
+    total : 10,
+    subtotal : 10,
+    discount : 10,
+    cash : 10,
+    balance : 10,
     itemsList : test
 });

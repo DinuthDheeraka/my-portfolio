@@ -1,4 +1,5 @@
 var selectedItemCode = '';
+var selectedCustomer = '';
 $(document).ready(function () {
     loadItemIdsToCmbx();
     loadCustomerIdsToCmbx();
@@ -30,10 +31,31 @@ $('#order-page-search-bar').on('keypress',function (e) {
     if(e.which==13){
         let orderHistory = findOrder($('#order-page-search-bar').val());
         if(orderHistory!=null){
-
+            setSearchedOrderItems(orderHistory.itemsList);
         }
     }
 });
+
+$('#purchase-btn').click(function () {
+
+});
+
+function addNewOrderHistory(itemList) {
+    ordersHistory.push({
+        orderCode : $('order-page-order-code').val(),
+        customerCode : selectedCustomer,
+        total : $('#order-page-total').val(),
+        subtotal : $('#order-page-sub-total').val(),
+        discount : $('#order-page-discount').val(),
+        cash : $('#order-page-cash').val(),
+        balance :$('#order-page-balance').val(),
+        itemsList : itemList
+    });
+}
+
+function duplicateArray(arr) {
+
+}
 
 function findOrder(orderId) {
     for(let o of ordersHistory){
@@ -166,4 +188,5 @@ $('#item-id-cmbx').change(function (e) {
 
 $('#customer-id-cmbx').change(function (e) {
     setSearchedCustomerData(e.target.value);
+    selectedCustomer = e.target.value;
 });
