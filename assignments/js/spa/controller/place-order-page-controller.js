@@ -32,17 +32,30 @@ $('#order-page-search-bar').on('keypress',function (e) {
         let orderHistory = findOrder($('#order-page-search-bar').val());
         if(orderHistory!=null){
             setSearchedOrderItems(orderHistory.itemsList);
+            setSearchedCustomerData(orderHistory.customerCode);
+            setSearchedPaymentsDetails(orderHistory);
         }
     }
 });
 
 $('#purchase-btn').click(function () {
-
+    let itemList = duplicateArray(orders);
+    addNewOrderHistory(itemList);
+    $('#order-page-tbl-body').empty();
+    orders = new Array();
 });
+
+function setSearchedPaymentsDetails(orderHistory) {
+    $('#order-page-total').val(orderHistory.total);
+    $('#order-page-sub-total').val(orderHistory.subtotal);
+    $('#order-page-discount').val(orderHistory.discount);
+    $('#order-page-cash').val(orderHistory.cash);
+    $('#order-page-balance').val(orderHistory.balance);
+}
 
 function addNewOrderHistory(itemList) {
     ordersHistory.push({
-        orderCode : $('order-page-order-code').val(),
+        orderCode : $('#order-page-order-code').val(),
         customerCode : selectedCustomer,
         total : $('#order-page-total').val(),
         subtotal : $('#order-page-sub-total').val(),
@@ -54,7 +67,11 @@ function addNewOrderHistory(itemList) {
 }
 
 function duplicateArray(arr) {
-
+    let itemList = new Array();
+    for(let o of arr){
+        itemList.push(o);
+    }
+    return itemList;
 }
 
 function findOrder(orderId) {
