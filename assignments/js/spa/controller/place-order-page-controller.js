@@ -14,15 +14,29 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#order-page-item-code').on('keypress', function (e) {
         if (e.which == 13) {
-            let item = searchItem($('#order-page-item-code').val());
-            if(item!=null){
-                $('#order-page-item-name').val(item.name);
-                $('#order-page-item-price').val(item.price);
-                $('#order-page-item-qoh').val(item.qty);
-            }
+            setSearchedItemData();
         }
     });
 });
+
+function setSearchedItemData() {
+    let itemId = $('#order-page-item-code').val();
+    clearInputItemData();
+    let item = searchItem(itemId);
+    if(item!=null){
+        $('#order-page-item-code').val(item.code);
+        $('#order-page-item-name').val(item.name);
+        $('#order-page-item-price').val(item.price);
+        $('#order-page-item-qoh').val(item.qty);
+    }
+}
+
+function clearInputItemData() {
+    $('#order-page-item-code').val('');
+    $('#order-page-item-name').val('');
+    $('#order-page-item-price').val('');
+    $('#order-page-item-qoh').val('');
+}
 
 $('#order-page-add-item-btn').click(function () {
     addNewItemForOrderTbl();
@@ -44,6 +58,7 @@ function addNewItemForOrderTbl() {
     }
     updateItemQOH(orderItem.code,'decrease',orderItem.qty);
     loadItemTblData();
+    setSearchedItemData();
 }
 
 function loadOrderItemTblData() {
