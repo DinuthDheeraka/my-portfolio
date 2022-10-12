@@ -179,6 +179,7 @@ function loadOrderItemTblData() {
         let row = "<tr><td>" + o.code + "</td><td>" + o.name + "</td><td>" + o.price + "</td><td>" + o.qty + "</td><td>" + o.price*o.qty + "</td></tr>";
         $('#order-page-tbl-body').append(row);
     }
+    addDeleteEvent();
 }
 
 function calculateTotalPrice() {
@@ -212,6 +213,20 @@ $('#customer-id-cmbx').change(function (e) {
     setSearchedCustomerData(e.target.value);
     selectedCustomer = e.target.value;
 });
+
+function addDeleteEvent() {
+    $('#order-page-tbl-body>tr').dblclick(function () {
+        if(confirm('Do you want to remove this item from cart?')){
+            removeItemFromCart(getOrderItemIndex(($(this).children('td:nth-child(1)')).text()));
+            loadOrderItemTblData();
+        }
+    });
+}
+
+function removeItemFromCart(itemIndex) {
+    alert(itemIndex);
+    orders.splice(itemIndex,1);
+}
 
 function autoGenerateOrderId() {
     if(ordersHistory.length!=0){
