@@ -1,15 +1,19 @@
 var itemValidations = new Array();
-itemValidations.push({input:$('#input-itm-id'),regex:/I-[0-9]{3}-[0-9]{3}$/,valid:$('#itm-id-valid')});
-itemValidations.push({input:$('#input-itm-name'),regex:/[A-Za-z ]{2,}/,valid:$('#itm-name-valid')});
-itemValidations.push({input:$('#input-itm-price'),regex:/[0-9]{2,}/,valid:$('#itm-price-valid')});
-itemValidations.push({input:$('#input-itm-qty'),regex:/[0-9]{1,10000}/,valid:$('#itm-qoh-valid')});
+itemValidations.push({input:$('#input-itm-id'),regex:/I-[0-9]{3}-[0-9]{3}$/,valid:$('#itm-id-valid'),name:'itm-id'});
+itemValidations.push({input:$('#input-itm-name'),regex:/[A-Za-z ]{2,}/,valid:$('#itm-name-valid'),name:'itm-name'});
+itemValidations.push({input:$('#input-itm-price'),regex:/[0-9]{2,}/,valid:$('#itm-price-valid'),name:'itm-price'});
+itemValidations.push({input:$('#input-itm-qty'),regex:/[0-9]{1,10000}/,valid:$('#itm-qoh-valid'),name:'itm-qty'});
 
 $('#itm-add-btn').click(function () {
-    addNewItem();
-    loadItemTblData();
-    clearInputFieldsData($('#input-itm-id'),$('#input-itm-name'),
-        $('#input-itm-price'),$('#input-itm-qty'));
-    loadItemIdsToCmbx();
+    if(validateAllInputs(itemValidations)){
+        addNewItem();
+        loadItemTblData();
+        clearInputFieldsData($('#input-itm-id'),$('#input-itm-name'),
+            $('#input-itm-price'),$('#input-itm-qty'));
+        loadItemIdsToCmbx();
+    }else{
+        alert('please fill the inputs');
+    }
 });
 
 $('#item-search-btn').click(function () {
@@ -114,42 +118,38 @@ $('.itm-inp').on('keydown', function(e) {
     if(e.keyCode == 13){
         switch ($(this).attr('id')) {
             case 'input-itm-id':
-                $('#input-itm-name').focus();
-                e.preventDefault();
+                if(validateInput('itm-id')){
+                    $('#input-itm-name').focus();
+                    e.preventDefault();
+                }
                 break;
             case 'input-itm-name':
-                $('#input-itm-price').focus();
-                e.preventDefault();
+                if(validateInput('itm-name')){
+                    $('#input-itm-price').focus();
+                    e.preventDefault();
+                }
                 break;
             case 'input-itm-price':
-                $('#input-itm-qty').focus();
-                e.preventDefault();
+                if(validateInput('itm-price')){
+                    $('#input-itm-qty').focus();
+                    e.preventDefault();
+                }
                 break;
             case 'input-itm-qty':
-                addNewItem();
-                loadItemTblData();
-                clearInputFieldsData($('#input-itm-name'),$('#input-itm-id'),$('#input-itm-price'),$('#input-itm-qty'));
-                $('#input-itm-id').focus();
-                e.preventDefault();
+                if(validateInput('itm-qty')){
+                    if(validateAllInputs(itemValidations)){
+                        addNewItem();
+                        loadItemTblData();
+                        clearInputFieldsData($('#input-itm-name'),$('#input-itm-id'),$('#input-itm-price'),$('#input-itm-qty'));
+                        $('#input-itm-id').focus();
+                        e.preventDefault();
+                    }
+                }
                 break;
         }
     }
 });
 
 $('.itm-inp').on('keyup', function(e) {
-    validateInputs(itemValidations);
+    validateAllInputs(itemValidations);
 });
-
-function validateInputs(arr) {
-    for(let v of arr){
-        if(v.input.val()!=''){
-            if(v.regex.test(v.input.val())){
-                v.input.css('border','1px solid #c4c7c4');
-                v.valid.css('visibility','hidden');
-            }else{
-                v.input.css('border','3px solid red');
-                v.valid.css('visibility','visible');
-            }
-        }
-    }
-}
