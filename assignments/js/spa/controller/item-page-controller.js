@@ -1,3 +1,9 @@
+var itemValidations = new Array();
+itemValidations.push({input:$('#input-itm-id'),regex:/I-[0-9]{3}-[0-9]{3}$/,valid:$('#itm-id-valid')});
+itemValidations.push({input:$('#input-itm-name'),regex:/[A-Za-z ]{2,}/,valid:$('#itm-name-valid')});
+itemValidations.push({input:$('#input-itm-price'),regex:/[0-9]{2,}/,valid:$('#itm-price-valid')});
+itemValidations.push({input:$('#input-itm-qty'),regex:/[0-9]{1,10000}/,valid:$('#itm-qoh-valid')});
+
 $('#itm-add-btn').click(function () {
     addNewItem();
     loadItemTblData();
@@ -129,3 +135,21 @@ $('.itm-inp').on('keydown', function(e) {
         }
     }
 });
+
+$('.itm-inp').on('keyup', function(e) {
+    validateInputs(itemValidations);
+});
+
+function validateInputs(arr) {
+    for(let v of arr){
+        if(v.input.val()!=''){
+            if(v.regex.test(v.input.val())){
+                v.input.css('border','1px solid #c4c7c4');
+                v.valid.css('visibility','hidden');
+            }else{
+                v.input.css('border','3px solid red');
+                v.valid.css('visibility','visible');
+            }
+        }
+    }
+}

@@ -93,3 +93,10 @@ input::placeholder{
 #cus-delete-btn{
     background-color: #e20013;
 }
+
+.customer-input-col>p{
+    position: absolute;
+    font-size: 14px;
+    color: red;
+    visibility:hidden;
+}
