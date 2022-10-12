@@ -69,8 +69,11 @@ input::placeholder{
     top: 10px;
 }
 
-#customer-table-inner-section{
+#item-table-inner-section{
     /*border: 1px solid black;*/
+    position: relative;
+    top: -8px;
+    height: 270px;
 }
 
 .cus-btn{
@@ -85,8 +88,8 @@ input::placeholder{
     background-color: #13c600;
 }
 #itm-update-btn{
-    background-color: #eaa802;
+    background-color: #ab17ea;
 }
 #itm-delete-btn{
-    background-color: #e22d00;
+    background-color: #e20013;
 }

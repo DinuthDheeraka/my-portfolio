@@ -98,3 +98,34 @@ function updateItemQOH(itemCode,operation,qty) {
         item.qty = parseInt(item.qty)+parseInt(qty);
     }
 }
+
+// -----------------------------------validations
+$('input').on('keydown', function(e) {
+    if (e.keyCode == 9) {
+        $(this).focus();
+        e.preventDefault();
+    }
+    if(e.keyCode == 13){
+        switch ($(this).attr('id')) {
+            case 'input-itm-id':
+                $('#input-itm-name').focus();
+                e.preventDefault();
+                break;
+            case 'input-itm-name':
+                $('#input-itm-price').focus();
+                e.preventDefault();
+                break;
+            case 'input-itm-price':
+                $('#input-itm-qty').focus();
+                e.preventDefault();
+                break;
+            case 'input-itm-qty':
+                addNewItem();
+                loadItemTblData();
+                clearInputFieldsData($('#input-itm-name'),$('#input-itm-id'),$('#input-itm-price'),$('#input-itm-qty'));
+                $('#input-itm-id').focus();
+                e.preventDefault();
+                break;
+        }
+    }
+});

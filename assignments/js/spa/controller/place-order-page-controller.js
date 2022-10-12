@@ -67,8 +67,10 @@ $('#purchase-btn').click(function () {
 function validateCash() {
     if(arguments[0]<0){
         $('#order-page-cash').css('border','3px solid red');
+        $('#purchase-btn').prop('disabled', true);
     }else{
         $('#order-page-cash').css('border','1px solid #c4c7c4');
+        $('#purchase-btn').prop('disabled', false);
     }
 }
 
