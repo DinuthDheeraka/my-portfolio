@@ -21,7 +21,9 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#order-page-cash').on('keyup', function (e) {
         if($('#order-page-cash').val()!=''){
-            setBalance();
+            let balance = getBalance();
+            $('#order-page-balance').val(balance);
+            validateCash(balance);
         }else{
             $('#order-page-balance').val('');
         }
@@ -33,10 +35,10 @@ $('#order-page-item-qty').on('keyup', function (e) {
     let qoh = parseInt($('#order-page-item-qoh').val());
     if(qty>qoh){
         $('#order-page-add-item-btn').prop('disabled', true);
-        $('#order-page-item-qty').css('border-color','red');
+        $('#order-page-item-qty').css('border','3px solid #f50433')
     }else{
         $('#order-page-add-item-btn').prop('disabled', false);
-        $('#order-page-item-qty').css('border-color','#c1c6c1');
+        $('#order-page-item-qty').css('border','1px solid #c4c7c4');
     }
 });
 
@@ -61,6 +63,14 @@ $('#purchase-btn').click(function () {
     $('#order-page-customer-address'),$('#order-page-customer-tele'))
     autoGenerateOrderId();
 });
+
+function validateCash() {
+    if(arguments[0]<0){
+        $('#order-page-cash').css('border','3px solid red');
+    }else{
+        $('#order-page-cash').css('border','1px solid #c4c7c4');
+    }
+}
 
 function setSearchedPaymentsDetails(orderHistory) {
     $('#order-page-total').val(orderHistory.total);
@@ -124,8 +134,8 @@ function loadCustomerIdsToCmbx() {
     }
 }
 
-function setBalance() {
-    $('#order-page-balance').val( parseFloat($('#order-page-cash').val())-parseFloat($('#order-page-sub-total').val()) );
+function getBalance() {
+    return ( parseFloat($('#order-page-cash').val())-parseFloat($('#order-page-sub-total').val()) );
 }
 
 function setSubTotal() {
