@@ -100,7 +100,7 @@ function updateItemQOH(itemCode,operation,qty) {
 }
 
 // -----------------------------------validations
-$('input').on('keydown', function(e) {
+$('.itm-inp').on('keydown', function(e) {
     if (e.keyCode == 9) {
         $(this).focus();
         e.preventDefault();

@@ -89,3 +89,34 @@ function clearInputFieldsData() {
         arguments[i].val('');
     }
 }
+
+// -----------------------------------validations
+$('.cus-inp').on('keydown', function(e) {
+    if (e.keyCode == 9) {
+        $(this).focus();
+        e.preventDefault();
+    }
+    if(e.keyCode == 13){
+        switch ($(this).attr('id')) {
+            case 'input-cus-id':
+                $('#input-cus-name').focus();
+                e.preventDefault();
+                break;
+            case 'input-cus-name':
+                $('#input-cus-address').focus();
+                e.preventDefault();
+                break;
+            case 'input-cus-address':
+                $('#input-cus-tele').focus();
+                e.preventDefault();
+                break;
+            case 'input-cus-tele':
+                addNewCustomer();
+                loadCustomerTblData();
+                clearInputFieldsData($('#input-cus-id'),$('#input-cus-name'),$('#input-cus-address'),$('#input-cus-tele'));
+                $('#input-cus-id').focus();
+                e.preventDefault();
+                break;
+        }
+    }
+});
