@@ -110,3 +110,25 @@ section>p{
     position: relative;
     top: 20px;
 }
+
+.payment-col>p{
+    visibility: hidden;
+    position: absolute;
+    margin: auto;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    left: 23%;
+    top: 98%;
+}
+
+.item-col>p{
+    visibility: hidden;
+    position: absolute;
+    margin: auto;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    /*left: 23%;*/
+    top: 98%;
+}

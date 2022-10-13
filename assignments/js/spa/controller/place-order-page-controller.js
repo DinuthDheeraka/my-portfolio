@@ -36,9 +36,11 @@ $('#order-page-item-qty').on('keyup', function (e) {
     if(qty>qoh){
         $('#order-page-add-item-btn').prop('disabled', true);
         $('#order-page-item-qty').css('border','3px solid #f50433')
+        $('#valid-qty').css('visibility','visible');
     }else{
         $('#order-page-add-item-btn').prop('disabled', false);
         $('#order-page-item-qty').css('border','1px solid #c4c7c4');
+        $('#valid-qty').css('visibility','hidden');
     }
 });
 
@@ -72,9 +74,11 @@ function validateCash() {
     if(arguments[0]<0){
         $('#order-page-cash').css('border','3px solid red');
         $('#purchase-btn').prop('disabled', true);
+        $('#valid-cash').css('visibility','visible');
     }else{
         $('#order-page-cash').css('border','1px solid #c4c7c4');
         $('#purchase-btn').prop('disabled', false);
+        $('#valid-cash').css('visibility','hidden');
     }
 }
 
