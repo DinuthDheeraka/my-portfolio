@@ -54,14 +54,18 @@ $('#order-page-search-bar').on('keypress',function (e) {
 });
 
 $('#purchase-btn').click(function () {
-    let itemList = duplicateArray(orders);
-    addNewOrderHistory(itemList);
-    $('#order-page-tbl-body').empty();
-    orders = new Array();
-    clearInputFieldsData($('#order-page-total'),$('#order-page-sub-total'),$('#order-page-discount'),
-    $('#order-page-cash'),$('#order-page-balance'),$('#order-page-item-name'),$('#order-page-item-price'),$('#order-page-item-qoh'),$('#order-page-item-qty'),$('#order-page-customer-name'),
-    $('#order-page-customer-address'),$('#order-page-customer-tele'))
-    autoGenerateOrderId();
+    if($('#order-page-balance').val()!=''){
+        let itemList = duplicateArray(orders);
+        addNewOrderHistory(itemList);
+        $('#order-page-tbl-body').empty();
+        orders = new Array();
+        clearInputFieldsData($('#order-page-total'),$('#order-page-sub-total'),$('#order-page-discount'),
+            $('#order-page-cash'),$('#order-page-balance'),$('#order-page-item-name'),$('#order-page-item-price'),$('#order-page-item-qoh'),$('#order-page-item-qty'),$('#order-page-customer-name'),
+            $('#order-page-customer-address'),$('#order-page-customer-tele'))
+        autoGenerateOrderId();
+    }else{
+        alert('Please enter the cash');
+    }
 });
 
 function validateCash() {
@@ -174,10 +178,14 @@ function clearInputItemData() {
 }
 
 $('#order-page-add-item-btn').click(function () {
-    addNewItemForOrderTbl();
-    loadOrderItemTblData();
-    $('#order-page-total').val(calculateTotalPrice());
-    $('#order-page-sub-total').val(calculateTotalPrice());
+    if($('#order-page-item-qty').val()!=''){
+        addNewItemForOrderTbl();
+        loadOrderItemTblData();
+        $('#order-page-total').val(calculateTotalPrice());
+        $('#order-page-sub-total').val(calculateTotalPrice());
+    }else{
+        alert('please select a item or fill the quantity');
+    }
 });
 
 function addNewItemForOrderTbl() {
@@ -195,6 +203,7 @@ function addNewItemForOrderTbl() {
     updateItemQOH(orderItem.code,'decrease',orderItem.qty);
     loadItemTblData();
     setSearchedItemData(selectedItemCode);
+    clearInputFieldsData($('#order-page-item-qty'));
 }
 
 function loadOrderItemTblData() {
