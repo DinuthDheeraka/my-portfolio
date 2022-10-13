@@ -1,0 +1,453 @@
+body{
+    background-color: #1f1f1f;
+}
+#my-projects-page {
+    position: relative;
+    background-color: #1f1f1f;
+    /*background-color: #1d0644;*/
+    top:-100px;
+    width: 98.88vw;
+    height: 2750px;
+    /*height: 790px;*/
+}
+
+#my-projects-page-topic {
+    font-family: Poppins;
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    /*text-align: center;*/
+    /*border: 1px solid whitesmoke;*/
+    width: 300px;
+    left: 0;
+    right: 0;
+    top: 150px;
+    font-size: 300%;
+    color: rgba(255, 255, 255, 0.91);
+    /*text-transform: uppercase;*/
+}
+
+#projects-container {
+    /*width: 1440px;*/
+    /*height: 1000px;*/
+    width: 90vw;
+    height: 2750px;
+    /*border: 1px solid whitesmoke;*/
+    position: absolute;
+    margin: auto;
+    top: 380px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column;
+    /*border: 1px solid whitesmoke;*/
+}
+
+#projects-container > .project-area {
+    width: 100%;
+    height: calc(100% / 3);
+    /*border: 1px solid white;*/
+    /*border: 2px solid hotpink;*/
+    display: flex;
+    flex-flow: column;
+    margin-top: -100px;
+}
+
+#projects-container > .project-area > section {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    /*border: 1px solid white;*/
+    /*background: url("images/image_processing20200107-4-6l9tbm.jpg");*/
+}
+
+#projects-container > .project-area > .project-desc {
+    width: 69%;
+    height: 20%;
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    /*border: 1px solid white;*/
+    /*background: url("images/image_processing20200107-4-6l9tbm.jpg");*/
+}
+
+#projects-container > .project-area > .project-image {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    /*border: 1px solid white;*/
+    /*background: url("images/image_processing20200107-4-6l9tbm.jpg");*/
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.project-area > .project-image > img {
+    width: 950px;
+    height: 500px;
+    position: absolute;
+    margin: auto;
+    top: 5px;
+    right: 0;
+    left: 0;
+    /*border: 2px solid #7007bb;*/
+    /*box-shadow: 4px 4px 4px 4px #adacac;*/
+}
+
+/*project-pos-styles*/
+/*#project-pos>#pos-image>img{*/
+/*    width: 90%;*/
+/*    height: 98%;*/
+/*    position: absolute;*/
+/*    margin: auto;*/
+/*    top: 5px;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    !*border: 2px solid #7007bb;*!*/
+/*    !*box-shadow: 1px 1px 1px 1px #6b0bb1;*!*/
+/*}*/
+
+.project-area > .project-desc > p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #f3f0f0;
+    /*font-size: 16px;*/
+    position: absolute;
+    top: -150px;
+}
+
+#project-pos > #pos-desc > button {
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    font-size: 16px;
+    position: absolute;
+    bottom: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+    /*border: 1px solid #e2e1e3;*/
+    /*border-radius: 20px;*/
+}
+
+/*project-hms-styles*/
+/*#project-hms>#hms-image>img{*/
+/*    width: 90%;*/
+/*    height: 98%;*/
+/*    position: absolute;*/
+/*    margin: auto;*/
+/*    top: 5px;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    !*border: 2px solid #7007bb;*!*/
+/*    !*box-shadow: 1px 1px 1px 1px #2e0372;*!*/
+/*}*/
+
+/*#project-hms>#hms-desc>p{*/
+/*    text-align: center;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    color: #f3f0f0;*/
+/*    !*font-size: 16px;*!*/
+/*    position: absolute;*/
+/*    top: 30%;*/
+/*}*/
+
+#project-hms > #hms-desc > button {
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    font-size: 16px;
+    position: absolute;
+    bottom: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+    /*border: 1px solid #f0f1f0;*/
+    /*border-radius: 20px;*/
+}
+
+/*gms-project-styles*/
+/*#project-gms>#gms-image>img{*/
+/*    width: 90%;*/
+/*    height: 98%;*/
+/*    position: absolute;*/
+/*    margin: auto;*/
+/*    top: 5px;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    !*border: 2px solid #7007bb;*!*/
+/*    !*box-shadow: 4px 4px 4px 4px #adacac;*!*/
+/*}*/
+
+/*#project-gms>#gms-desc>p{*/
+/*    text-align: center;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    color: #f3f0f0;*/
+/*    !*font-size: 16px;*!*/
+/*    position: absolute;*/
+/*    top: 30%;*/
+/*}*/
+
+#project-gms > #gms-desc > button {
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    font-size: 16px;
+    position: absolute;
+    bottom: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+    /*border: 1px solid whitesmoke;*/
+    /*border: 1px solid #e1e0e3;*/
+    /*border-radius: 20px;*/
+}
+
+.project-desc {
+    /*border: 1px solid red;*/
+}
+
+.project-desc > p {
+    font-size: 100%;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#my-projects-page > button {
+    position: absolute;
+    margin: auto;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    width: 180px;
+    height: 40px;
+    /*background-color: rgba(77, 5, 139, 0.97);*/
+    background-color:transparent;
+    border: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    /*border-radius: 20px;*/
+}
+
+#my-projects-page > button:hover{
+    border-bottom: 4px solid white;
+    /*border-radius: 20px;*/
+    /*background-color: #9610ea;*/
+}
+
+.project-desc > button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 1270px) {
+    #my-projects-page {
+        /*background-color: red;*/
+        height: 2500px;
+    }
+
+    #my-projects-page > #projects-container {
+        height: 2000px;
+    }
+
+    #my-projects-page > #projects-container > .project-area {
+        flex-flow: column;
+        margin-top: 20px;
+        /*border: 2px solid hotpink;*/
+    }
+
+    #my-projects-page > #projects-container > .project-area > .project-image {
+        width: 100%;
+        height: 90%;
+    }
+
+    #my-projects-page > #projects-container > .project-area > .project-desc {
+        width: 100%;
+        height: 150px;
+    }
+
+    .project-area > .project-desc > p {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #f3f0f0;
+        /*font-size: 16px;*/
+        position: absolute;
+        top: -10px;
+    }
+
+    .project-area > .project-desc > button {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #f3f0f0;
+        /*font-size: 16px;*/
+        position: absolute;
+        top: 80%;
+    }
+}
+
+
+/*===============================================================================*/
+
+@media all and (max-width: 1040px) {
+    main > #my-projects-page {
+        /*background-color: rgba(234, 9, 9, 0.97);*/
+    }
+
+    .project-area > .project-image > img {
+        width: 800px;
+        height: 400px;
+        /*border: 2px solid #7007bb;*/
+        /*box-shadow: 4px 4px 4px 4px #adacac;*/
+    }
+
+    .project-area > .project-desc > p {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #f3f0f0;
+        /*font-size: 16px;*/
+        position: absolute;
+        top: -80px;
+    }
+
+    .project-area > .project-desc > button {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #f3f0f0;
+        font-size: 16px;
+        position: absolute;
+        top: 40%;
+    }
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media all and (max-width: 890px) {
+    main > #my-projects-page {
+        /*background-color: rgba(58, 184, 3, 0.97);*/
+        height: 1900px;
+    }
+
+    .project-area > .project-image > img {
+        width: 600px;
+        height: 300px;
+        /*border: 2px solid #7007bb;*/
+        /*box-shadow: 4px 4px 4px 4px #adacac;*/
+    }
+
+    .project-area > .project-desc > p {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #f3f0f0;
+        /*font-size: 16px;*/
+        position: absolute;
+        top: -220px;
+    }
+
+    .project-area > .project-desc > button {
+        /*text-align: center;*/
+        /*font-family: 'Poppins', sans-serif;*/
+        /*color: #f3f0f0;*/
+        /*font-size: 16px;*/
+        position: absolute;
+        top: -160px;
+    }
+
+    #my-projects-page > #projects-container > .project-area {
+        flex-flow: column;
+        margin-top: -130px;
+        /*border: 2px solid hotpink;*/
+    }
+
+    #my-projects-page > button {
+        bottom: 40px;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 665px) {
+    main > #my-projects-page {
+        /*background-color: rgba(132, 82, 6, 0.97);*/
+        height: 1800px;
+    }
+
+    .project-area > .project-image > img {
+        margin-top: 100px;
+        width: 400px;
+        height: 200px;
+    }
+
+    .project-area > .project-desc > p {
+        top: -10px;
+    }
+
+    .project-area > .project-desc > button {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        /*color: #f3f0f0;*/
+        /*font-size: 16px;*/
+        position: absolute;
+        top: 170px;
+    }
+
+    #my-projects-page > #projects-container > .project-area {
+        margin-top: -10px;
+    }
+
+    #my-projects-page > #projects-container {
+        margin-top: -160px;
+        height: 1400px;
+    }
+
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+@media all and (max-width: 665px) {
+
+    .project-area > .project-image > img {
+        margin-top: 100px;
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 385px) and (min-width: 100px) {
+    .project-area > .project-image > img {
+        width: 300px;
+        height: 180px;
+    }
+
+    .project-area > .project-image > img {
+        left: -6px;
+    }
+}
+/* CSS */
+.button-63 {
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: transparent;!important;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .button-63 {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
