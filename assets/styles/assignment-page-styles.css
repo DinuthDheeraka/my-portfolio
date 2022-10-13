@@ -63,7 +63,7 @@
     left: 0;
     right: 0;
     border: 1px solid transparent;
-    background-color: #700dc7;
+    background-color: #5d07bf;
     width: 98%;
 }
 
@@ -109,6 +109,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.ass-desc-div>button a:hover{
+    color: #ea1093;
+}
+
+.ass-desc-div>button a{
+    color: #fffcfc;
+    font-family: 'Poppins', sans-serif;
+    text-decoration:none;
+}
+
 .ass-desc-div>p{
     padding-top: 2px;
     font-family: 'Poppins', sans-serif;
@@ -123,10 +133,20 @@
     left: 0;
     right: 0;
     bottom: 10px;
-    background-color: #1f1f1f;
+    background-color: transparent;
     color: white;
     font-family: 'Poppins', sans-serif;
     border: transparent;
+}
+
+#assignments-btn:hover{
+    border-bottom: 4px solid white;
+}
+
+#assignments-btn a{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 @media all and (max-width: 1225px){
