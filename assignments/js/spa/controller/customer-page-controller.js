@@ -85,7 +85,7 @@ function printAllCustomers() {
 function loadCustomerTblData() {
     $('#customer-tbl-body').empty();
     for(let c of customers){
-        let row = "<tr><td>" + c.code + "</td><td>" + c.name + "</td><td>" + c.address + "</td><td>" + c.salary + "</td></tr>";
+        let row = "<tr><td>" + c.getCode() + "</td><td>" + c.getName() + "</td><td>" + c.getAddress() + "</td><td>" + c.getSalary() + "</td></tr>";
         $('#customer-tbl-body').append(row);
     }
 }
