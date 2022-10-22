@@ -254,8 +254,11 @@ $('#customer-id-cmbx').change(function (e) {
 function addDeleteEvent() {
     $('#order-page-tbl-body>tr').dblclick(function () {
         if(confirm('Do you want to remove this item from cart?')){
+            updateItemQOH(($(this).children('td:nth-child(1)')).text(),'increase',($(this).children('td:nth-child(4)')).text());
             removeItemFromCart(getOrderItemIndex(($(this).children('td:nth-child(1)')).text()));
             loadOrderItemTblData();
+            loadItemTblData();
+            setSearchedItemData(selectedItemCode);
             $('#order-page-total').val(calculateTotalPrice());
             $('#order-page-sub-total').val(calculateTotalPrice());
         }

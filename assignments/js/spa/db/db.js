@@ -1,7 +1,7 @@
 var customers = new Array();
-customers.push({code: 'C-000-000', name: 'Dinuth Dheeraka', address: 'Kalutara', salary: 100000});
-customers.push({code: 'C-000-001', name: 'Sethmal Fonseka', address: 'Galle', salary: 200000});
-customers.push({code: 'C-000-002', name: 'Kaveen Kashmika', address: 'Jaffna', salary: 300000});
+customers.push({code: 'C-000-000', name: 'Dinuth Dheeraka', address: 'Kalutara', salary: 9877654565});
+customers.push({code: 'C-000-001', name: 'Sethmal Fonseka', address: 'Galle', salary: 9876543456});
+customers.push({code: 'C-000-002', name: 'Kaveen Kashmika', address: 'Jaffna', salary: 8767654345});
 
 var items = new Array();
 items.push({code:'I-000-000',name:'Kome',price:400, qty:10});
