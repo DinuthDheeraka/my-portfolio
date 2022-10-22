@@ -72,12 +72,7 @@ function setCustomerData(customer) {
 }
 
 function addNewCustomer() {
-    let newCustomer = {
-        code: $('#input-cus-id').val(),
-        name: $('#input-cus-name').val(),
-        address: $('#input-cus-address').val(),
-        salary: $('#input-cus-tele').val()
-    };
+    let newCustomer = new Customer($('#input-cus-id').val(),$('#input-cus-name').val(),$('#input-cus-address').val(),$('#input-cus-tele').val());
     customers.push(newCustomer);
 }
 
