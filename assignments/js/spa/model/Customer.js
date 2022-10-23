@@ -4,29 +4,29 @@ function Customer(p_code,p_name,p_address,p_salary) {
     var address = p_address;
     var salary = p_salary;
 
-    this.setCode = function (c) {
+    this.setCustomerCode = function (c) {
         code = c;
     }
-    this.setName = function (n) {
+    this.setCustomerName = function (n) {
         name = n;
     }
-    this.setAddress = function (a) {
+    this.setCustomerAddress = function (a) {
         address = a;
     }
-    this.setSalary = function (s) {
+    this.setCustomerSalary = function (s) {
         salary = s;
     }
 
-    this.getCode = function () {
+    this.getCustomerCode = function () {
         return code;
     }
-    this.getName = function () {
+    this.getCustomerName = function () {
         return name;
     }
-    this.getAddress = function () {
+    this.getCustomerAddress = function () {
         return address;
     }
-    this.getSalary = function () {
+    this.getCustomerSalary = function () {
         return salary;
     }
 }

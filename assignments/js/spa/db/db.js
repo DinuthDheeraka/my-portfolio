@@ -1,12 +1,12 @@
 var customers = new Array();
-customers.push({code: 'C-000-000', name: 'Dinuth Dheeraka', address: 'Kalutara', salary: 9877654565});
-customers.push({code: 'C-000-001', name: 'Sethmal Fonseka', address: 'Galle', salary: 9876543456});
-customers.push({code: 'C-000-002', name: 'Kaveen Kashmika', address: 'Jaffna', salary: 8767654345});
+customers.push(new Customer('C-000-000','Dinuth Dheeraka', 'Kalutara',9877654565));
+customers.push(new Customer('C-000-001', 'Sethmal Fonseka', 'Galle',9876543456));
+customers.push(new Customer('C-000-002',  'Kaveen Kashmika', 'Jaffna', 8767654345));
 
 var items = new Array();
-items.push({code:'I-000-000',name:'Kome',price:400, qty:10});
-items.push({code:'I-000-001',name:'Toffee',price:500, qty:20});
-items.push({code:'I-000-002',name:'Coke',price:600, qty:30});
+items.push(new Item('I-000-000','Kome',400,10));
+items.push(new Item('I-000-001','Toffee',20,100));
+items.push(new Item('I-000-002','Jam',500,200));
 
 var orders = new Array();
 

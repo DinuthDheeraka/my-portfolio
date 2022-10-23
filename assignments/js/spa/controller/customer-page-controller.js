@@ -36,17 +36,17 @@ function deleteCustomer(customerIndex) {
 }
 
 function updateCustomer(customerIndex) {
-    customers[customerIndex] = {
-        code: $('#input-cus-id').val(),
-        name: $('#input-cus-name').val(),
-        address: $('#input-cus-address').val(),
-        salary: $('#input-cus-tele').val()
-    }
+    customers[customerIndex] = new Customer(
+        $('#input-cus-id').val(),
+        $('#input-cus-name').val(),
+        $('#input-cus-address').val(),
+        $('#input-cus-tele').val()
+    )
 }
 
 function searchCustomerIndex(customerId) {
     for(let i = 0; i<customers.length; i++){
-        if(customers[i].code==customerId){
+        if(customers[i].getCustomerCode()==customerId){
             return i;
         }
     }
@@ -55,7 +55,7 @@ function searchCustomerIndex(customerId) {
 
 function searchCustomer(customerId) {
     for(let customer of customers){
-        if(customer.code==customerId){
+        if(customer.getCustomerCode()==customerId){
             return customer;
         }
     }
@@ -64,10 +64,10 @@ function searchCustomer(customerId) {
 
 function setCustomerData(customer) {
     if(customer!=null){
-        $('#input-cus-id').val(customer.code);
-        $('#input-cus-name').val(customer.name);
-        $('#input-cus-address').val(customer.address);
-        $('#input-cus-tele').val(customer.salary);
+        $('#input-cus-id').val(customer.getCustomerCode());
+        $('#input-cus-name').val(customer.getCustomerName());
+        $('#input-cus-address').val(customer.getCustomerAddress());
+        $('#input-cus-tele').val(customer.getCustomerSalary());
     }
 }
 
@@ -85,7 +85,7 @@ function printAllCustomers() {
 function loadCustomerTblData() {
     $('#customer-tbl-body').empty();
     for(let c of customers){
-        let row = "<tr><td>" + c.getCode() + "</td><td>" + c.getName() + "</td><td>" + c.getAddress() + "</td><td>" + c.getSalary() + "</td></tr>";
+        let row = "<tr><td>" + c.getCustomerCode() + "</td><td>" + c.getCustomerName() + "</td><td>" + c.getCustomerAddress() + "</td><td>" + c.getCustomerSalary() + "</td></tr>";
         $('#customer-tbl-body').append(row);
     }
 }

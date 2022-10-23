@@ -35,17 +35,17 @@ function deleteItem(itemIndex) {
 }
 
 function updateItem(itemIndex) {
-    items[itemIndex] = {
-        code: $('#input-itm-id').val(),
-        name: $('#input-itm-name').val(),
-        price: $('#input-itm-price').val(),
-        qty: $('#input-itm-qty').val()
-    }
+    items[itemIndex] = new Item(
+        $('#input-itm-id').val(),
+        $('#input-itm-name').val(),
+        $('#input-itm-price').val(),
+        $('#input-itm-qty').val()
+    );
 }
 
 function searchIndex(itemId) {
     for(let i = 0; i<items.length; i++){
-        if(items[i].code==itemId){
+        if(items[i].getItemCode()==itemId){
             return i;
         }
     }
@@ -54,7 +54,7 @@ function searchIndex(itemId) {
 
 function searchItem(itemId) {
     for(let item of items){
-        if(item.code==itemId){
+        if(item.getItemCode()==itemId){
             return item;
         }
     }
@@ -63,20 +63,16 @@ function searchItem(itemId) {
 
 function setItemData(item) {
     if(item!=null){
-        $('#input-itm-id').val(item.code);
-        $('#input-itm-name').val(item.name);
-        $('#input-itm-price').val(item.price);
-        $('#input-itm-qty').val(item.qty);
+        $('#input-itm-id').val(item.getItemCode());
+        $('#input-itm-name').val(item.getItemName());
+        $('#input-itm-price').val(item.getItemPrice());
+        $('#input-itm-qty').val(item.getItemQty());
     }
 }
 
 function addNewItem() {
-    let newItem = {
-        code: $('#input-itm-id').val(),
-        name: $('#input-itm-name').val(),
-        price: $('#input-itm-price').val(),
-        qty: $('#input-itm-qty').val()
-    };
+    let newItem = new Item($('#input-itm-id').val(),$('#input-itm-name').val(),$('#input-itm-price').val(),
+        $('#input-itm-qty').val());
     items.push(newItem);
 }
 
@@ -89,7 +85,7 @@ function printAllCustomers() {
 function loadItemTblData() {
     $('#itm-tbl-body').empty();
     for(let i of items){
-        let row = "<tr><td>" + i.code + "</td><td>" + i.name + "</td><td>" + i.price + "</td><td>" + i.qty + "</td></tr>";
+        let row = "<tr><td>" + i.getItemCode() + "</td><td>" + i.getItemName() + "</td><td>" + i.getItemPrice() + "</td><td>" + i.getItemQty() + "</td></tr>";
         $('#itm-tbl-body').append(row);
     }
 }
@@ -103,10 +99,11 @@ function clearInputFieldsData() {
 function updateItemQOH(itemCode,operation,qty) {
     let item = items[searchIndex(itemCode)];
     if(operation=='decrease'){
-        item.qty = parseInt(item.qty)-parseInt(qty);
+        item.setItemQty(parseInt(item.qty)-parseInt(qty));
     }else{
-        item.qty = parseInt(item.qty)+parseInt(qty);
+        item.setItemQty(parseInt(item.qty)+parseInt(qty));
     }
+
 }
 
 // -----------------------------------validations

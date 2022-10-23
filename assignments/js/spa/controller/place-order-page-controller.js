@@ -131,7 +131,7 @@ function setSearchedOrderItems(itemList) {
 function loadItemIdsToCmbx() {
     $('#item-id-cmbx').empty();
     for(let i of items){
-        let option = "<option>"+i.code+"</option>";
+        let option = "<option>"+i.getItemCode()+"</option>";
         $('#item-id-cmbx').append(option);
     }
 }
@@ -139,7 +139,7 @@ function loadItemIdsToCmbx() {
 function loadCustomerIdsToCmbx() {
     $('#customer-id-cmbx').empty();
     for(let c of customers){
-        let option = "<option>"+c.code+"</option>";
+        let option = "<option>"+c.getCustomerCode()+"</option>";
         $('#customer-id-cmbx').append(option);
     }
 }
@@ -159,18 +159,18 @@ function setSearchedItemData(itemCode) {
     let item = searchItem(itemCode);
     if(item!=null){
         // $('#order-page-item-code').val(item.code);
-        $('#order-page-item-name').val(item.name);
-        $('#order-page-item-price').val(item.price);
-        $('#order-page-item-qoh').val(item.qty);
+        $('#order-page-item-name').val(item.getItemCode());
+        $('#order-page-item-price').val(item.getItemPrice());
+        $('#order-page-item-qoh').val(item.getItemQty());
     }
 }
 
 function setSearchedCustomerData(customerCode) {
     let customer = searchCustomer(customerCode);
     if(customer!=null){
-        $('#order-page-customer-name').val(customer.name);
-        $('#order-page-customer-address').val(customer.address);
-        $('#order-page-customer-tele').val(customer.salary);
+        $('#order-page-customer-name').val(customer.getCustomerName());
+        $('#order-page-customer-address').val(customer.getCustomerAddress());
+        $('#order-page-customer-tele').val(customer.getCustomerSalary());
     }
 }
 
