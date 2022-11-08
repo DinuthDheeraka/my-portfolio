@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JQuery-UI/JQuery-UI.iml" filepath="$PROJECT_DIR$/JQuery-UI/JQuery-UI.iml" />
       <module fileurl="file://$PROJECT_DIR$/My-Portfolio.iml" filepath="$PROJECT_DIR$/My-Portfolio.iml" />
     </modules>
   </component>

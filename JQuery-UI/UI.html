@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/jquery-ui.min.css">
+    <style>
+        #sec-1{
+            width: 100px;
+            height: 100px;
+            background-color: #003eff;
+        }
+        #sec-2{
+            width: 150px;
+            height: 150px;
+            background-color: #157f5a;
+        }
+    </style>
+</head>
+<body>
+<section id="sec-1"></section>
+<section id="sec-2"></section>
+<div class="paper" >
+    <img src="assets/img.png" width="800px">
+</div>
+
+<script src="assets/jquery-3.6.1.min.js"></script>
+<script src="assets/jquery-ui.min.js"></script>
+<script src="assets/oridomi.min.js"></script>
+<script>
+    var folded = new OriDomi(document.getElementsByClassName('paper')[0]);
+    $( function() {
+        $( "#sec-1" ).draggable();
+        $( "#sec-2" ).droppable({
+            drop: function( event, ui ) {
+                $( this )
+                    .css('background-color','red')
+            }
+        });
+    } );
+</script>
+</body>
+</html>
