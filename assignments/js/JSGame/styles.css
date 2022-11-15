@@ -1,0 +1,12 @@
+#canvas1{
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    border: 3px solid #bf7f7f;
+    width: 1530px;
+    height: 700px;
+    /*background-color: black;*/
+}
