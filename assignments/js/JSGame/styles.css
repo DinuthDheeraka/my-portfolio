@@ -17,8 +17,8 @@
     margin:auto;
     height: 200px;
     border:1px solid #391313;
-    /*background-image: url("Run (1).png");*/
+    background-image: url("Run (1).png");
     background-position: center;
     background-size: cover;
-    bottom:112px;
+    bottom:100px;
 }

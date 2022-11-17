@@ -69,13 +69,44 @@ animateParallax();
 // const PLAYER_CANVAS_CTX = PLAYER_CANVAS.getContext('2d');
 // const PLAYER_CANVAS_WIDTH = PLAYER_CANVAS.width = 250;
 // const PLAYER_CANVAS_HEIGHT = PLAYER_CANVAS.height = 200;
-
+var animationNum = 0;
 var index = 0;
-function playerMotions() {
+function runAnimation() {
     if(index==9){
         index = 0;
     }
     $('#player').css('background-image','url("Run ('+index+').png"');
     index++;
 }
-setInterval(playerMotions,70);
+// animationNum =  setInterval(runAnimation,70);
+
+var jumpIndex = 0;
+var jumpHeight = 110;
+function jumpAnimation() {
+    if(jumpIndex==11){
+        jumpIndex = 0;
+        clearInterval(animationNum);
+        animationNum = setInterval(runAnimation,70);
+    }
+    $('#player').css('background-image','url("Jump ('+jumpIndex+').png"');
+    jumpIndex++;
+    setJumpHeight();
+}
+
+function setJumpHeight() {
+    if(jumpIndex>=10){
+        $('#player').css('bottom','100px');
+        jumpHeight=100;
+    }else if (jumpIndex<6){
+        jumpHeight+=20;
+        $('#player').css('bottom',jumpHeight+'px');
+    }else {
+        jumpHeight-=20;
+        $('#player').css('bottom',jumpHeight+'px');
+    }
+}
+
+$('#player').click(function () {
+    clearInterval(animationNum);
+    animationNum = setInterval(jumpAnimation,70);
+});
