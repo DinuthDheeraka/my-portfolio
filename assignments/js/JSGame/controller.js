@@ -20,20 +20,20 @@ BG_IMAGE5.src = 'layer-2.png';
 
 function animateParallax() {
     BG_CANVAS_CTX.clearRect(0,0,BG_CANVAS_WIDTH,BG_CANVAS_HEIGHT)
-    BG_CANVAS_CTX.drawImage(BG_IMAGE4,x,0);
-    BG_CANVAS_CTX.drawImage(BG_IMAGE4,x2,0);
+    // BG_CANVAS_CTX.drawImage(BG_IMAGE4,x,0);
+    // BG_CANVAS_CTX.drawImage(BG_IMAGE4,x2,0);
 
-    BG_CANVAS_CTX.drawImage(BG_IMAGE5,x,0);
-    BG_CANVAS_CTX.drawImage(BG_IMAGE5,x2,0);
+    // BG_CANVAS_CTX.drawImage(BG_IMAGE5,x,0);
+    // BG_CANVAS_CTX.drawImage(BG_IMAGE5,x2,0);
 
-    BG_CANVAS_CTX.drawImage(BG_IMAGE,x,30);
-    BG_CANVAS_CTX.drawImage(BG_IMAGE,x2,30);
+    // BG_CANVAS_CTX.drawImage(BG_IMAGE,x,30);
+    // BG_CANVAS_CTX.drawImage(BG_IMAGE,x2,30);
 
     BG_CANVAS_CTX.drawImage(BG_IMAGE2,x,-15);
     BG_CANVAS_CTX.drawImage(BG_IMAGE2,x2,-15);
 
-    BG_CANVAS_CTX.drawImage(BG_IMAGE3,x,0);
-    BG_CANVAS_CTX.drawImage(BG_IMAGE3,x2,0);
+    // BG_CANVAS_CTX.drawImage(BG_IMAGE3,x,0);
+    // BG_CANVAS_CTX.drawImage(BG_IMAGE3,x2,0);
 
     if(x<-2400){
         x = 2400+x2+gameSpeed-4;
@@ -69,35 +69,37 @@ animateParallax();
 // const PLAYER_CANVAS_CTX = PLAYER_CANVAS.getContext('2d');
 // const PLAYER_CANVAS_WIDTH = PLAYER_CANVAS.width = 250;
 // const PLAYER_CANVAS_HEIGHT = PLAYER_CANVAS.height = 200;
+$('#player').css('background-image','url("img/Idle ('+1+').png"');
 var animationNum = 0;
-var index = 0;
-function runAnimation() {
-    if(index==9){
-        index = 0;
+var index = 1;
+function IdleAnimation() {
+    if(index==11){
+        index = 1;
     }
-    $('#player').css('background-image','url("Run ('+index+').png"');
+    $('#player').css('background-image','url("img/Idle ('+index+').png"');
     index++;
 }
-// animationNum =  setInterval(runAnimation,70);
+animationNum =  setInterval(IdleAnimation,70);
 
-var jumpIndex = 0;
-var jumpHeight = 110;
+var jumpIndex = 1;
+var jumpHeight = 90;
 function jumpAnimation() {
-    if(jumpIndex==11){
-        jumpIndex = 0;
+    if(jumpIndex==13){
+        jumpIndex = 1;
         clearInterval(animationNum);
-        animationNum = setInterval(runAnimation,70);
+        animationNum = setInterval(runAnimation,120);
     }
-    $('#player').css('background-image','url("Jump ('+jumpIndex+').png"');
+    $('#player').css('background-image','url("img/Jump ('+jumpIndex+').png"');
     jumpIndex++;
     setJumpHeight();
 }
 
 function setJumpHeight() {
-    if(jumpIndex>=10){
-        $('#player').css('bottom','100px');
-        jumpHeight=100;
-    }else if (jumpIndex<6){
+    if(jumpIndex==13){
+        $('#player').css('bottom','90px');
+        jumpHeight=90;
+        console.log(111111111111111111);
+    }else if (jumpIndex<8){
         jumpHeight+=20;
         $('#player').css('bottom',jumpHeight+'px');
     }else {
@@ -106,7 +108,35 @@ function setJumpHeight() {
     }
 }
 
+var runIndex = 1;
+function runAnimation() {
+    if(runIndex==9){
+        runIndex = 1;
+    }
+    $('#player').css('background-image','url("img/Run ('+runIndex+').png"');
+    runIndex++;
+}
+
+var deadIndex = 1;
+function deadAnimation() {
+    if(deadIndex==9){
+        deadIndex = 1;
+    }
+    $('#player').css('background-image','url("img/Dead ('+deadIndex+').png"');
+    deadIndex++;
+}
+
 $('#player').click(function () {
     clearInterval(animationNum);
-    animationNum = setInterval(jumpAnimation,70);
+    animationNum = setInterval(jumpAnimation,90);
+});
+
+document.getElementById('canvas1').addEventListener('click',function () {
+    clearInterval(animationNum);
+    animationNum = setInterval(deadAnimation,180);
+});
+
+document.getElementById('player').addEventListener('click',function () {
+    clearInterval(animationNum);
+    animationNum = setInterval(jumpAnimation,80);
 });
