@@ -4,7 +4,20 @@ const BG_CANVAS_WIDTH = BG_CANVAS.width = 1530;
 const BG_CANVAS_HEIGHT = BG_CANVAS.height = 700;
 let gameSpeed = 4;
 var x = 0;
-var x2 = 2400;
+var x2 = 1600;
+
+//sounds
+var jumpSound = new Audio();
+jumpSound.src = "santa/jump1.mp3";
+
+var slideSound = new Audio();
+slideSound.src = "santa/slide1.mp3";
+
+var zombieSound = new Audio();
+zombieSound.src = "santa/zom1.mp3";
+
+var deadSound = new Audio();
+deadSound.src = "santa/zom2.mp3";
 
 // const BG_IMAGE = document.getElementById('img1');
 const BG_IMAGE1 = new Image();
@@ -14,39 +27,43 @@ BG_IMAGE2.src = 'img/layer-5.png';
 const BG_IMAGE3 = new Image();
 BG_IMAGE3.src = 'img/layer-3.png';
 const BG_IMAGE4 = new Image();
-BG_IMAGE4.src = 'img/layer-1.png';
+BG_IMAGE4.src = 'img/layer6.jpg';
 const BG_IMAGE5 = new Image();
-BG_IMAGE5.src = 'img/layer-2.png';
+BG_IMAGE5.src = 'santa/blueBg.jpg';
 
+var animateParallaxNum = 0;
+var zombieSoundNum = 0;
+
+BG_CANVAS_CTX.drawImage(BG_IMAGE5, x, 0);
+BG_CANVAS_CTX.drawImage(BG_IMAGE5, x2, 0);
 function animateParallax() {
   BG_CANVAS_CTX.clearRect(0, 0, BG_CANVAS_WIDTH, BG_CANVAS_HEIGHT)
   // BG_CANVAS_CTX.drawImage(BG_IMAGE4, x, 0);
   // BG_CANVAS_CTX.drawImage(BG_IMAGE4, x2, 0);
   //
-  // BG_CANVAS_CTX.drawImage(BG_IMAGE5, x, 0);
-  // BG_CANVAS_CTX.drawImage(BG_IMAGE5, x2, 0);
+  BG_CANVAS_CTX.drawImage(BG_IMAGE5, x, 0);
+  BG_CANVAS_CTX.drawImage(BG_IMAGE5, x2, 0);
 
   // BG_CANVAS_CTX.drawImage(BG_IMAGE1, x, 30);
   // BG_CANVAS_CTX.drawImage(BG_IMAGE1, x2, 30);
 
-  BG_CANVAS_CTX.drawImage(BG_IMAGE2, x, -15);
-  BG_CANVAS_CTX.drawImage(BG_IMAGE2, x2, -15);
+  // BG_CANVAS_CTX.drawImage(BG_IMAGE2, x, -15);
+  // BG_CANVAS_CTX.drawImage(BG_IMAGE2, x2, -15);
   //
   // BG_CANVAS_CTX.drawImage(BG_IMAGE3, x, 0);
   // BG_CANVAS_CTX.drawImage(BG_IMAGE3, x2, 0);
 
-  if (x < -2400) {
-    x = 2400 + x2 + gameSpeed - 4;
+  if (x < -1600) {
+    x = 1600 + x2 + gameSpeed - 4;
   }
   x -= gameSpeed;
-  if (x2 < -2400) {
-    x2 = 2400 + x + gameSpeed - 4;
+  if (x2 < -1600) {
+    x2 = 1600 + x + gameSpeed - 4;
   }
   x2 -= gameSpeed;
-  requestAnimationFrame(animateParallax);
+  animateParallaxNum =  requestAnimationFrame(animateParallax);
 }
 
-animateParallax();
 
 // var n = 2;
 // function jumpAnimation() {
@@ -117,18 +134,18 @@ function walkAnimation() {
   }
 }
 
-var jumpHeight = 105;
+var jumpHeight = 60;
 function setJumpHeight(jumpIndex) {
   if(jumpIndex!==17){
     if (jumpIndex < 9) {
-      jumpHeight += 60;
+      jumpHeight += 50;
       $('#player').css('bottom', jumpHeight + 'px');
     }else{
-      jumpHeight -= 50;
+      jumpHeight -= 40;
       $('#player').css('bottom', jumpHeight + 'px');
     }
   }else{
-    jumpHeight = 105;
+    jumpHeight = 60;
     $('#player').css('bottom', jumpHeight+'px');
   }
 }
@@ -138,19 +155,63 @@ function runAnimation() {
   if (runIndex === 12) {
     runIndex = 1;
   }
-  $('#player').css('bottom', 90 + 'px');
+  // $('#player').css('bottom', 60 + 'px');
   $('#player').css('background-image', 'url("santa/Run (' + runIndex + ').png"');
   runIndex++;
 }
 
 var deadIndex = 1;
 function deadAnimation() {
+  $('#player').css('bottom','60px');
   if (deadIndex === 18) {
     deadIndex = 1;
   }
   $('#player').css('background-image', 'url("santa/Dead (' + deadIndex + ').png"');
   deadIndex++;
 }
+
+var slideIndex = 1;
+function slideAnimation() {
+  if (slideIndex === 12) {
+    slideIndex = 1;
+    clearInterval(animationNum);
+    resetAnimation();
+  }
+  $('#player').css('background-image', 'url("santa/Slide (' + slideIndex + ').png"');
+  slideIndex++;
+}
+
+var enemyAnimationNum = 0;
+var enemyWalkIndex = 1;
+function enemyWalkAnimation() {
+  if (enemyWalkIndex === 11) {
+    enemyWalkIndex = 1;
+    clearInterval(enemyAnimationNum);
+    enemyAnimationNum = setInterval(enemyAttackAnimation,100);
+  }
+  $('#nme-box-1').css('background-image', 'url("santa/Background (' + enemyWalkIndex + ').png"');
+  $('#nme-box-2').css('background-image', 'url("santa/BackgroundM' + enemyWalkIndex + '.png"');
+  enemyWalkIndex++;
+}
+
+let state = 0;
+var enemyAttackIndex = 1;
+function enemyAttackAnimation() {
+  if (enemyAttackIndex === 9) {
+    enemyAttackIndex = 1;
+    clearInterval(enemyAnimationNum);
+    if(state===0){
+      enemyAnimationNum = setInterval(enemyWalkAnimation,60);
+    }else{
+      enemyAnimationNum = setInterval(enemyAttackAnimation,100);
+    }
+  }
+  $('#nme-box-1').css('background-image', 'url("santa/Background' + enemyAttackIndex + '.png"');
+  $('#nme-box-2').css('background-image', 'url("santa/BackgroundA' + enemyAttackIndex + '.png"');
+  enemyAttackIndex++;
+}
+
+enemyAnimationNum = setInterval(enemyWalkAnimation,60);
 
 // setInterval(animeReminder,10);
 
@@ -164,8 +225,17 @@ function animeReminder() {
 // });
 $(window).keypress(function(e) {
   if(e.keyCode == 32) {
+    jumpSound.play();
     clearInterval(animationNum);
     animationNum = setInterval(jumpAnimation, 100);
+  }
+});
+
+$(window).keypress(function(e) {
+  if(e.key == "c") {
+    slideSound.play();
+    clearInterval(animationNum);
+    animationNum = setInterval(slideAnimation, 60);
   }
 });
 
@@ -182,6 +252,14 @@ $(window).keypress(function(e) {
     previousAnimation="Run";
     clearInterval(animationNum);
     animationNum = setInterval(runAnimation, 60);
+  }
+});
+
+$(window).keypress(function(e) {
+  if(e.key == "Enter") {
+    animateParallax();
+    animateEnm =  setInterval(animateEnemies,30);
+    countScoreAnimationNum = setInterval(countScore,5);
   }
 });
 // $(window).onkeydown(function (event) {
@@ -204,26 +282,29 @@ $(window).keypress(function(e) {
 //   clearInterval(animationNum);
 //   animationNum = setInterval(jumpAnimation, 80);
 // });
-
+let countScoreAnimationNum = 0;
 let isC = true;
-var left = 1400;
+var left = 1800;
 let animateEnm = 0;
 let animateDead = 0;
-
 function animateEnemies() {
   if (left === 10) {
-    left = 1400;
+    left = 1800;
   }
-  $('.enemy').css('left', left);
+  $('#nme-box-1').css('left', left);
   left -= 10;
-  let r1 = document.getElementById('box').getBoundingClientRect();
+  let r1 = document.getElementById('nme-box-1').getBoundingClientRect();
   let r2 = document.getElementById('player').getBoundingClientRect();
   if (r1.x < r2.x + r2.width - 100 && r1.x + r1.width > r2.x && r1.y < r2.y + r2.height && r1.y + r1.height > r2.y) {
     clearInterval(animationNum);
     animateDead = setInterval(setDeadOverNme, 100);
     clearInterval(animateEnm);
+    state = 1;
+    cancelAnimationFrame(animateParallaxNum);
+    clearInterval(countScoreAnimationNum);
+    clearInterval(zombieSoundNum);
+    deadSound.play();
   } else {
-    console.log(22222222);
   }
 }
 
@@ -247,7 +328,6 @@ function resetAnimation() {
   }
 }
 
-// animateEnm =  setInterval(animateEnemies,15);
 let countU = 0;
 function setDeadOverNme() {
   if (countU == 17) {
@@ -258,4 +338,29 @@ function setDeadOverNme() {
   countU++;
 }
 
+let score = 0;
+function countScore() {
+  let formated_score =  String(score++).padStart(10, '0');
+  $('#scoreAmount').text(formated_score);
+}
 
+
+
+function playZombieSounds() {
+  zombieSound.play();
+}
+
+zombieSoundNum = setInterval(playZombieSounds,10);
+
+let animateHitEnterNum = 0;
+let visibilityNum = 1;
+function animateHitEnter() {
+  if(visibilityNum%2==1){
+    $('#hit-enter').css("visibility","visible");
+  }else{
+    $('#hit-enter').css("visibility","hidden");
+  }
+  visibilityNum++;
+}
+
+animateHitEnterNum = setInterval(animateHitEnter,400);
