@@ -83,6 +83,20 @@ h1 {
   top: 0;
   bottom: 0;
   color: #ffffff;
+  /*color: #0a53be;*/
   font-size: 50px;
+  font-family: 'Fredoka One', cursive;
+}
+
+#controls{
+  height: 50px;
+  width:506px;
+  left: 0;
+  right: 0;
+  top: 120px;
+  bottom: 0;
+  color: #ffffff;
+  /*color: #0a53be;*/
+  font-size: 30px;
   font-family: 'Fredoka One', cursive;
 }

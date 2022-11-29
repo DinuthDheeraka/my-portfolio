@@ -33,6 +33,8 @@ BG_IMAGE5.src = 'santa/blueBg.jpg';
 
 var animateParallaxNum = 0;
 var zombieSoundNum = 0;
+let animateHitEnterNum = 0;
+let animateControlsNum = 0;
 
 BG_CANVAS_CTX.drawImage(BG_IMAGE5, x, 0);
 BG_CANVAS_CTX.drawImage(BG_IMAGE5, x2, 0);
@@ -255,11 +257,27 @@ $(window).keypress(function(e) {
   }
 });
 
+let isGameStart = false;
+let enterCount = 0;
 $(window).keypress(function(e) {
   if(e.key == "Enter") {
-    animateParallax();
-    animateEnm =  setInterval(animateEnemies,30);
-    countScoreAnimationNum = setInterval(countScore,5);
+    if(isGameStart==false){
+      clearInterval(animateHitEnterNum);
+      animateParallax();
+      clearInterval(animateEnm);
+      clearInterval(countScoreAnimationNum);
+      // cancelAnimationFrame(animateParallaxNum);
+      animateEnm =  setInterval(animateEnemies,30);
+      countScoreAnimationNum = setInterval(countScore,5);
+      // animateParallaxNum = requestAnimationFrame(animateParallax);
+      $('#hit-enter').css("visibility","hidden");
+      setInterval(animateControls,20);
+      enterCount++;
+      isGameStart= true;
+    }else{
+      isGameStart = false;
+      window.location.reload();
+    }
   }
 });
 // $(window).onkeydown(function (event) {
@@ -303,6 +321,11 @@ function animateEnemies() {
     cancelAnimationFrame(animateParallaxNum);
     clearInterval(countScoreAnimationNum);
     clearInterval(zombieSoundNum);
+    $('#hit-enter').css("visibility","visible");
+    $('#hit-enter').css("width","300px");
+    $('#hit-enter').text("Game Over!");
+    clearInterval(animationNum);
+    animateHitEnterNum = setInterval(animateHitEnter,400);
     deadSound.play();
   } else {
   }
@@ -352,15 +375,24 @@ function playZombieSounds() {
 
 zombieSoundNum = setInterval(playZombieSounds,10);
 
-let animateHitEnterNum = 0;
 let visibilityNum = 1;
 function animateHitEnter() {
   if(visibilityNum%2==1){
-    $('#hit-enter').css("visibility","visible");
+    $('#hit-enter').css("color","rgba(232,222,11,0.99)");
   }else{
-    $('#hit-enter').css("visibility","hidden");
+    $('#hit-enter').css("color","#09f5dd");
   }
   visibilityNum++;
 }
 
 animateHitEnterNum = setInterval(animateHitEnter,400);
+
+let controlsTop = 120;
+function animateControls() {
+  if(controlsTop<=490){
+    controlsTop+=10;
+    $('#controls').css('top','-'+controlsTop+'px');
+  }else{
+    clearInterval(animateControlsNum);
+  }
+}
